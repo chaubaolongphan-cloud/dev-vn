@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CSS3 - DevPortal VN</title>
+<!-- Google Fonts: Be Vietnam Pro -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;family=Fira+Code:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            portal: {
+              bg: '#0a192f',
+              dark: '#07122a',
+              card: '#112240',
+              cardborder: '#233554',
+              mint: '#64ffda',
+              mintHover: '#52e0be',
+              text: '#ccd6f6',
+              muted: '#8892b0',
+              highlight: '#020c1b'
+            }
+          },
+          fontFamily: {
+            sans: ['"Be Vietnam Pro"', 'sans-serif'],
+            mono: ['"Fira Code"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-scroll-and-prism">
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #07122a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e3a5f;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #64ffda;
+    }
+    /* Syntax Highlighting Tokens */
+    .token-comment { color: #6272a4; font-style: italic; }
+    .token-selector { color: #50fa7b; }
+    .token-property { color: #64ffda; }
+    .token-value { color: #f1fa8c; }
+    .token-punctuation { color: #f8f8f2; }
+    .token-variable { color: #bd93f9; }
+    .token-unit { color: #ff79c6; }
+  </style>
+</head>
+<body class="bg-[#07122a] text-portal-text font-sans antialiased min-h-screen flex flex-col selection:bg-portal-mint/20 selection:text-portal-mint">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-[#07122a]/95 backdrop-blur-md border-b border-slate-800/80 px-4 lg:px-8 py-3.5">
+<div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+<!-- Left: Logo & Main Navigation -->
+<div class="flex items-center gap-8">
+<!-- Logo -->
+<a class="flex items-center gap-2 text-portal-mint font-bold text-xl tracking-tight hover:opacity-90 transition-opacity" href="code_4.html">
+<span class="p-1 rounded bg-portal-mint/10 text-portal-mint flex items-center justify-center">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</span>
+<span class="text-white">DevPortal</span> <span class="text-portal-mint font-semibold text-lg">VN</span>
+</a>
+<!-- Desktop Navigation Items -->
+<nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+<a class="text-portal-muted hover:text-portal-mint transition-colors" href="code_4.html">Trang chủ</a>
+<a class="text-portal-mint font-semibold relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-portal-mint" href="code.html">Ngôn ngữ</a>
+<a class="text-portal-muted hover:text-portal-mint transition-colors" href="code_3.html">Thư viện</a>
+<a class="text-portal-muted hover:text-portal-mint transition-colors" href="code_2.html">Kịch bản</a>
+</nav>
+</div>
+<!-- Right: Search Bar and Account Buttons -->
+<div class="flex items-center gap-4">
+<!-- Quick Search Bar -->
+<div class="relative hidden sm:block w-56 md:w-64">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-portal-muted">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<input class="w-full bg-[#0b192f] border border-slate-700/80 rounded-lg pl-9 pr-14 py-1.5 text-xs text-white placeholder-portal-muted focus:outline-none focus:border-portal-mint focus:ring-1 focus:ring-portal-mint transition-all" placeholder="Tìm kiếm tài liệu..." type="text"/>
+<div class="absolute inset-y-0 right-0 pr-2.5 flex items-center pointer-events-none">
+<kbd class="border border-slate-700 bg-slate-800/80 text-[10px] text-slate-400 font-mono px-1.5 py-0.5 rounded shadow-sm">Ctrl K</kbd>
+</div>
+</div>
+<!-- Auth Actions -->
+<div class="flex items-center gap-3 text-sm">
+<button class="text-portal-text hover:text-white transition-colors font-medium px-2 py-1"><button onclick="window.location.href='login.html'">Đăng nhập</button></button>
+<button class="border border-portal-mint text-portal-mint hover:bg-portal-mint hover:text-[#07122a] px-3.5 py-1.5 rounded text-sm font-medium transition-all duration-200"><button onclick="window.location.href='signup.html'">Đăng ký</button></button>
+</div>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: MainContentArea -->
+<main class="flex-grow max-w-7xl mx-auto w-full px-4 lg:px-8 py-6 flex flex-col md:flex-row gap-8">
+<!-- BEGIN: LeftSidebar -->
+<aside class="w-full md:w-64 shrink-0 md:border-r border-slate-800/80 pr-0 md:pr-6">
+<!-- Sidebar Title -->
+<div class="mb-4">
+<h2 class="text-sm font-bold uppercase tracking-wider text-white">Ngôn ngữ phổ biến</h2>
+<p class="text-xs text-portal-muted mt-0.5">Tài liệu lập trình &amp; hướng dẫn</p>
+</div>
+<!-- Language List -->
+<nav aria-label="Danh sách ngôn ngữ" class="space-y-1.5">
+<!-- Python -->
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-sm text-portal-muted hover:text-white hover:bg-slate-800/50 transition-colors" href="#">
+<svg class="w-5 h-5 text-portal-muted" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-medium">Python</span>
+<button class="ml-auto text-xs text-portal-muted hover:text-white transition-colors" onclick="window.location.href='python.html'">Xem thêm</button>
+</a>
+<!-- HTML -->
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-sm text-portal-muted hover:text-white hover:bg-slate-800/50 transition-colors" href="#">
+<span class="font-mono text-xs font-bold px-1 py-0.5 rounded bg-slate-800 text-portal-muted">HTML</span>
+<span class="font-medium">HTML</span>
+<button class="ml-auto text-xs text-portal-muted hover:text-white transition-colors" onclick="window.location.href='html.html'">Xem thêm</button>
+</a>
+<!-- CSS (Active Item) -->
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-sm font-semibold bg-[#112240] text-portal-mint border border-portal-mint/30 shadow-sm transition-colors" href="#">
+<span class="font-mono text-xs font-bold px-1.5 py-0.5 rounded bg-portal-mint/20 text-portal-mint">CSS</span>
+<span>CSS</span>
+<span class="ml-auto w-1.5 h-1.5 rounded-full bg-portal-mint"></span>
+<button class="ml-auto text-xs text-portal-muted hover:text-white transition-colors" onclick="window.location.href='css.html'">Xem thêm</button>
+</a>
+<!-- JavaScript -->
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-sm text-portal-muted hover:text-white hover:bg-slate-800/50 transition-colors" href="#">
+<span class="font-mono text-xs font-bold px-1 py-0.5 rounded bg-slate-800 text-yellow-400">JS</span>
+<span class="font-medium">JavaScript</span>
+<button class="ml-auto text-xs text-portal-muted hover:text-white transition-colors" onclick="window.location.href='javascript.html'">Xem thêm</button>
+</a>
+<!-- Bash / Shell -->
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-sm text-portal-muted hover:text-white hover:bg-slate-800/50 transition-colors" href="#">
+<svg class="w-4 h-4 text-portal-muted" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-medium">Bash / Shell</span>
+<button class="ml-auto text-xs text-portal-muted hover:text-white transition-colors" onclick="window.location.href='bash.html'">Xem thêm</button>
+</a>
+<!-- JSON & XML -->
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-sm text-portal-muted hover:text-white hover:bg-slate-800/50 transition-colors" href="#">
+<svg class="w-4 h-4 text-portal-muted" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-medium">JSON &amp; XML</span>
+<button class="ml-auto text-xs text-portal-muted hover:text-white transition-colors" onclick="window.location.href='json.html'">Xem thêm</button>
+</a>
+</nav>
+</aside>
+<!-- END: LeftSidebar -->
+<!-- BEGIN: DetailArticle -->
+<article class="flex-1 min-w-0 space-y-8">
+<!-- Header Hero & Badge -->
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2.5 px-3 py-1 rounded-md bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono font-medium">
+<svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+<path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.242l.345 4.148 5.413 1.524 5.378-1.514.736-8.152H8.531z"></path>
+</svg>
+          Cascading Style Sheets
+        </div>
+<h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+          CSS3: Định Hình Giao Diện &amp; Phong Cách Web
+        </h1>
+<p class="text-base text-slate-300 leading-relaxed max-w-4xl">
+          CSS (Cascading Style Sheets) là ngôn ngữ quy định cách hiển thị các phần tử HTML trên trình duyệt, từ màu sắc, kiểu chữ, bố cục linh hoạt (Flexbox, Grid) đến hiệu ứng chuyển động mượt mà (Animations &amp; Transitions).
+        </p>
+</div>
+<!-- Info Highlight Box -->
+<!-- This container is for the key note explaining CSS significance -->
+<div class="rounded-xl bg-[#112240] border-l-4 border-l-portal-mint border-y border-r border-slate-800/80 p-5 shadow-lg">
+<div class="flex items-start gap-3.5">
+<div class="text-portal-mint mt-0.5 shrink-0">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h3 class="text-base font-semibold text-white mb-1">Tại sao CSS quan trọng?</h3>
+<p class="text-sm text-slate-300 leading-relaxed">
+              CSS biến cấu trúc HTML thô sơ thành trải nghiệm người dùng hiện đại, tương thích đa thiết bị (Responsive Design) và tối ưu hóa hiệu suất hiển thị mà không cần tải thêm mã logic phức tạp.
+            </p>
+</div>
+</div>
+</div>
+<!-- Feature/Attribute Groups (3 Cards) -->
+<div class="space-y-3">
+<h3 class="text-lg font-bold text-white">Các nhóm thuộc tính CSS nền tảng</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Card 1 -->
+<div class="p-4 rounded-xl bg-[#0b192f] border border-slate-800 hover:border-portal-mint/40 transition-colors">
+<div class="w-8 h-8 rounded-lg bg-teal-500/10 text-portal-mint flex items-center justify-center font-bold text-xs mb-3">01</div>
+<h4 class="font-semibold text-white text-sm mb-1.5">Bố cục &amp; Hiển thị</h4>
+<p class="text-xs text-portal-muted leading-relaxed">Display, Flexbox, CSS Grid, Position (Relative, Absolute, Sticky), Float &amp; Clear.</p>
+</div>
+<!-- Card 2 -->
+<div class="p-4 rounded-xl bg-[#0b192f] border border-slate-800 hover:border-portal-mint/40 transition-colors">
+<div class="w-8 h-8 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center font-bold text-xs mb-3">02</div>
+<h4 class="font-semibold text-white text-sm mb-1.5">Kiểu dáng &amp; Màu sắc</h4>
+<p class="text-xs text-portal-muted leading-relaxed">Color, Background, Typography (Font, Line-height), Box-Model (Margin, Padding), Borders.</p>
+</div>
+<!-- Card 3 -->
+<div class="p-4 rounded-xl bg-[#0b192f] border border-slate-800 hover:border-portal-mint/40 transition-colors">
+<div class="w-8 h-8 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center font-bold text-xs mb-3">03</div>
+<h4 class="font-semibold text-white text-sm mb-1.5">Hiệu ứng &amp; Nâng cao</h4>
+<p class="text-xs text-portal-muted leading-relaxed">Transitions, Keyframes Animation, Media Queries (Responsive), Biến CSS (Variables).</p>
+</div>
+</div>
+</div>
+<!-- Code Example Block -->
+<div class="space-y-3">
+<div>
+<h3 class="text-lg font-bold text-white">Ví dụ: "CSS Cơ bản &amp; Hiện đại"</h3>
+<p class="text-xs text-portal-muted mt-0.5">Xây dựng thẻ giao diện mượt mà với Flexbox, Biến CSS và hiệu ứng Hover.</p>
+</div>
+<!-- Terminal Window Mockup -->
+<div class="rounded-xl overflow-hidden bg-[#020c1b] border border-slate-800 shadow-2xl">
+<!-- Terminal Header -->
+<div class="bg-[#0b192f] px-4 py-2.5 border-b border-slate-800/80 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+<span class="ml-2 text-xs font-mono text-slate-400">style.css</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-[11px] font-mono font-semibold tracking-wider text-portal-mint bg-portal-mint/10 px-2 py-0.5 rounded">CSS</span>
+<!-- Copy Button -->
+<button class="text-portal-muted hover:text-white p-1 rounded transition-colors" onclick="navigator.clipboard.writeText(document.getElementById('code-content').innerText)" title="Sao chép mã">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+<!-- Code Body with Syntax Color Styling -->
+<pre class="p-4 sm:p-6 overflow-x-auto text-xs sm:text-sm font-mono leading-relaxed" id="code-content"><code><span class="token-comment">/* Tạo thẻ Card hiện đại với Flexbox &amp; Biến CSS */</span>
+<span class="token-selector">:root</span> <span class="token-punctuation">{</span>
+  <span class="token-property">--primary-color</span><span class="token-punctuation">:</span> <span class="token-value">#64ffda</span><span class="token-punctuation">;</span>
+  <span class="token-property">--bg-card</span><span class="token-punctuation">:</span> <span class="token-value">#0f172a</span><span class="token-punctuation">;</span>
+<span class="token-punctuation">}</span>
+
+<span class="token-selector">.card-container</span> <span class="token-punctuation">{</span>
+  <span class="token-property">display</span><span class="token-punctuation">:</span> <span class="token-value">flex</span><span class="token-punctuation">;</span>
+  <span class="token-property">justify-content</span><span class="token-punctuation">:</span> <span class="token-value">center</span><span class="token-punctuation">;</span>
+  <span class="token-property">align-items</span><span class="token-punctuation">:</span> <span class="token-value">center</span><span class="token-punctuation">;</span>
+  <span class="token-property">padding</span><span class="token-punctuation">:</span> <span class="token-value">24px</span><span class="token-punctuation">;</span>
+  <span class="token-property">background-color</span><span class="token-punctuation">:</span> <span class="token-variable">var(--bg-card)</span><span class="token-punctuation">;</span>
+  <span class="token-property">border-radius</span><span class="token-punctuation">:</span> <span class="token-value">12px</span><span class="token-punctuation">;</span>
+  <span class="token-property">border</span><span class="token-punctuation">:</span> <span class="token-value">1px solid rgba(100, 255, 218, 0.2)</span><span class="token-punctuation">;</span>
+  <span class="token-property">transition</span><span class="token-punctuation">:</span> <span class="token-value">transform 0.3s ease, box-shadow 0.3s ease</span><span class="token-punctuation">;</span>
+<span class="token-punctuation">}</span>
+
+<span class="token-selector">.card-container:hover</span> <span class="token-punctuation">{</span>
+  <span class="token-property">transform</span><span class="token-punctuation">:</span> <span class="token-value">translateY(-4px)</span><span class="token-punctuation">;</span>
+  <span class="token-property">box-shadow</span><span class="token-punctuation">:</span> <span class="token-value">0 10px 25px rgba(0, 0, 0, 0.5)</span><span class="token-punctuation">;</span>
+<span class="token-punctuation">}</span></code></pre>
+</div>
+</div>
+<!-- Tag Cloud Component -->
+<div class="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-800">
+<span class="text-xs text-portal-muted mr-1">Từ khóa liên quan:</span>
+<a class="px-2.5 py-1 text-xs font-mono rounded bg-slate-800/80 text-portal-mint hover:bg-portal-mint/20 transition-colors" href="#">#css3</a>
+<a class="px-2.5 py-1 text-xs font-mono rounded bg-slate-800/80 text-portal-muted hover:text-white transition-colors" href="#">#webdesign</a>
+<a class="px-2.5 py-1 text-xs font-mono rounded bg-slate-800/80 text-portal-muted hover:text-white transition-colors" href="#">#responsive</a>
+<a class="px-2.5 py-1 text-xs font-mono rounded bg-slate-800/80 text-portal-muted hover:text-white transition-colors" href="#">#flexbox</a>
+<a class="px-2.5 py-1 text-xs font-mono rounded bg-slate-800/80 text-portal-muted hover:text-white transition-colors" href="#">#frontend</a>
+</div>
+</article>
+<!-- END: DetailArticle -->
+</main>
+<!-- END: MainContentArea -->
+<!-- BEGIN: MainFooter -->
+<footer class="mt-auto bg-[#050c1b] border-t border-slate-800/80 py-8 px-4 lg:px-8 text-xs text-portal-muted">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+<!-- Logo & Copyright -->
+<div class="flex items-center gap-2">
+<span class="font-bold text-white">&lt;&gt; DevPortal VN</span>
+<span>— © 2024 Bản quyền thuộc về DevPortal VN.</span>
+</div>
+<!-- Secondary Links -->
+<div class="flex flex-wrap items-center gap-6">
+<a class="hover:text-portal-mint transition-colors" href="#about.html">Về chúng tôi</a>
+<a class="hover:text-portal-mint transition-colors" href="#terms.html">Điều khoản dịch vụ</a>
+<a class="hover:text-portal-mint transition-colors" href="#privacy.html">Chính sách bảo mật</a>
+<a class="hover:text-portal-mint transition-colors" href="#contact.html">Liên hệ</a>
+<a class="hover:text-portal-mint transition-colors" href="#api.html">Tài liệu API</a>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+</body></html>
