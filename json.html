@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>DevPortal VN</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed":"#0d1c32","surface":"#07122a","on-background":"#d9e2ff","on-tertiary-container":"#556486","background":"#07122a","on-surface":"#d9e2ff","on-tertiary":"#20304f","surface-container-highest":"#2a344e","on-surface-variant":"#bacac3","surface-bright":"#2f3952","inverse-surface":"#d9e2ff","tertiary-container":"#d8e2ff","primary-fixed":"#5ffbd6","surface-container-high":"#1f2942","primary-container":"#5ffbd6","surface-tint":"#38debb","tertiary":"#ffffff","secondary-container":"#3c4962","surface-container-lowest":"#030d25","error-container":"#93000a","outline-variant":"#3c4a45","surface-dim":"#07122a","secondary-fixed-dim":"#b9c7e4","secondary":"#b9c7e4","surface-variant":"#2a344e","on-tertiary-fixed":"#091b39","on-secondary-fixed-variant":"#39475f","surface-container":"#151f37","on-secondary":"#233148","on-primary-fixed-variant":"#005142","error":"#ffb4ab","inverse-primary":"#006b58","on-primary-container":"#00725e","outline":"#85948e","on-primary-fixed":"#002019","inverse-on-surface":"#263049","on-secondary-container":"#abb9d6","surface-container-low":"#101b33","tertiary-fixed":"#d8e2ff","primary":"#ffffff","on-error-container":"#ffdad6","on-tertiary-fixed-variant":"#374767","tertiary-fixed-dim":"#b6c6ed","primary-fixed-dim":"#38debb","on-error":"#690005","on-primary":"#00382d","secondary-fixed":"#d6e3ff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"container-max":"1200px","xl":"40px","lg":"24px","gutter":"24px","unit":"4px","xs":"4px","sm":"8px","md":"16px"},"fontFamily":{"code-block":["JetBrains Mono"],"body-lg":["Inter"],"label-caps":["JetBrains Mono"],"body-md":["Inter"],"display-lg":["Be Vietnam Pro"],"headline-md":["Be Vietnam Pro"],"display-lg-mobile":["Be Vietnam Pro"]},"fontSize":{"code-block":["14px",{"lineHeight":"1.7","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"1.6","fontWeight":"400"}],"label-caps":["12px",{"lineHeight":"1.0","letterSpacing":"0.1em","fontWeight":"500"}],"body-md":["16px",{"lineHeight":"1.6","fontWeight":"400"}],"display-lg":["48px",{"lineHeight":"1.2","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"1.4","fontWeight":"600"}],"display-lg-mobile":["32px",{"lineHeight":"1.2","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full max-w-[1200px] mx-auto px-lg flex items-center justify-between gap-md"><div class="flex items-center gap-lg"><a class="flex items-center gap-xs text-primary-fixed-dim hover:text-primary transition-colors" data-path="trang-chu" href="#"><span class="font-code-block text-code-block font-semibold">&lt;/&gt;</span><span class="font-headline-md text-headline-md tracking-tight text-primary">DevPortal VN</span></a><nav class="hidden lg:flex items-center gap-md" data-active-classes="text-primary-fixed-dim font-semibold border-b-2 border-primary-fixed-dim pb-1"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="trang-chu" href="code_4.html">Trang chủ</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="ngon-ngu" href="code.html">Ngôn ngữ</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="thu-vien" href="code_3.html">Thư viện</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kich-ban" href="code_2.html">Kịch bản</a><a aria-current="page" class="transition-colors text-primary-fixed-dim font-semibold border-b-2 border-primary-fixed-dim pb-1" data-path="tro-giup" href="#">Trợ giúp</a></nav></div><div class="flex-1 max-w-md hidden md:flex items-center"><div class="w-full flex items-center bg-surface-container-low px-md py-xs rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-on-surface-variant mr-xs text-[20px]">search</span><input class="w-full bg-transparent border-none outline-none font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant" placeholder="Tìm kiếm giải pháp, lỗi cú pháp, thư viện..." type="text"/><span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-high px-xs py-unit rounded">Ctrl+K</span></div></div><div class="flex items-center gap-md"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors hidden sm:inline-block" data-path="dang-nhap" href="login.html">Đăng nhập</a><a class="font-body-md text-body-md text-on-primary bg-primary-container hover:bg-primary-fixed-dim hover:text-on-primary-container px-md py-xs rounded-full transition-colors hidden sm:inline-block font-medium" data-path="dang-ky" href="signup.html">Đăng ký</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Subtle decorative ambient glow -->
+<div class="relative w-full max-w-[1280px] mx-auto px-lg py-md">
+<div class="absolute top-12 left-1/3 w-96 h-96 bg-primary-fixed/5 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+<div class="absolute top-72 right-10 w-80 h-80 bg-secondary-container/20 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+<!-- Main 2-column Grid (Sidebar + Content) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-lg items-start">
+<!-- LEFT SIDEBAR: Ngôn ngữ phổ biến -->
+<aside class="lg:col-span-3 flex flex-col gap-md sticky top-20">
+<div class="bg-surface-container-low rounded-xl p-md shadow-md">
+<div class="flex items-center gap-xs mb-sm px-xs">
+<span class="material-symbols-outlined text-primary-fixed text-[18px]">terminal</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase">Tài liệu &amp; Ngôn ngữ</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-md px-xs">Ngôn ngữ Phổ biến</h2>
+<nav aria-label="Danh mục ngôn ngữ" class="flex flex-col gap-xs">
+<!-- Python -->
+<a class="flex items-center justify-between px-md py-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors group" href="python.html">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary-fixed transition-colors">code_blocks</span>
+<span class="font-body-md text-body-md">Python</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">v3.12</span>
+</a>
+<!-- HTML -->
+<a class="flex items-center justify-between px-md py-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors group" href="html.html">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary-fixed transition-colors">html</span>
+<span class="font-body-md text-body-md">HTML5</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Web</span>
+</a>
+<!-- CSS -->
+<a class="flex items-center justify-between px-md py-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors group" href="css.html">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary-fixed transition-colors">css</span>
+<span class="font-body-md text-body-md">CSS3 &amp; Modern</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Styles</span>
+</a>
+<!-- JavaScript -->
+<a class="flex items-center justify-between px-md py-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors group" href="javascript.html">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary-fixed transition-colors">javascript</span>
+<span class="font-body-md text-body-md">JavaScript</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">ESNext</span>
+</a>
+<!-- Bash / Shell -->
+<a class="flex items-center justify-between px-md py-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors group" href="bash.html">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary-fixed transition-colors">terminal</span>
+<span class="font-body-md text-body-md">Bash / Shell</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">CLI</span>
+</a>
+<!-- JSON & XML - ACTIVE -->
+<a class="flex items-center justify-between px-md py-sm rounded-lg bg-surface-container text-primary shadow-sm relative group" href="json.html">
+<div class="flex items-center gap-sm">
+<div class="w-6 h-6 rounded-md bg-primary-fixed/20 text-primary-fixed flex items-center justify-center font-code-block text-label-caps font-semibold">
+                  {}
+                </div>
+<span class="font-body-md text-body-md font-semibold text-primary">JSON &amp; XML</span>
+</div>
+<div class="flex items-center gap-xs">
+<span class="w-2 h-2 rounded-full bg-primary-fixed shadow-[0_0_8px_rgba(95,251,214,0.8)]"></span>
+</div>
+</a>
+</nav>
+</div>
+<!-- Progress Widget on Sidebar -->
+<div class="bg-surface-container-low rounded-xl p-md shadow-sm">
+<div class="flex items-center justify-between mb-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Tiến trình học tập</span>
+<span class="font-label-caps text-label-caps text-primary-fixed font-semibold">100%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mb-sm">
+<div class="bg-primary-container h-full w-full rounded-full"></div>
+</div>
+<p class="font-body-md text-[13px] text-on-surface-variant leading-tight">
+            Bạn đã duyệt xong tất cả các module cấu trúc định dạng dữ liệu.
+          </p>
+</div>
+</aside>
+<!-- RIGHT MAIN CONTENT -->
+<section class="lg:col-span-9 flex flex-col gap-xl">
+<!-- Header Banner Block -->
+<div class="bg-surface-container-low rounded-xl p-lg md:p-xl shadow-md flex flex-col gap-md relative overflow-hidden">
+<div class="flex flex-wrap items-center gap-xs">
+<span class="inline-flex items-center gap-xs px-sm py-unit rounded-full bg-surface-container-high text-primary-fixed font-code-block text-label-caps">
+<span class="material-symbols-outlined text-[14px]">data_object</span>
+              JSON
+            </span>
+<span class="inline-flex items-center px-sm py-unit rounded-full bg-surface-container text-on-surface-variant font-label-caps text-label-caps">
+              JavaScript Object Notation &amp; Data Exchange
+            </span>
+<span class="inline-flex items-center px-sm py-unit rounded-full bg-surface-container-highest text-secondary font-label-caps text-label-caps ml-auto">
+              RFC 8259 Standard
+            </span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tight">
+            JSON &amp; XML: Cấu Trúc Dữ Liệu &amp; Giao Thức Trao Đổi Chuẩn Web
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+            Định dạng không phụ thuộc ngôn ngữ (Language-Agnostic) giữ vai trò xương sống trong kiến trúc Web RESTful API, Microservices, hệ thống cấu hình (Config) và truyền nhận dữ liệu thời gian thực hiện đại giữa Client và Server.
+          </p>
+<!-- Callout box: Why JSON dominates -->
+<div class="bg-surface-container rounded-xl p-md flex flex-col sm:flex-row gap-md items-start mt-xs">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed/15 text-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="flex flex-col gap-xs">
+<h3 class="font-headline-md text-[18px] text-primary">Tại sao JSON trở thành định dạng thống trị toàn cầu?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Dung lượng payload siêu nhẹ, thừa hưởng cú pháp key-value tự nhiên của JavaScript, dễ đọc hiểu cho cả con người lẫn máy tính. Đồng thời, JSON được tích hợp parser gốc ở tốc độ cao trong mọi ngôn ngữ backend từ Node.js, Python, Go, Java đến Rust.
+              </p>
+</div>
+</div>
+</div>
+<!-- 3 Core Knowledge Cards -->
+<div>
+<div class="flex items-center justify-between mb-md">
+<div>
+<span class="font-label-caps text-label-caps text-primary-fixed uppercase tracking-wider">Module Kiến Thức</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">3 Trụ Cột Nền Tảng của JSON &amp; Trao Đổi Dữ Liệu</h2>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Card 01 -->
+<div class="bg-surface-container-low rounded-xl p-md flex flex-col justify-between shadow-sm hover:bg-surface-container transition-colors group">
+<div>
+<div class="flex items-center justify-between mb-md">
+<span class="font-code-block text-[28px] font-bold text-primary-fixed/40 group-hover:text-primary-fixed transition-colors">01</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">data_array</span>
+</div>
+</div>
+<h3 class="font-headline-md text-[18px] text-primary mb-xs">Cú Pháp &amp; Kiểu Dữ Liệu</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant mb-md">
+                  Hỗ trợ 6 kiểu dữ liệu chuẩn: <code class="font-code-block text-primary-fixed-dim">string</code>, <code class="font-code-block text-primary-fixed-dim">number</code>, <code class="font-code-block text-primary-fixed-dim">boolean</code>, <code class="font-code-block text-primary-fixed-dim">null</code>, đối tượng <code class="font-code-block text-primary-fixed-dim">{}</code> và mảng <code class="font-code-block text-primary-fixed-dim">[]</code>. Bắt buộc dấu ngoặc kép chuẩn cho mọi key.
+                </p>
+</div>
+<span class="font-label-caps text-label-caps text-secondary flex items-center gap-xs">
+                Cú pháp nghiêm ngặt <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+<!-- Card 02 -->
+<div class="bg-surface-container-low rounded-xl p-md flex flex-col justify-between shadow-sm hover:bg-surface-container transition-colors group">
+<div>
+<div class="flex items-center justify-between mb-md">
+<span class="font-code-block text-[28px] font-bold text-primary-fixed/40 group-hover:text-primary-fixed transition-colors">02</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">transform</span>
+</div>
+</div>
+<h3 class="font-headline-md text-[18px] text-primary mb-xs">Phân Tích &amp; Chuyển Đổi</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant mb-md">
+                  Xử lý tuần tự hóa (Serialization) và chuyển đổi chuỗi sang đối tượng qua <code class="font-code-block text-primary-fixed-dim">JSON.parse()</code>, <code class="font-code-block text-primary-fixed-dim">JSON.stringify()</code>, cùng kỹ thuật kiểm tra cấu trúc với JSON Schema.
+                </p>
+</div>
+<span class="font-label-caps text-label-caps text-secondary flex items-center gap-xs">
+                Serialization Lifecycle <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+<!-- Card 03 -->
+<div class="bg-surface-container-low rounded-xl p-md flex flex-col justify-between shadow-sm hover:bg-surface-container transition-colors group">
+<div>
+<div class="flex items-center justify-between mb-md">
+<span class="font-code-block text-[28px] font-bold text-primary-fixed/40 group-hover:text-primary-fixed transition-colors">03</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">api</span>
+</div>
+</div>
+<h3 class="font-headline-md text-[18px] text-primary mb-xs">JSON trong REST &amp; Thực Tế</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant mb-md">
+                  Ứng dụng làm payload cho REST API qua Header <code class="font-code-block text-primary-fixed-dim">application/json</code>, token định danh JWT, và tệp cấu hình hệ thống hiện đại (<code class="font-code-block text-primary-fixed-dim">package.json</code>, <code class="font-code-block text-primary-fixed-dim">tsconfig</code>).
+                </p>
+</div>
+<span class="font-label-caps text-label-caps text-secondary flex items-center gap-xs">
+                Production-Ready <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Terminal / IDE Code Example Box -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-xl">
+<!-- Terminal Titlebar -->
+<div class="bg-surface-container-low px-md py-sm flex items-center justify-between">
+<div class="flex items-center gap-xs">
+<span class="w-3 h-3 rounded-full bg-[#ff5f56] inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-[#ffbd2e] inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-[#27c93f] inline-block"></span>
+<span class="font-code-block text-[13px] text-on-surface-variant ml-sm flex items-center gap-xs">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed">description</span>
+                user_profile.json — RESTful Response Schema
+              </span>
+</div>
+<div class="flex items-center gap-sm">
+<span class="font-label-caps text-label-caps bg-surface-container px-xs py-unit rounded text-primary-fixed">JSON</span>
+<button class="flex items-center gap-xs font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed transition-colors bg-surface-container-high px-sm py-xs rounded" id="copyBtn" onclick="navigator.clipboard.writeText(document.getElementById('codeContent').innerText); const el=this.querySelector('.copy-text'); el.innerText='Đã chép!'; setTimeout(()=&gt;el.innerText='Sao chép', 2000);">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span class="copy-text">Sao chép</span>
+</button>
+</div>
+</div>
+<!-- Code Content Area with Accurate Dark Palette Highlighting -->
+<pre class="p-md md:p-lg font-code-block text-code-block overflow-x-auto leading-relaxed text-on-surface"><code id="codeContent">{
+  <span class="text-primary-fixed">"status"</span>: <span class="text-[#f5a97f]">200</span>,
+  <span class="text-primary-fixed">"success"</span>: <span class="text-[#f5a97f]">true</span>,
+  <span class="text-primary-fixed">"schema_version"</span>: <span class="text-[#a6da95]">"v2.4.0"</span>,
+  <span class="text-primary-fixed">"data"</span>: {
+    <span class="text-primary-fixed">"user_id"</span>: <span class="text-[#c6a0f6]">"usr_99824dev"</span>,
+    <span class="text-primary-fixed">"username"</span>: <span class="text-[#a6da95]">"nam_nguyen.dev"</span>,
+    <span class="text-primary-fixed">"fullname"</span>: <span class="text-[#a6da95]">"Nguyễn Phương Nam"</span>,
+    <span class="text-primary-fixed">"email"</span>: <span class="text-[#a6da95]">"nam.devportal@gmail.com"</span>,
+    <span class="text-primary-fixed">"verified"</span>: <span class="text-[#f5a97f]">true</span>,
+    <span class="text-primary-fixed">"reputation_score"</span>: <span class="text-[#eed49f]">1840</span>,
+    <span class="text-primary-fixed">"completed_tracks"</span>: [
+      <span class="text-[#a6da95]">"Bash / Shell Scripting"</span>,
+      <span class="text-[#a6da95]">"JavaScript Fundamentals"</span>,
+      <span class="text-[#a6da95]">"CSS Layout Master"</span>,
+      <span class="text-[#a6da95]">"JSON &amp; Modern XML Protocol"</span>
+    ],
+    <span class="text-primary-fixed">"preferences"</span>: {
+      <span class="text-primary-fixed">"editor_theme"</span>: <span class="text-[#a6da95]">"tokyo-night-dark"</span>,
+      <span class="text-primary-fixed">"tab_size"</span>: <span class="text-[#eed49f]">2</span>,
+      <span class="text-primary-fixed">"auto_format"</span>: <span class="text-[#f5a97f]">true</span>,
+      <span class="text-primary-fixed">"legacy_xml_fallback"</span>: <span class="text-[#f5a97f]">null</span>
+    }
+  },
+  <span class="text-primary-fixed">"metadata"</span>: {
+    <span class="text-primary-fixed">"generated_at"</span>: <span class="text-[#a6da95]">"2024-10-31T09:45:00.128Z"</span>,
+    <span class="text-primary-fixed">"server_region"</span>: <span class="text-[#a6da95]">"ap-southeast-1 (HN01)"</span>
+  }
+}</code></pre>
+</div>
+<!-- Keyword Tags -->
+<div class="flex flex-wrap items-center gap-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant mr-xs">Từ khóa liên quan:</span>
+<a class="px-sm py-unit rounded-full bg-surface-container-high text-primary-fixed font-code-block text-[13px] hover:bg-surface-bright transition-colors" href="#">#json</a>
+<a class="px-sm py-unit rounded-full bg-surface-container-high text-secondary font-code-block text-[13px] hover:bg-surface-bright transition-colors" href="#">#api</a>
+<a class="px-sm py-unit rounded-full bg-surface-container-high text-secondary font-code-block text-[13px] hover:bg-surface-bright transition-colors" href="#">#restful</a>
+<a class="px-sm py-unit rounded-full bg-surface-container-high text-secondary font-code-block text-[13px] hover:bg-surface-bright transition-colors" href="#">#data-format</a>
+<a class="px-sm py-unit rounded-full bg-surface-container-high text-secondary font-code-block text-[13px] hover:bg-surface-bright transition-colors" href="#">#xml</a>
+<a class="px-sm py-unit rounded-full bg-surface-container-high text-secondary font-code-block text-[13px] hover:bg-surface-bright transition-colors" href="#">#serialization</a>
+</div>
+<!-- SPECIAL SECTION: CERTIFICATE OF COMPLETION BANNER -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-lg md:p-xl shadow-xl">
+<!-- Background accent glow inside banner -->
+<div class="absolute -right-16 -bottom-16 w-80 h-80 bg-primary-container/15 rounded-full blur-[90px] pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-lg">
+<div class="flex flex-col gap-sm max-w-2xl">
+<div class="flex items-center gap-xs">
+<span class="w-8 h-8 rounded-full bg-primary-container/20 text-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</span>
+<span class="font-label-caps text-label-caps text-primary-fixed tracking-wider uppercase">Chuyên đề Hoàn tất</span>
+</div>
+<h2 class="font-headline-md text-[24px] md:text-[28px] text-primary font-bold leading-snug">
+                Bạn đã hoàn thành xong chuyên đề JSON &amp; Trao đổi dữ liệu!
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Đạt chuẩn kiến thức nền tảng về Web Data Format. Bạn đã sẵn sàng để kiểm tra và nhận chứng nhận số uy tín từ DevPortal VN, có thể đính kèm trực tiếp vào CV hoặc hồ sơ LinkedIn.
+              </p>
+<!-- Progress bar -->
+<div class="flex items-center gap-md mt-xs">
+<div class="flex-1 bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full w-full rounded-full shadow-[0_0_12px_rgba(95,251,214,0.7)]"></div>
+</div>
+<span class="font-code-block text-[13px] text-primary-fixed font-semibold">100% Hoàn thành</span>
+</div>
+</div>
+<!-- Action Buttons Group -->
+<div class="flex flex-col sm:flex-row md:flex-col gap-sm shrink-0 w-full md:w-auto">
+<!-- Highlighted Primary Certificate Button -->
+<button class="flex items-center justify-center gap-xs px-lg py-md rounded-full bg-primary-container hover:bg-primary-fixed text-on-primary font-headline-md text-[16px] font-bold shadow-lg shadow-primary-container/20 hover:shadow-primary-container/40 transition-all transform hover:-translate-y-0.5 active:translate-y-0 text-center" id="certClaimBtn" onclick="document.getElementById('certModal').classList.remove('hidden');">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Nhận Bằng Chứng Chỉ Ngay</span>
+<button onclick="window.location.href='certificate.html '>
+</button>
+<!-- Secondary Quiz/PDF Button -->
+<a class="flex items-center justify-center gap-xs px-md py-sm rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-md text-body-md transition-colors text-center" href="#">
+<span class="material-symbols-outlined text-[18px]">quiz</span>
+<span>Làm bài kiểm tra ngắn (10 câu)</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Comparative Reference: JSON vs XML Quick Card -->
+<div class="bg-surface-container-low rounded-xl p-lg shadow-sm">
+<div class="flex items-center justify-between mb-md">
+<h3 class="font-headline-md text-[18px] text-primary">So sánh nhanh: JSON vs XML trong Kiến trúc Hiện đại</h3>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Bản tin kỹ thuật</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md font-body-md text-[14px]">
+<div class="p-md rounded-lg bg-surface-container flex flex-col gap-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-block text-primary-fixed font-semibold">JSON (Ưu thế tuyệt đối)</span>
+<span class="material-symbols-outlined text-primary-fixed text-[18px]">bolt</span>
+</div>
+<p class="text-on-surface-variant">Kích thước gọn nhẹ, cú pháp thân thiện mảng/đối tượng, parse trực tiếp thành Native Object qua V8 engine, chuẩn hóa de-facto cho REST &amp; GraphQL.</p>
+</div>
+<div class="p-md rounded-lg bg-surface-container flex flex-col gap-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-block text-secondary font-semibold">XML (Vẫn giá trị trong)</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">account_tree</span>
+</div>
+<p class="text-on-surface-variant">Giao thức ngân hàng cũ SOAP/WSDL, cấu hình Android Manifest, SVG đồ họa vector, tài liệu văn bản phức tạp đòi hỏi thuộc tính lồng sâu (Attributes + DTD Schema).</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Interactive Certificate Modal -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-md bg-surface-container-lowest/80 backdrop-blur-md" id="certModal">
+<div class="bg-surface-container rounded-xl max-w-lg w-full p-lg shadow-2xl flex flex-col gap-md relative">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors" onclick="document.getElementById('certModal').classList.add('hidden');">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+<div class="flex items-center gap-sm">
+<span class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</span>
+<div>
+<span class="font-label-caps text-label-caps text-primary-fixed uppercase">DevPortal VN Academy</span>
+<h3 class="font-headline-md text-[20px] text-primary">Chứng Nhận Hoàn Thành Khóa Học</h3>
+</div>
+</div>
+<div class="p-md rounded-lg bg-surface-container-lowest flex flex-col gap-xs">
+<p class="font-body-md text-[13px] text-on-surface-variant">Chứng nhận số cấp cho lập trình viên:</p>
+<p class="font-headline-md text-[18px] text-primary-fixed font-bold">NGUYỄN PHƯƠNG NAM</p>
+<p class="font-body-md text-[13px] text-on-surface">Đã vượt qua chuyên đề kiểm định: <strong class="text-primary">JSON &amp; XML Data Protocol Specialist</strong></p>
+<div class="flex items-center justify-between pt-sm mt-xs text-[11px] text-on-surface-variant font-code-block">
+<span>ID: VN-DEV-2024-JSON-8821</span>
+<span>Cấp ngày: 31/10/2024</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-sm pt-xs">
+<button class="px-md py-xs rounded-full bg-surface-container-high text-on-surface font-body-md text-[14px]" onclick="document.getElementById('certModal').classList.add('hidden');">
+          Đóng
+        </button>
+<button class="flex items-center gap-xs px-md py-xs rounded-full bg-primary-container text-on-primary font-headline-md text-[14px] font-bold" onclick="alert('Đang tải chứng nhận PDF có chữ ký số SHA-256...'); document.getElementById('certModal').classList.add('hidden');">
+<span class="material-symbols-outlined text-[16px]">download</span>
+          Tải file PDF Chứng Chỉ
+        </button>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest py-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full max-w-[1200px] mx-auto px-lg flex flex-col md:flex-row items-center justify-between gap-md"><div class="text-center md:text-left"><p class="font-body-md text-body-md text-on-surface-variant">© 2024 DevPortal VN. Nền tảng học tập &amp; trợ giúp lập trình viên Việt Nam.</p></div><nav class="flex flex-wrap items-center justify-center gap-md" data-active-classes="text-primary-fixed-dim"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="ve-chung-toi" href="about.html">Về chúng tôi</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="dieu-khoan" href="term.html">Điều khoản</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="bao-mat" href="privacy.html">Bảo mật</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="lien-he" href="contact.html">Liên hệ</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="github" href="https://github.com/DevPortal-VN" target="_blank">GitHub</a></nav></div></footer></body></html>
