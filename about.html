@@ -1,0 +1,262 @@
+<!DOCTYPE html><html class="dark" lang="vi" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Về chúng tôi - DevPortal VN</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Design System -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#39475f",
+                        "primary": "#ffffff",
+                        "on-primary-fixed-variant": "#005142",
+                        "tertiary-fixed": "#d8e2ff",
+                        "primary-fixed": "#5ffbd6",
+                        "inverse-primary": "#006b58",
+                        "on-secondary-container": "#abb9d6",
+                        "outline": "#85948e",
+                        "on-error-container": "#ffdad6",
+                        "on-surface": "#d9e2ff",
+                        "primary-container": "#5ffbd6",
+                        "surface-container-lowest": "#030d25",
+                        "on-primary-container": "#00725e",
+                        "surface-dim": "#07122a",
+                        "on-tertiary": "#20304f",
+                        "surface-container-low": "#101b33",
+                        "outline-variant": "#3c4a45",
+                        "error": "#ffb4ab",
+                        "error-container": "#93000a",
+                        "surface-container-highest": "#2a344e",
+                        "surface": "#07122a",
+                        "on-primary-fixed": "#002019",
+                        "on-tertiary-fixed-variant": "#374767",
+                        "tertiary": "#ffffff",
+                        "tertiary-container": "#d8e2ff",
+                        "surface-container-high": "#1f2942",
+                        "secondary": "#b9c7e4",
+                        "surface-container": "#151f37",
+                        "on-background": "#d9e2ff",
+                        "secondary-container": "#3c4962",
+                        "surface-bright": "#2f3952",
+                        "inverse-surface": "#d9e2ff",
+                        "tertiary-fixed-dim": "#b6c6ed",
+                        "on-error": "#690005",
+                        "background": "#07122a",
+                        "on-secondary-fixed": "#0d1c32",
+                        "surface-tint": "#38debb",
+                        "inverse-on-surface": "#263049",
+                        "on-primary": "#00382d",
+                        "on-surface-variant": "#bacac3",
+                        "on-secondary": "#233148",
+                        "primary-fixed-dim": "#38debb",
+                        "on-tertiary-container": "#556486",
+                        "secondary-fixed": "#d6e3ff",
+                        "surface-variant": "#2a344e",
+                        "secondary-fixed-dim": "#b9c7e4",
+                        "on-tertiary-fixed": "#091b39"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sm": "8px",
+                        "xs": "4px",
+                        "lg": "24px",
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "md": "16px",
+                        "unit": "4px",
+                        "xl": "40px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Be Vietnam Pro"],
+                        "headline-md": ["Be Vietnam Pro"],
+                        "display-lg-mobile": ["Be Vietnam Pro"],
+                        "code-block": ["JetBrains Mono"],
+                        "label-caps": ["JetBrains Mono"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "code-block": ["14px", { "lineHeight": "1.7", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #0A192F; 
+            color: #d9e2ff;
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0A192F; 
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #233554; 
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #3c4a45; 
+        }
+
+        .depth-level-1 {
+            background-color: #112240;
+            border: 1px solid #233554;
+        }
+
+        .btn-primary {
+            border: 1px solid #64FFDA;
+            color: #64FFDA;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: rgba(100, 255, 218, 0.1);
+        }
+        
+        .btn-secondary {
+            color: #CCD6F6;
+            position: relative;
+        }
+        
+        .btn-secondary::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #64FFDA;
+            transition: width 0.3s ease;
+        }
+        
+        .btn-secondary:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col pt-16">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-outline-variant dark:border-outline-variant flat no shadows transition-all duration-300">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto flex-row">
+<!-- Brand -->
+<a class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg font-bold text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity flex items-center gap-2 text-xl whitespace-nowrap flex-row" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">terminal</span>
+                DevPortal VN
+            </a>
+<!-- Navigation Links (Desktop) -->
+<ul class="hidden lg:flex items-center gap-lg flex-row whitespace-nowrap">
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-200" href="#"><button onclick="window.location.href='code_4.html'">Trang chủ</button></a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-200" href="#"><button onclick="window.location.href='code.html'">Ngôn ngữ</button></a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-200" href="#"><button onclick="window.location.href='code_3.html'">Thư viện</button></a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-200" href="#"><button onclick="window.location.href='code_2.html'">Kịch bản</button></a></li>
+</ul>
+<!-- Actions -->
+<div class="flex items-center gap-md flex-row whitespace-nowrap">
+<div class="hidden xl:flex items-center bg-surface-container-high rounded-full px-4 py-1.5 border border-outline-variant">
+<span class="material-symbols-outlined text-on-surface-variant mr-2 text-sm">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-48 text-on-surface outline-none" placeholder="Tìm kiếm tài liệu..." type="text">
+<span class="text-xs text-on-surface-variant bg-surface px-1.5 py-0.5 rounded border border-outline-variant font-label-caps">Ctrl K</span>
+</div>
+<a class="btn-secondary font-label-caps text-label-caps uppercase tracking-wider hidden md:block" href="#"><button onclick="window.location.href='login.html'">Đăng nhập</button></a>
+<a class="btn-primary font-label-caps text-label-caps px-md py-sm rounded-DEFAULT uppercase tracking-wider active:scale-95 duration-200" href="#"><button onclick="window.location.href='signup.html'">Đăng ký</button></a>
+</div>
+</div>
+</nav>
+<main class="flex-grow pt-8 pb-xl px-gutter max-w-container-max mx-auto w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-xl">
+<!-- Sidebar -->
+<aside class="lg:col-span-3 hidden md:block">
+<div class="sticky top-24 border-r border-outline-variant pr-lg h-[calc(100vh-120px)] overflow-y-auto custom-scrollbar">
+<h3 class="text-on-secondary-container font-headline-md text-headline-md mb-6 uppercase tracking-wider text-sm opacity-80">Ngôn ngữ phổ biến</h3>
+<ul class="space-y-2 font-body-md text-body-md">
+<li class="">
+<a class="flex items-center gap-3 px-4 py-3 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">code</span> Python
+                            </a>
+</li>
+<li class="">
+<a class="flex items-center gap-3 px-4 py-3 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">html</span> HTML
+                            </a>
+</li>
+<li class="">
+<a class="flex items-center gap-3 px-4 py-3 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">css</span> CSS
+                            </a>
+</li>
+<li class="">
+<a class="flex items-center gap-3 px-4 py-3 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">javascript</span> JavaScript
+                            </a>
+</li>
+<li class="">
+<a class="flex items-center gap-3 px-4 py-3 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">terminal</span> Bash / Shell
+                            </a>
+</li>
+<li class="">
+<a class="flex items-center gap-3 px-4 py-3 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">data_object</span> JSON &amp; XML
+                            </a>
+</li>
+</ul>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<div class="lg:col-span-9"><div class="mb-10"><h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-4">Về Lập trình VN</h1><p class="text-on-surface-variant text-body-lg leading-relaxed">Sứ mệnh của chúng tôi là xây dựng cộng đồng lập trình viên Việt Nam vững mạnh, nơi kiến thức được chia sẻ tự do và mọi người cùng nhau phát triển.</p></div><div class="w-full h-px bg-outline-variant mb-10"></div><section class="mb-12"><h2 class="font-headline-md text-headline-md text-primary mb-6">Giá trị cốt lõi</h2><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"><div class="depth-level-1 rounded-xl p-6 hover:border-primary-fixed transition-colors duration-300 flex flex-col items-center text-center"><span class="material-symbols-outlined text-primary-fixed text-4xl mb-4">lightbulb</span><h3 class="font-bold text-lg text-primary">Sáng tạo</h3></div><div class="depth-level-1 rounded-xl p-6 hover:border-primary-fixed transition-colors duration-300 flex flex-col items-center text-center"><span class="material-symbols-outlined text-primary-fixed text-4xl mb-4">share</span><h3 class="font-bold text-lg text-primary">Chia sẻ</h3></div><div class="depth-level-1 rounded-xl p-6 hover:border-primary-fixed transition-colors duration-300 flex flex-col items-center text-center"><span class="material-symbols-outlined text-primary-fixed text-4xl mb-4">groups</span><h3 class="font-bold text-lg text-primary">Kết nối</h3></div><div class="depth-level-1 rounded-xl p-6 hover:border-primary-fixed transition-colors duration-300 flex flex-col items-center text-center"><span class="material-symbols-outlined text-primary-fixed text-4xl mb-4">trending_up</span><h3 class="font-bold text-lg text-primary">Phát triển</h3></div></div></section><section class="mb-12"><h2 class="font-headline-md text-headline-md text-primary mb-6">Đội ngũ của chúng tôi</h2><div class="grid grid-cols-1 md:grid-cols-3 gap-6"><div class="depth-level-1 rounded-xl p-6 hover:border-primary-fixed transition-colors duration-300 text-center"><div class="w-20 h-20 bg-surface-container-high rounded-full mx-auto mb-4 flex items-center justify-center"><span class="material-symbols-outlined text-4xl text-on-surface-variant">person</span></div><h3 class="font-bold text-lg text-primary">Nguyễn Văn A</h3><p class="text-primary-fixed text-sm mt-1">Founder</p></div><div class="depth-level-1 rounded-xl p-6 hover:border-primary-fixed transition-colors duration-300 text-center"><div class="w-20 h-20 bg-surface-container-high rounded-full mx-auto mb-4 flex items-center justify-center"><span class="material-symbols-outlined text-4xl text-on-surface-variant">person</span></div><h3 class="font-bold text-lg text-primary">Trần Thị B</h3><p class="text-primary-fixed text-sm mt-1">Lead Developer</p></div><div class="depth-level-1 rounded-xl p-6 hover:border-primary-fixed transition-colors duration-300 text-center"><div class="w-20 h-20 bg-surface-container-high rounded-full mx-auto mb-4 flex items-center justify-center"><span class="material-symbols-outlined text-4xl text-on-surface-variant">person</span></div><h3 class="font-bold text-lg text-primary">Lê Văn C</h3><p class="text-primary-fixed text-sm mt-1">Community Manager</p></div></div></section></div>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline-variant flat no shadows transition-all duration-300 w-full py-xl mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md px-gutter max-w-container-max mx-auto">
+<!-- Brand & Copyright -->
+<div class="flex flex-col items-start gap-sm">
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">terminal</span>
+                    DevPortal VN
+                </span>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant mt-sm">
+                    © 2024 DevPortal VN. Cộng đồng lập trình viên Việt Nam.
+                </p>
+</div>
+<!-- Links -->
+<div class="flex flex-col md:items-end justify-center">
+<ul class="flex flex-wrap gap-md font-body-md text-body-md">
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors" href="about.html">Về chúng tôi</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors" href="term.html">Điều khoản</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors" href="privacy.html">Bảo mật</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors" href="contact.html">Liên hệ</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors" href="api-docs.html">Tài liệu API</a></li>
+</ul>
+</div>
+</div>
+</footer>
+
+
+</body></html>

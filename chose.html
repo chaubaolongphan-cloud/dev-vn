@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DevPortal VN - Language Recommendation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#151f37",
+                      "surface-variant": "#2a344e",
+                      "secondary": "#b9c7e4",
+                      "on-tertiary-fixed-variant": "#374767",
+                      "surface-dim": "#07122a",
+                      "on-error-container": "#ffdad6",
+                      "outline-variant": "#3c4a45",
+                      "tertiary-fixed": "#d8e2ff",
+                      "error": "#ffb4ab",
+                      "outline": "#85948e",
+                      "on-primary-fixed": "#002019",
+                      "surface-container-high": "#1f2942",
+                      "secondary-container": "#3c4962",
+                      "on-background": "#d9e2ff",
+                      "on-surface": "#d9e2ff",
+                      "tertiary-container": "#d8e2ff",
+                      "surface": "#07122a",
+                      "tertiary": "#ffffff",
+                      "surface-tint": "#38debb",
+                      "surface-container-highest": "#2a344e",
+                      "primary-fixed-dim": "#38debb",
+                      "on-secondary-container": "#abb9d6",
+                      "on-surface-variant": "#bacac3",
+                      "surface-container-low": "#101b33",
+                      "secondary-fixed": "#d6e3ff",
+                      "inverse-surface": "#d9e2ff",
+                      "on-tertiary-container": "#556486",
+                      "on-primary-fixed-variant": "#005142",
+                      "on-error": "#690005",
+                      "on-secondary": "#233148",
+                      "on-secondary-fixed": "#0d1c32",
+                      "on-secondary-fixed-variant": "#39475f",
+                      "on-tertiary-fixed": "#091b39",
+                      "error-container": "#93000a",
+                      "primary": "#ffffff",
+                      "primary-fixed": "#5ffbd6",
+                      "on-primary-container": "#00725e",
+                      "primary-container": "#5ffbd6",
+                      "inverse-on-surface": "#263049",
+                      "surface-bright": "#2f3952",
+                      "secondary-fixed-dim": "#b9c7e4",
+                      "surface-container-lowest": "#030d25",
+                      "tertiary-fixed-dim": "#b6c6ed",
+                      "background": "#07122a",
+                      "on-primary": "#00382d",
+                      "inverse-primary": "#006b58",
+                      "on-tertiary": "#20304f",
+                      "brand-accent": "#64FFDA",
+                      "surface-dark": "#0A192F",
+                      "surface-card": "#112240",
+                      "surface-border": "#233554",
+                      "text-secondary": "#CCD6F6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "sm": "8px",
+                      "lg": "24px",
+                      "xl": "40px",
+                      "unit": "4px",
+                      "container-max": "1200px",
+                      "gutter": "24px",
+                      "md": "16px",
+                      "xs": "4px"
+              },
+              "fontFamily": {
+                      "display-lg": ["Be Vietnam Pro", "sans-serif"],
+                      "display-lg-mobile": ["Be Vietnam Pro", "sans-serif"],
+                      "body-md": ["Inter", "sans-serif"],
+                      "body-lg": ["Inter", "sans-serif"],
+                      "label-caps": ["JetBrains Mono", "monospace"],
+                      "headline-md": ["Be Vietnam Pro", "sans-serif"],
+                      "code-block": ["JetBrains Mono", "monospace"]
+              },
+              "fontSize": {
+                      "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                      "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                      "code-block": ["14px", {"lineHeight": "1.7", "fontWeight": "400"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        body {
+            background-color: #0A192F;
+            color: #d9e2ff;
+        }
+        .glow-active {
+            box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+        }
+        .btn-primary {
+            border: 1px solid #64FFDA;
+            color: #64FFDA;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: rgba(100, 255, 218, 0.1);
+        }
+        .custom-radio:checked + label {
+            border-color: #64FFDA;
+            background-color: rgba(100, 255, 218, 0.05);
+            box-shadow: 0 0 10px rgba(100, 255, 218, 0.2);
+        }
+        .custom-checkbox:checked + label {
+            border-color: #64FFDA;
+            background-color: rgba(100, 255, 218, 0.05);
+            box-shadow: 0 0 10px rgba(100, 255, 218, 0.2);
+        }
+        .glass-card {
+            background: #112240;
+            border: 1px solid #233554;
+        }
+        .step-indicator.active {
+            color: #64FFDA;
+            border-bottom: 2px solid #64FFDA;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col pt-[72px]">
+<!-- TopNavBar -->
+<nav class="bg-surface/80 dark:bg-surface/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant">
+<div class="flex justify-between items-center px-lg py-sm max-w-container-max mx-auto h-[72px]">
+<div class="flex items-center gap-md">
+<a class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary dark:text-primary tracking-tighter" href="#">
+                    DevPortal VN
+                </a>
+</div>
+<div class="hidden md:flex gap-lg font-body-md text-body-md">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:opacity-80" href="code_4.html">Home</a>
+<a class="text-primary dark:text-primary border-b-2 border-primary pb-1 cursor-pointer active:opacity-80" href="code.html">Languages</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:opacity-80" href="code_3.html">Library</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:opacity-80" href="code_2.html">Scripts</a>
+</div>
+<div class="flex items-center gap-md">
+<div class="relative hidden md:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="bg-surface-dark border border-surface-border rounded-lg py-2 pl-10 pr-4 text-on-surface focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent font-body-md w-64 placeholder:text-on-surface-variant" placeholder="Search..." type="text"/>
+</div>
+<button class="font-body-md text-secondary hover:text-primary transition-colors underline decoration-brand-accent underline-offset-4 decoration-2" onclick="window.location.href='login.html'">Login</button>
+<button class="btn-primary rounded-lg px-4 py-2 font-body-md font-semibold" onclick="window.location.href='signup.html'">Sign Up</button>
+</div>
+</div>
+</nav>
+<div class="flex flex-1 max-w-container-max mx-auto w-full relative">
+<!-- SideNavBar -->
+<aside class="hidden md:flex h-full w-64 fixed left-0 top-[72px] bg-surface-container dark:bg-surface-container border-r border-outline-variant flex-col gap-sm p-md pt-lg z-40">
+<div class="mb-lg px-sm">
+<h2 class="font-headline-md text-headline-md text-primary mb-1">Languages</h2>
+<p class="font-body-md text-on-surface-variant text-sm">Tech Stack</p>
+</div>
+<nav class="flex flex-col gap-sm font-label-caps text-label-caps">
+<a class="flex items-center gap-md p-sm rounded-lg text-secondary dark:text-secondary hover:bg-on-tertiary-fixed-variant/10 hover:text-primary transition-all duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">javascript</span>
+                    JavaScript
+                </a>
+<a class="flex items-center gap-md p-sm rounded-lg text-secondary dark:text-secondary hover:bg-on-tertiary-fixed-variant/10 hover:text-primary transition-all duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">file_download_done</span>
+                    Python
+                </a>
+<a class="flex items-center gap-md p-sm rounded-lg text-secondary dark:text-secondary hover:bg-on-tertiary-fixed-variant/10 hover:text-primary transition-all duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">terminal</span>
+                    Go
+                </a>
+<a class="flex items-center gap-md p-sm rounded-lg text-secondary dark:text-secondary hover:bg-on-tertiary-fixed-variant/10 hover:text-primary transition-all duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings_input_component</span>
+                    Rust
+                </a>
+<a class="flex items-center gap-md p-sm rounded-lg text-secondary dark:text-secondary hover:bg-on-tertiary-fixed-variant/10 hover:text-primary transition-all duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">code</span>
+                    TypeScript
+                </a>
+</nav>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 md:ml-64 p-lg md:p-xl w-full">
+<!-- Page Header -->
+<div class="mb-xl text-center md:text-left">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-sm">Gợi ý Ngôn ngữ Lập trình</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Tìm ngôn ngữ lập trình phù hợp nhất với mục tiêu và sở thích của bạn thông qua vài câu hỏi đơn giản.</p>
+</div>
+<!-- Survey Container -->
+<div class="glass-card rounded-xl p-lg md:p-xl max-w-3xl mx-auto md:mx-0 relative overflow-hidden">
+<!-- Progress Indicators -->
+<div class="flex gap-lg mb-xl border-b border-surface-border pb-sm">
+<div class="step-indicator active font-label-caps text-label-caps pb-2 cursor-pointer transition-colors" data-step="1">
+                        01. ĐỘ TUỔI
+                    </div>
+<div class="step-indicator text-on-surface-variant font-label-caps text-label-caps pb-2 cursor-pointer transition-colors" data-step="2">
+                        02. SỞ THÍCH
+                    </div>
+</div>
+<!-- Form Area -->
+<form class="space-y-xl" id="recommendationForm">
+<!-- Step 1: Age -->
+<div class="space-y-md animate-fade-in" id="step1">
+<h3 class="font-headline-md text-headline-md text-primary">Nhập độ tuổi của bạn</h3>
+<p class="font-body-md text-on-surface-variant">Chọn nhóm tuổi của bạn để chúng tôi có thể đưa ra lộ trình học phù hợp nhất.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md mt-lg">
+<div class="relative">
+<input class="custom-radio hidden peer" id="age_8_12" name="ageGroup" type="radio" value="8-12"/>
+<label class="flex flex-col items-center justify-center p-lg rounded-lg border border-surface-border bg-surface-dark cursor-pointer transition-all hover:border-brand-accent/50 text-center h-full" for="age_8_12">
+<span class="font-headline-md text-primary mb-1">8 - 12</span>
+<span class="font-body-md text-on-surface-variant text-sm">Tuổi</span>
+</label>
+</div>
+<div class="relative">
+<input class="custom-radio hidden peer" id="age_13_17" name="ageGroup" type="radio" value="13-17"/>
+<label class="flex flex-col items-center justify-center p-lg rounded-lg border border-surface-border bg-surface-dark cursor-pointer transition-all hover:border-brand-accent/50 text-center h-full" for="age_13_17">
+<span class="font-headline-md text-primary mb-1">13 - 17</span>
+<span class="font-body-md text-on-surface-variant text-sm">Tuổi</span>
+</label>
+</div>
+<div class="relative">
+<input checked="" class="custom-radio hidden peer" id="age_18_plus" name="ageGroup" type="radio" value="18+"/>
+<label class="flex flex-col items-center justify-center p-lg rounded-lg border border-surface-border bg-surface-dark cursor-pointer transition-all hover:border-brand-accent/50 text-center h-full" for="age_18_plus">
+<span class="font-headline-md text-primary mb-1">18+</span>
+<span class="font-body-md text-on-surface-variant text-sm">Trưởng thành</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Step 2: Interests -->
+<div class="space-y-md" id="step2">
+<h3 class="font-headline-md text-headline-md text-primary">Sở thích của bạn là gì?</h3>
+<p class="font-body-md text-on-surface-variant">Chọn một hoặc nhiều lĩnh vực bạn muốn theo đuổi.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-md mt-lg">
+<div class="relative">
+<input class="custom-checkbox hidden peer" id="int_web" name="interest" type="checkbox" value="web"/>
+<label class="flex items-center gap-md p-md rounded-lg border border-surface-border bg-surface-dark cursor-pointer transition-all hover:border-brand-accent/50" for="int_web">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">language</span>
+</div>
+<span class="font-body-md font-medium text-primary">Làm trang web</span>
+</label>
+</div>
+<div class="relative">
+<input class="custom-checkbox hidden peer" id="int_ai" name="interest" type="checkbox" value="ai"/>
+<label class="flex items-center gap-md p-md rounded-lg border border-surface-border bg-surface-dark cursor-pointer transition-all hover:border-brand-accent/50" for="int_ai">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<span class="font-body-md font-medium text-primary">Trí tuệ nhân tạo (AI)</span>
+</label>
+</div>
+<div class="relative">
+<input class="custom-checkbox hidden peer" id="int_game" name="interest" type="checkbox" value="game"/>
+<label class="flex items-center gap-md p-md rounded-lg border border-surface-border bg-surface-dark cursor-pointer transition-all hover:border-brand-accent/50" for="int_game">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">sports_esports</span>
+</div>
+<span class="font-body-md font-medium text-primary">Làm game</span>
+</label>
+</div>
+<div class="relative">
+<input class="custom-checkbox hidden peer" id="int_mobile" name="interest" type="checkbox" value="mobile"/>
+<label class="flex items-center gap-md p-md rounded-lg border border-surface-border bg-surface-dark cursor-pointer transition-all hover:border-brand-accent/50" for="int_mobile">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">smartphone</span>
+</div>
+<span class="font-body-md font-medium text-primary">Ứng dụng di động</span>
+</label>
+</div>
+<div class="relative sm:col-span-2 md:col-span-1">
+<input class="custom-checkbox hidden peer" id="int_sys" name="interest" type="checkbox" value="sys"/>
+<label class="flex items-center gap-md p-md rounded-lg border border-surface-border bg-surface-dark cursor-pointer transition-all hover:border-brand-accent/50" for="int_sys">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">memory</span>
+</div>
+<span class="font-body-md font-medium text-primary">Hệ thống &amp; Phần cứng</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<div class="pt-lg flex justify-end">
+<button class="btn-primary rounded-lg px-xl py-3 font-body-lg font-semibold flex items-center gap-sm" id="analyzeBtn" type="button">
+<span class="material-symbols-outlined">magic_button</span>
+                            Phân tích và Gợi ý
+                        </button>
+</div>
+</form>
+</div>
+<!-- Results Section (Hidden by default, shown on analyze) -->
+<div class="mt-2xl hidden" id="resultsSection">
+<div class="mb-xl flex items-center gap-md">
+<div class="h-8 w-1 bg-brand-accent rounded-full"></div>
+<h2 class="font-headline-md text-headline-md text-primary">Danh sách ngôn ngữ phù hợp</h2>
+</div>
+<!-- Bento Grid for Results -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-lg">
+<!-- Result Card 1: Python -->
+<div class="glass-card rounded-xl p-lg flex flex-col h-full group hover:border-brand-accent/30 transition-colors">
+<div class="flex justify-between items-start mb-md">
+<div class="w-12 h-12 rounded bg-[#3776AB]/20 flex items-center justify-center text-[#3776AB]">
+<span class="font-display-lg text-2xl font-bold">Py</span>
+</div>
+<span class="font-label-caps text-label-caps bg-surface-container px-2 py-1 rounded text-brand-accent">95% Phù hợp</span>
+</div>
+<h3 class="font-headline-md text-xl text-primary mb-2">Python</h3>
+<p class="font-body-md text-on-surface-variant flex-1 mb-lg">Lựa chọn tuyệt vời cho Trí tuệ nhân tạo (AI) và Phân tích dữ liệu. Cú pháp dễ đọc, cộng đồng hỗ trợ lớn.</p>
+<div class="flex flex-wrap gap-2 mb-lg">
+<span class="font-label-caps text-[10px] bg-surface-dark border border-surface-border px-2 py-1 rounded">#AI</span>
+<span class="font-label-caps text-[10px] bg-surface-dark border border-surface-border px-2 py-1 rounded">#Data</span>
+<span class="font-label-caps text-[10px] bg-surface-dark border border-surface-border px-2 py-1 rounded">#Backend</span>
+</div>
+<button class="w-full py-2 border border-brand-accent/50 text-brand-accent rounded-lg font-body-md hover:bg-brand-accent/10 transition-colors mt-auto">
+                            Bắt đầu học ngay
+                        </button>
+</div>
+<!-- Result Card 2: JavaScript -->
+<div class="glass-card rounded-xl p-lg flex flex-col h-full group hover:border-brand-accent/30 transition-colors">
+<div class="flex justify-between items-start mb-md">
+<div class="w-12 h-12 rounded bg-[#F7DF1E]/20 flex items-center justify-center text-[#F7DF1E]">
+<span class="font-display-lg text-2xl font-bold">JS</span>
+</div>
+<span class="font-label-caps text-label-caps bg-surface-container px-2 py-1 rounded text-brand-accent">88% Phù hợp</span>
+</div>
+<h3 class="font-headline-md text-xl text-primary mb-2">JavaScript</h3>
+<p class="font-body-md text-on-surface-variant flex-1 mb-lg">Ngôn ngữ không thể thiếu để làm trang web tương tác. Kết hợp với Node.js để làm cả Backend.</p>
+<div class="flex flex-wrap gap-2 mb-lg">
+<span class="font-label-caps text-[10px] bg-surface-dark border border-surface-border px-2 py-1 rounded">#Web</span>
+<span class="font-label-caps text-[10px] bg-surface-dark border border-surface-border px-2 py-1 rounded">#Frontend</span>
+<span class="font-label-caps text-[10px] bg-surface-dark border border-surface-border px-2 py-1 rounded">#Fullstack</span>
+</div>
+<button class="w-full py-2 border border-brand-accent/50 text-brand-accent rounded-lg font-body-md hover:bg-brand-accent/10 transition-colors mt-auto">
+                            Bắt đầu học ngay
+                        </button>
+</div>
+<!-- Result Card 3: C++ -->
+<div class="glass-card rounded-xl p-lg flex flex-col h-full group hover:border-brand-accent/30 transition-colors">
+<div class="flex justify-between items-start mb-md">
+<div class="w-12 h-12 rounded bg-[#00599C]/20 flex items-center justify-center text-[#61b6f9]">
+<span class="font-display-lg text-2xl font-bold">C++</span>
+</div>
+<span class="font-label-caps text-label-caps bg-surface-container px-2 py-1 rounded text-brand-accent">75% Phù hợp</span>
+</div>
+<h3 class="font-headline-md text-xl text-primary mb-2">C++</h3>
+<p class="font-body-md text-on-surface-variant flex-1 mb-lg">Mạnh mẽ và hiệu suất cao. Phù hợp nhất nếu bạn muốn phát triển Game 3D nặng hoặc lập trình hệ thống.</p>
+<div class="flex flex-wrap gap-2 mb-lg">
+<span class="font-label-caps text-[10px] bg-surface-dark border border-surface-border px-2 py-1 rounded">#GameDev</span>
+<span class="font-label-caps text-[10px] bg-surface-dark border border-surface-border px-2 py-1 rounded">#System</span>
+<span class="font-label-caps text-[10px] bg-surface-dark border border-surface-border px-2 py-1 rounded">#Performance</span>
+</div>
+<button class="w-full py-2 border border-brand-accent/50 text-brand-accent rounded-lg font-body-md hover:bg-brand-accent/10 transition-colors mt-auto">
+                            Bắt đầu học ngay
+                        </button>
+</div>
+</div>
+</div>
+</main>
+</div>
+<script>
+        // Simple interaction logic for demo purposes
+        document.addEventListener('DOMContentLoaded', () => {
+            const analyzeBtn = document.getElementById('analyzeBtn');
+            const resultsSection = document.getElementById('resultsSection');
+            const stepIndicators = document.querySelectorAll('.step-indicator');
+
+            // Toggle steps visual (simplified)
+            const checkboxes = document.querySelectorAll('input[name="interest"]');
+            checkboxes.forEach(cb => {
+                cb.addEventListener('change', () => {
+                    stepIndicators[1].classList.add('active');
+                    stepIndicators[1].classList.remove('text-on-surface-variant');
+                });
+            });
+
+            analyzeBtn.addEventListener('click', () => {
+                // Simulate loading state
+                const originalText = analyzeBtn.innerHTML;
+                analyzeBtn.innerHTML = '<span class="material-symbols-outlined animate-spin">refresh</span> Đang phân tích...';
+                analyzeBtn.classList.add('opacity-80', 'cursor-not-allowed');
+                
+                setTimeout(() => {
+                    analyzeBtn.innerHTML = originalText;
+                    analyzeBtn.classList.remove('opacity-80', 'cursor-not-allowed');
+                    
+                    // Show results with slight delay for dramatic effect
+                    resultsSection.classList.remove('hidden');
+                    resultsSection.classList.add('animate-fade-in');
+                    
+                    // Scroll to results
+                    resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 1000);
+            });
+        });
+    </script>
+</body></html>

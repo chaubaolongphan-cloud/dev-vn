@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chính sách Bảo mật - DevPortal VN</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#38debb",
+                        "on-tertiary": "#20304f",
+                        "on-tertiary-container": "#556486",
+                        "surface-container-lowest": "#030d25",
+                        "surface-container-low": "#101b33",
+                        "on-secondary-container": "#abb9d6",
+                        "on-surface-variant": "#bacac3",
+                        "tertiary-container": "#d8e2ff",
+                        "on-primary-container": "#00725e",
+                        "error-container": "#93000a",
+                        "secondary-fixed-dim": "#b9c7e4",
+                        "outline": "#85948e",
+                        "surface-dim": "#07122a",
+                        "primary": "#ffffff",
+                        "background": "#07122a",
+                        "inverse-primary": "#006b58",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-highest": "#2a344e",
+                        "secondary-fixed": "#d6e3ff",
+                        "on-surface": "#d9e2ff",
+                        "inverse-surface": "#d9e2ff",
+                        "surface-bright": "#2f3952",
+                        "on-tertiary-fixed": "#091b39",
+                        "secondary-container": "#3c4962",
+                        "on-background": "#d9e2ff",
+                        "on-primary-fixed": "#002019",
+                        "on-secondary": "#233148",
+                        "on-primary-fixed-variant": "#005142",
+                        "primary-fixed-dim": "#38debb",
+                        "primary-fixed": "#5ffbd6",
+                        "on-secondary-fixed-variant": "#39475f",
+                        "surface-variant": "#2a344e",
+                        "on-error": "#690005",
+                        "secondary": "#b9c7e4",
+                        "on-primary": "#00382d",
+                        "tertiary-fixed": "#d8e2ff",
+                        "outline-variant": "#3c4a45",
+                        "on-secondary-fixed": "#0d1c32",
+                        "surface-container": "#151f37",
+                        "surface-container-high": "#1f2942",
+                        "inverse-on-surface": "#263049",
+                        "on-tertiary-fixed-variant": "#374767",
+                        "tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#b6c6ed",
+                        "surface": "#07122a",
+                        "error": "#ffb4ab",
+                        "primary-container": "#5ffbd6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "lg": "24px",
+                        "md": "16px",
+                        "sm": "8px",
+                        "gutter": "24px",
+                        "unit": "4px",
+                        "xs": "4px",
+                        "container-max": "1200px",
+                        "xl": "40px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Be Vietnam Pro"],
+                        "code-block": ["JetBrains Mono"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Be Vietnam Pro"],
+                        "label-caps": ["JetBrains Mono"],
+                        "headline-md": ["Be Vietnam Pro"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "code-block": ["14px", { "lineHeight": "1.7", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #0A192F;
+            color: #d9e2ff;
+        }
+        .text-cyan {
+            color: #64FFDA;
+        }
+        .border-cyan {
+            border-color: #64FFDA;
+        }
+        .bg-cyan-10 {
+            background-color: rgba(100, 255, 218, 0.1);
+        }
+        .shadow-glow {
+            box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+        }
+        .glass-nav {
+            backdrop-filter: blur(10px);
+            background-color: rgba(10, 25, 47, 0.8);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md antialiased min-h-screen flex flex-col">
+<!-- Content-only page logic dictates navigation is suppressed for non-destinations. -->
+<header class="fixed top-0 w-full z-50 border-b border-[#233554] glass-nav">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<div class="font-display-lg-mobile text-display-lg-mobile text-primary">DevPortal VN</div>
+<nav class="hidden md:flex gap-lg h-full items-center">
+<!-- Suppressed normal navigation array since this is a content-focused view (Privacy Policy) -->
+<a class="text-on-surface-variant hover:text-cyan transition-colors" href="code_4.html">Trang chủ</a>
+</nav>
+</div>
+</header>
+<main class="flex-grow pt-[104px] pb-xl px-gutter max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-xl">
+<!-- Sidebar -->
+<aside class="md:col-span-3 bg-[#112240] rounded-lg p-md border border-[#233554] h-fit sticky top-[104px]">
+<nav class="flex flex-col gap-sm">
+<a class="px-sm py-xs rounded text-cyan bg-cyan-10 border-l-2 border-cyan shadow-glow font-medium" href="privacy.html">Chính sách Bảo mật</a>
+<a class="px-sm py-xs rounded text-on-surface-variant hover:text-cyan transition-colors" href="term.html">Điều khoản Sử dụng</a>
+</nav>
+</aside>
+<!-- Main Content Canvas -->
+<article class="md:col-span-9 flex flex-col gap-xl">
+<header>
+<h1 class="font-display-lg text-display-lg text-primary mb-sm">Chính sách Bảo mật</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Cập nhật lần cuối: Tháng 10, 2024</p>
+</header>
+<section class="flex flex-col gap-md bg-[#112240] p-lg rounded-xl border border-[#233554]">
+<h2 class="font-headline-md text-headline-md text-primary flex items-center gap-sm">
+<span class="material-symbols-outlined text-cyan">database</span>
+                    1. Thu thập thông tin
+                </h2>
+<div class="text-on-surface-variant leading-relaxed">
+<p>Giải thích các dữ liệu người dùng được thu thập. Chúng tôi thu thập các thông tin cần thiết để tối ưu hóa trải nghiệm học tập của bạn, bao gồm nhưng không giới hạn ở:</p>
+<ul class="list-disc pl-lg mt-sm flex flex-col gap-xs">
+<li>Thông tin đăng ký (Email, Tên hiển thị).</li>
+<li>Dữ liệu tiến trình học tập và kết quả bài tập.</li>
+<li>Lịch sử tương tác với nền tảng (Thời gian học, mã nguồn nộp).</li>
+</ul>
+</div>
+</section>
+<section class="flex flex-col gap-md bg-[#112240] p-lg rounded-xl border border-[#233554]">
+<h2 class="font-headline-md text-headline-md text-primary flex items-center gap-sm">
+<span class="material-symbols-outlined text-cyan">analytics</span>
+                    2. Sử dụng thông tin
+                </h2>
+<div class="text-on-surface-variant leading-relaxed">
+<p>Cách hệ thống sử dụng dữ liệu để cải thiện trải nghiệm học tập. Dữ liệu của bạn giúp chúng tôi:</p>
+<ul class="list-disc pl-lg mt-sm flex flex-col gap-xs">
+<li>Cá nhân hóa lộ trình học tập và đề xuất khóa học phù hợp.</li>
+<li>Phân tích và khắc phục các vấn đề kỹ thuật trên nền tảng.</li>
+<li>Thông báo về các tính năng mới và cập nhật nội dung quan trọng.</li>
+</ul>
+</div>
+</section>
+<section class="flex flex-col gap-md bg-[#112240] p-lg rounded-xl border border-[#233554]">
+<h2 class="font-headline-md text-headline-md text-primary flex items-center gap-sm">
+<span class="material-symbols-outlined text-cyan">security</span>
+                    3. Bảo mật dữ liệu
+                </h2>
+<div class="text-on-surface-variant leading-relaxed">
+<p>Cam kết bảo vệ thông tin cá nhân. Chúng tôi áp dụng các tiêu chuẩn mã hóa công nghiệp để bảo vệ dữ liệu của bạn trong quá trình truyền tải và lưu trữ. Nền tảng được bảo vệ bởi các biện pháp tường lửa và kiểm soát truy cập nghiêm ngặt.</p>
+</div>
+<!-- Callout Example -->
+<div class="border-l-4 border-cyan bg-[#101b33] p-md rounded-r mt-sm flex gap-sm items-start">
+<span class="material-symbols-outlined text-cyan mt-xs">info</span>
+<p class="text-on-surface-variant text-sm">Lưu ý: Mật khẩu của bạn được mã hóa một chiều. Chúng tôi không bao giờ lưu trữ mật khẩu dưới dạng văn bản gốc.</p>
+</div>
+</section>
+<section class="flex flex-col gap-md bg-[#112240] p-lg rounded-xl border border-[#233554]">
+<h2 class="font-headline-md text-headline-md text-primary flex items-center gap-sm">
+<span class="material-symbols-outlined text-cyan">manage_accounts</span>
+                    4. Quyền của người dùng
+                </h2>
+<div class="text-on-surface-variant leading-relaxed">
+<p>Quyền truy cập và xóa dữ liệu. Bất kỳ lúc nào, bạn đều có quyền:</p>
+<ul class="list-disc pl-lg mt-sm flex flex-col gap-xs">
+<li>Yêu cầu trích xuất toàn bộ dữ liệu cá nhân đang được lưu trữ.</li>
+<li>Yêu cầu xóa toàn bộ hoặc một phần dữ liệu tài khoản.</li>
+<li>Chỉnh sửa thông tin hồ sơ cá nhân.</li>
+</ul>
+</div>
+</section>
+</article>
+</main>
+<!-- Footer Component from JSON -->
+<footer class="w-full py-xl bg-[#030d25] border-t border-[#3c4a45] mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md px-gutter max-w-container-max mx-auto items-center">
+<div class="flex flex-col gap-sm">
+<span class="font-headline-md text-headline-md text-primary">DevPortal VN</span>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 DevPortal VN. Cộng đồng lập trình viên Việt Nam.</p>
+</div>
+<div class="flex flex-wrap gap-md justify-start md:justify-end">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-cyan transition-all duration-300 hover:underline" href="about.html">Về chúng tôi</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-cyan transition-all duration-300 hover:underline" href="term.html">Điều khoản</a>
+<a class="font-body-md text-body-md text-primary transition-all duration-300" href="privacy.html">Bảo mật</a> <!-- Active state logically -->
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-cyan transition-all duration-300 hover:underline" href="contact.html">Liên hệ</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-cyan transition-all duration-300 hover:underline" href="api-docs.html">Tài liệu API</a>
+</div>
+</div>
+</footer>
+</body></html>

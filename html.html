@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HTML - DevPortal VN</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#abb9d6",
+                        "inverse-surface": "#d9e2ff",
+                        "tertiary": "#ffffff",
+                        "on-secondary": "#233148",
+                        "surface-container-highest": "#2a344e",
+                        "surface-container": "#151f37",
+                        "on-tertiary-container": "#556486",
+                        "primary-fixed-dim": "#38debb",
+                        "tertiary-fixed": "#d8e2ff",
+                        "surface-tint": "#38debb",
+                        "inverse-primary": "#006b58",
+                        "surface-container-low": "#101b33",
+                        "error-container": "#93000a",
+                        "outline": "#85948e",
+                        "tertiary-fixed-dim": "#b6c6ed",
+                        "surface-dim": "#07122a",
+                        "surface-bright": "#2f3952",
+                        "on-surface": "#d9e2ff",
+                        "surface-container-lowest": "#030d25",
+                        "on-secondary-fixed-variant": "#39475f",
+                        "background": "#07122a",
+                        "primary-fixed": "#5ffbd6",
+                        "on-primary": "#00382d",
+                        "secondary-fixed": "#d6e3ff",
+                        "on-background": "#d9e2ff",
+                        "on-primary-container": "#00725e",
+                        "secondary-fixed-dim": "#b9c7e4",
+                        "inverse-on-surface": "#263049",
+                        "on-tertiary": "#20304f",
+                        "surface-variant": "#2a344e",
+                        "on-secondary-fixed": "#0d1c32",
+                        "on-error": "#690005",
+                        "on-surface-variant": "#bacac3",
+                        "outline-variant": "#3c4a45",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#005142",
+                        "on-tertiary-fixed-variant": "#374767",
+                        "secondary": "#b9c7e4",
+                        "primary-container": "#5ffbd6",
+                        "surface-container-high": "#1f2942",
+                        "primary": "#ffffff",
+                        "on-tertiary-fixed": "#091b39",
+                        "tertiary-container": "#d8e2ff",
+                        "error": "#ffb4ab",
+                        "on-primary-fixed": "#002019",
+                        "secondary-container": "#3c4962",
+                        "surface": "#07122a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sm": "8px",
+                        "md": "16px",
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "lg": "24px",
+                        "unit": "4px",
+                        "xs": "4px",
+                        "xl": "40px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-md": ["Be Vietnam Pro"],
+                        "display-lg-mobile": ["Be Vietnam Pro"],
+                        "display-lg": ["Be Vietnam Pro"],
+                        "label-caps": ["JetBrains Mono"],
+                        "body-lg": ["Inter"],
+                        "code-block": ["JetBrains Mono"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "code-block": ["14px", { "lineHeight": "1.7", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0A192F; 
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #233554; 
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #3c4a45; 
+        }
+        
+        .code-highlight-tag { color: #5ffbd6; } /* Cyan for tags */
+        .code-highlight-attr { color: #b9c7e4; } /* Light blue for attributes */
+        .code-highlight-string { color: #ffb4ab; } /* Pink/orange for strings */
+        .code-highlight-text { color: #d9e2ff; } /* White for text */
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline-variant">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<div class="flex items-center gap-2 font-display-lg text-display-lg font-bold text-primary dark:text-primary-fixed">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">terminal</span>
+<span class="text-xl">DevPortal VN</span>
+</div>
+<nav class="hidden md:flex gap-6">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-200" href="#"><button onclick="window.location.href='code_4.html'">Trang chủ</button></a>
+<a class="text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-200" href="#"><button onclick="window.location.href='code.html'">Ngôn ngữ</button></a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-200" href="#"><button onclick="window.location.href='code_3.html'">Thư viện</button></a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-200" href="#"><button onclick="window.location.href='code_2.html'">Kịch bản</button></a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="hidden lg:flex items-center bg-surface-container-high rounded-full px-4 py-2 border border-outline-variant">
+<span class="material-symbols-outlined text-on-surface-variant mr-2">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-48 text-on-surface outline-none" placeholder="Tìm kiếm tài liệu..." type="text"/>
+<span class="text-xs text-on-surface-variant bg-surface px-1.5 py-0.5 rounded border border-outline-variant font-label-caps">Ctrl K</span>
+</div>
+<div class="flex gap-4">
+<button class="text-secondary hover:text-primary transition-colors underline active:scale-95 duration-200"><button onclick="window.location.href='login.html'">Đăng nhập</button></button>
+<button class="border border-primary-container text-primary-container hover:bg-primary-container/10 px-4 py-1.5 rounded transition-colors active:scale-95 duration-200"><button onclick="window.location.href='signup.html'">Đăng ký</button></button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow pt-24 pb-xl px-gutter max-w-container-max mx-auto w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-xl">
+<!-- Sidebar -->
+<aside class="lg:col-span-3 hidden md:block">
+<div class="sticky top-24 border-r border-outline-variant pr-lg h-[calc(100vh-120px)] overflow-y-auto custom-scrollbar">
+<h3 class="text-on-secondary-container font-headline-md text-headline-md mb-6 uppercase tracking-wider text-sm opacity-80">Ngôn ngữ phổ biến</h3>
+<ul class="space-y-2">
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">code</span> Python
+                            </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-md bg-[#112240] text-primary-fixed border-l-4 border-primary-fixed" href="#">
+<span class="material-symbols-outlined">html</span> HTML
+                            </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">css</span> CSS
+                            </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">javascript</span> JavaScript
+                            </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">terminal</span> Bash / Shell
+                            </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">data_object</span> JSON &amp; XML
+                            </a>
+</li>
+</ul>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<div class="lg:col-span-9">
+<div class="mb-10">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-16 h-16 bg-[#E34F26]/20 rounded-xl flex items-center justify-center border border-[#E34F26]/30">
+<span class="material-symbols-outlined text-4xl text-[#E34F26]" style="font-variation-settings: 'FILL' 1;">html</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary">HTML5: Bộ Xương Của Web</h1>
+</div>
+<p class="text-on-surface-variant text-body-lg leading-relaxed">
+                        HTML (HyperText Markup Language) là ngôn ngữ đánh dấu tiêu chuẩn để tạo ra các trang web. Nó mô tả cấu trúc của một trang web bằng cách sử dụng các thẻ markup. HTML là nền tảng cốt lõi của mọi ứng dụng web, định hình nội dung trước khi CSS và JavaScript thêm phong cách và tính tương tác.
+                    </p>
+</div>
+<div class="w-full h-px bg-outline-variant mb-10"></div>
+<!-- Callout -->
+<div class="bg-[#112240] border-l-4 border-primary-fixed p-6 rounded-r-lg mb-12 flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-fixed mt-1">lightbulb</span>
+<div>
+<h4 class="font-headline-md text-xl text-primary mb-2">Tại sao HTML quan trọng?</h4>
+<p class="text-on-surface-variant">
+                            Mặc dù không phải là một ngôn ngữ lập trình thuần túy, việc nắm vững HTML ngữ nghĩa (Semantic HTML) là rất quan trọng cho SEO, khả năng truy cập (Accessibility - a11y) và hiệu suất trang web. Nó giúp trình duyệt và công cụ tìm kiếm hiểu rõ nội dung của bạn.
+                        </p>
+</div>
+</div>
+<!-- Lộ trình học tập -->
+<section class="mb-12">
+<h2 class="font-headline-md text-headline-md text-secondary mb-6">Lộ trình học tập HTML</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="bg-[#112240] rounded-xl p-6 border border-outline-variant hover:border-primary-fixed/50 transition-colors">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-surface-tint">looks_one</span>
+<h3 class="font-bold text-lg text-primary">Cơ bản</h3>
+</div>
+<ul class="space-y-2 text-on-surface-variant text-sm">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-xs text-primary-fixed mt-1">check</span> Cấu trúc tài liệu cơ bản (html, head, body)</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-xs text-primary-fixed mt-1">check</span> Heading &amp; Paragraphs (h1-h6, p)</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-xs text-primary-fixed mt-1">check</span> Danh sách (ul, ol, li)</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-xs text-primary-fixed mt-1">check</span> Liên kết &amp; Hình ảnh (a, img)</li>
+</ul>
+</div>
+<!-- Card 2 -->
+<div class="bg-[#112240] rounded-xl p-6 border border-outline-variant hover:border-primary-fixed/50 transition-colors">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-surface-tint">looks_two</span>
+<h3 class="font-bold text-lg text-primary">Trung cấp</h3>
+</div>
+<ul class="space-y-2 text-on-surface-variant text-sm">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-xs text-primary-fixed mt-1">check</span> Bảng dữ liệu (table, tr, td)</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-xs text-primary-fixed mt-1">check</span> Biểu mẫu &amp; Inputs (form, input, select)</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-xs text-primary-fixed mt-1">check</span> HTML Ngữ nghĩa (Semantic HTML5)</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-xs text-primary-fixed mt-1">check</span> Phân chia layout (div, span)</li>
+</ul>
+</div>
+<!-- Card 3 -->
+<div class="bg-[#112240] rounded-xl p-6 border border-outline-variant hover:border-primary-fixed/50 transition-colors">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-surface-tint">looks_3</span>
+<h3 class="font-bold text-lg text-primary">Nâng cao</h3>
+</div>
+<ul class="space-y-2 text-on-surface-variant text-sm">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-xs text-primary-fixed mt-1">check</span> Thuộc tính Data &amp; Tùy chỉnh (data-*)</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-xs text-primary-fixed mt-1">check</span> Tích hợp Đa phương tiện (audio, video)</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-xs text-primary-fixed mt-1">check</span> Khả năng truy cập (ARIA attributes)</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-xs text-primary-fixed mt-1">check</span> Web Storage &amp; APIs tích hợp</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Code Example -->
+<section class="mb-12">
+<h2 class="font-headline-md text-headline-md text-secondary mb-4">Ví dụ "Hello, World!"</h2>
+<p class="text-on-surface-variant mb-6">Cấu trúc tài liệu HTML5 tối giản nhất để hiển thị nội dung cơ bản trên trình duyệt.</p>
+<div class="bg-[#0A192F] rounded-xl border border-outline-variant overflow-hidden">
+<!-- Code Editor Header -->
+<div class="bg-[#112240] px-4 py-3 flex justify-between items-center border-b border-outline-variant">
+<div class="flex gap-2">
+<div class="w-3 h-3 rounded-full bg-[#FF605C]"></div>
+<div class="w-3 h-3 rounded-full bg-[#FFBD44]"></div>
+<div class="w-3 h-3 rounded-full bg-[#00CA4E]"></div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">HTML</span>
+</div>
+<!-- Code Block -->
+<div class="p-6 relative font-code-block text-code-block overflow-x-auto custom-scrollbar">
+<button class="absolute top-4 right-4 p-2 rounded bg-surface-container hover:bg-surface-container-high border border-outline-variant text-on-surface-variant transition-colors" title="Copy code">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+<pre class="m-0"><code><span class="code-highlight-text">&lt;!DOCTYPE html&gt;</span>
+<span class="code-highlight-tag">&lt;html</span> <span class="code-highlight-attr">lang</span>=<span class="code-highlight-string">"vi"</span><span class="code-highlight-tag">&gt;</span>
+<span class="code-highlight-tag">&lt;head&gt;</span>
+    <span class="code-highlight-tag">&lt;meta</span> <span class="code-highlight-attr">charset</span>=<span class="code-highlight-string">"UTF-8"</span><span class="code-highlight-tag">&gt;</span>
+    <span class="code-highlight-tag">&lt;meta</span> <span class="code-highlight-attr">name</span>=<span class="code-highlight-string">"viewport"</span> <span class="code-highlight-attr">content</span>=<span class="code-highlight-string">"width=device-width, initial-scale=1.0"</span><span class="code-highlight-tag">&gt;</span>
+    <span class="code-highlight-tag">&lt;title&gt;</span><span class="code-highlight-text">Trang đầu tiên của tôi</span><span class="code-highlight-tag">&lt;/title&gt;</span>
+<span class="code-highlight-tag">&lt;/head&gt;</span>
+<span class="code-highlight-tag">&lt;body&gt;</span>
+    <span class="code-highlight-tag">&lt;h1&gt;</span><span class="code-highlight-text">Hello, World!</span><span class="code-highlight-tag">&lt;/h1&gt;</span>
+    <span class="code-highlight-tag">&lt;p&gt;</span><span class="code-highlight-text">Chào mừng bạn đến với thế giới lập trình Web.</span><span class="code-highlight-tag">&lt;/p&gt;</span>
+<span class="code-highlight-tag">&lt;/body&gt;</span>
+<span class="code-highlight-tag">&lt;/html&gt;</span></code></pre>
+</div>
+</div>
+</section>
+<div class="flex gap-2 flex-wrap mb-10">
+<span class="bg-[#112240] text-on-surface-variant px-3 py-1 rounded font-label-caps text-xs border border-outline-variant">#html5</span>
+<span class="bg-[#112240] text-on-surface-variant px-3 py-1 rounded font-label-caps text-xs border border-outline-variant">#webdev</span>
+<span class="bg-[#112240] text-on-surface-variant px-3 py-1 rounded font-label-caps text-xs border border-outline-variant">#frontend</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline-variant w-full py-xl mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md px-gutter max-w-container-max mx-auto">
+<div>
+<p class="font-headline-md text-headline-md text-primary dark:text-primary-fixed mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">terminal</span> DevPortal VN
+                </p>
+<p class="text-on-surface-variant dark:text-on-surface-variant font-body-md text-body-md">
+                    © 2024 DevPortal VN. Cộng đồng lập trình viên Việt Nam.
+                </p>
+</div>
+<div class="flex gap-4 flex-wrap md:justify-end items-center">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-300" href="#"><button onclick="window.location.href='about.html'">Về chúng tôi</button></a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-300" href="#"><button onclick="window.location.href='term.html'">Điều khoản</button></a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-300" href="#"><button onclick="window.location.href='privacy.html'">Bảo mật</button></a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-300" href="#"><button onclick="window.location.href='contact.html'">Liên hệ</button></a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-300" href="#"><button onclick="window.location.href='api-docs.html'">Tài liệu API</button></a>
+</div>
+</div>
+</footer>
+</body></html>

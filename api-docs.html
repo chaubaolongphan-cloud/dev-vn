@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tài liệu API - DevPortal VN</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error": "#690005",
+                      "inverse-on-surface": "#263049",
+                      "inverse-primary": "#006b58",
+                      "tertiary-container": "#d8e2ff",
+                      "tertiary-fixed": "#d8e2ff",
+                      "surface-container-lowest": "#030d25",
+                      "on-surface": "#d9e2ff",
+                      "on-error-container": "#ffdad6",
+                      "on-primary-fixed-variant": "#005142",
+                      "on-tertiary-fixed-variant": "#374767",
+                      "secondary-fixed": "#d6e3ff",
+                      "tertiary": "#ffffff",
+                      "on-secondary-fixed": "#0d1c32",
+                      "error": "#ffb4ab",
+                      "secondary-fixed-dim": "#b9c7e4",
+                      "on-primary-container": "#00725e",
+                      "error-container": "#93000a",
+                      "surface-container": "#151f37",
+                      "secondary-container": "#3c4962",
+                      "surface-container-low": "#101b33",
+                      "background": "#07122a",
+                      "on-surface-variant": "#bacac3",
+                      "inverse-surface": "#d9e2ff",
+                      "outline": "#85948e",
+                      "secondary": "#b9c7e4",
+                      "surface-tint": "#38debb",
+                      "tertiary-fixed-dim": "#b6c6ed",
+                      "surface-dim": "#07122a",
+                      "surface-bright": "#2f3952",
+                      "on-secondary": "#233148",
+                      "on-primary": "#00382d",
+                      "on-secondary-fixed-variant": "#39475f",
+                      "primary-container": "#5ffbd6",
+                      "on-background": "#d9e2ff",
+                      "surface-container-high": "#1f2942",
+                      "on-tertiary-container": "#556486",
+                      "outline-variant": "#3c4a45",
+                      "surface-container-highest": "#2a344e",
+                      "on-tertiary-fixed": "#091b39",
+                      "on-tertiary": "#20304f",
+                      "surface": "#07122a",
+                      "primary": "#ffffff",
+                      "on-secondary-container": "#abb9d6",
+                      "primary-fixed": "#5ffbd6",
+                      "surface-variant": "#2a344e",
+                      "primary-fixed-dim": "#38debb",
+                      "on-primary-fixed": "#002019"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "xl": "40px",
+                      "container-max": "1200px",
+                      "unit": "4px",
+                      "gutter": "24px",
+                      "xs": "4px",
+                      "lg": "24px",
+                      "sm": "8px",
+                      "md": "16px"
+              },
+              "fontFamily": {
+                      "display-lg-mobile": [
+                              "Be Vietnam Pro"
+                      ],
+                      "code-block": [
+                              "JetBrains Mono"
+                      ],
+                      "display-lg": [
+                              "Be Vietnam Pro"
+                      ],
+                      "label-caps": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-md": [
+                              "Be Vietnam Pro"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "code-block": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.7",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: #07122a; /* Custom background matching dark theme */
+            color: #d9e2ff;
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky bg-background/80 backdrop-blur-md border-b border-outline-variant z-50">
+<div class="flex justify-between items-center h-16 px-lg max-w-container-max mx-auto">
+<!-- Brand -->
+<div class="flex items-center gap-4">
+<a class="font-display-lg text-headline-md font-bold text-primary" href="#">DevPortal VN</a>
+</div>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="code_4.html">Trang chủ</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="code.html">Ngôn ngữ</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="code_3.html">Thư viện</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="code_2.html">Kịch bản</a>
+</nav>
+<!-- Actions & Search -->
+<div class="hidden md:flex items-center gap-4">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm">search</span>
+<input class="bg-surface-container-low border border-outline-variant rounded-md py-1.5 pl-9 pr-4 text-sm text-on-surface focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container w-64 transition-all" placeholder="Tìm kiếm tài liệu..." type="text"/>
+</div>
+<a class="text-secondary-fixed hover:text-primary transition-colors font-body-md text-body-md" href="login.html">Đăng nhập</a>
+<a class="bg-transparent border border-primary-container text-primary-container px-4 py-1.5 rounded-md hover:bg-primary-container/10 transition-colors font-body-md text-body-md" href="signup.html">Đăng ký</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface-variant">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<div class="flex flex-1 w-full max-w-container-max mx-auto">
+<!-- SideNavBar -->
+<aside class="hidden md:flex flex-col h-[calc(100vh-4rem)] w-64 sticky top-16 bg-surface-container py-lg border-r border-outline-variant flex-shrink-0">
+<div class="px-6 mb-6">
+<h2 class="font-headline-md text-body-lg text-primary mb-1">Developer Hub</h2>
+<p class="text-xs text-on-surface-variant opacity-80">Vietnamese Dev Community</p>
+<button class="mt-4 w-full bg-surface-container-high hover:bg-surface-container-highest text-primary py-2 rounded-md transition-colors border border-outline-variant flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">add</span>
+                    Tạo bài viết mới
+                </button>
+</div>
+<nav class="flex-1 overflow-y-auto px-4 space-y-1 font-label-caps text-label-caps">
+<a class="flex items-center gap-3 px-3 py-2 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined text-lg opacity-70">overview</span>
+                    Tổng quan
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined text-lg opacity-70">vpn_key</span>
+                    Xác thực
+                </a>
+<!-- Active Item -->
+<a class="flex items-center gap-3 px-3 py-2 rounded-md text-primary bg-primary-container/10 border-r-4 border-primary cursor-pointer" href="#">
+<span class="material-symbols-outlined text-lg">api</span>
+                    Endpoints
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined text-lg opacity-70">error</span>
+                    Mã lỗi
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined text-lg opacity-70">webhook</span>
+                    Webhooks
+                </a>
+<div class="pt-6 pb-2">
+<div class="text-[10px] text-on-surface-variant opacity-50 uppercase tracking-wider px-3 mb-2">JSON Shared</div>
+<a class="flex items-center gap-3 px-3 py-2 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined text-lg opacity-70" data-icon="description" data-weight="fill">description</span>
+                        Tài liệu
+                    </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined text-lg opacity-70" data-icon="menu_book" data-weight="fill">menu_book</span>
+                        Hướng dẫn
+                    </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined text-lg opacity-70" data-icon="code" data-weight="fill">code</span>
+                        API Reference
+                    </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined text-lg opacity-70" data-icon="groups" data-weight="fill">groups</span>
+                        Cộng đồng
+                    </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined text-lg opacity-70" data-icon="help" data-weight="fill">help</span>
+                        Hỗ trợ
+                    </a>
+</div>
+</nav>
+<div class="px-4 mt-auto pt-4 border-t border-outline-variant font-label-caps text-label-caps">
+<a class="flex items-center gap-3 px-3 py-2 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined text-lg opacity-70" data-icon="settings" data-weight="fill">settings</span>
+                    Cài đặt
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-md text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined text-lg opacity-70" data-icon="feedback" data-weight="fill">feedback</span>
+                    Phản hồi
+                </a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 p-6 md:p-xl w-full max-w-4xl overflow-y-auto bg-surface-container-lowest">
+<div class="mb-12">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-4">Tài liệu API</h1>
+<p class="text-on-surface-variant font-body-lg text-body-lg max-w-3xl leading-relaxed">
+                    Chào mừng bạn đến với tài liệu API của DevPortal VN. Giao diện lập trình ứng dụng (API) của chúng tôi được thiết kế theo chuẩn RESTful, trả về định dạng JSON và sử dụng các mã trạng thái HTTP tiêu chuẩn. Hướng dẫn này sẽ giúp bạn tích hợp hệ thống của mình với nền tảng một cách nhanh chóng và an toàn.
+                </p>
+</div>
+<!-- Endpoint Section -->
+<section class="bg-surface-container rounded-xl border border-outline-variant p-6 md:p-8 mb-10 shadow-sm relative overflow-hidden group">
+<!-- Subtle glow effect on hover -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary-container/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 relative z-10">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2 flex items-center gap-3">
+                            Lấy danh sách ngôn ngữ
+                            <span class="bg-[#112240] text-primary-container px-2 py-1 rounded text-xs font-label-caps tracking-widest border border-outline-variant">GET</span>
+</h2>
+<code class="font-code-block text-code-block text-on-surface bg-surface-container-low px-3 py-1.5 rounded border border-outline-variant inline-block">/v1/languages</code>
+</div>
+<button class="shrink-0 bg-transparent border border-primary-container text-primary-container px-5 py-2 rounded-md hover:bg-primary-container/10 transition-colors font-label-caps text-label-caps flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">play_arrow</span>
+                        Try it out
+                    </button>
+</div>
+<p class="text-on-surface-variant mb-8 leading-relaxed max-w-2xl">
+                    Endpoint này cho phép bạn truy xuất danh sách các ngôn ngữ lập trình được hỗ trợ trên nền tảng, bao gồm siêu dữ liệu và trạng thái khả dụng.
+                </p>
+<!-- Parameters Table -->
+<div class="mb-8">
+<h3 class="font-body-lg text-body-lg font-semibold text-on-background mb-4">Parameters</h3>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-outline-variant text-on-surface-variant font-label-caps text-label-caps">
+<th class="py-3 px-4 w-1/4">Name</th>
+<th class="py-3 px-4 w-1/4">Type</th>
+<th class="py-3 px-4 w-1/2">Description</th>
+</tr>
+</thead>
+<tbody class="font-code-block text-sm">
+<tr class="border-b border-outline-variant/50 hover:bg-surface-container-high transition-colors">
+<td class="py-3 px-4 text-secondary-fixed">limit</td>
+<td class="py-3 px-4 text-on-surface-variant">integer <span class="text-[10px] text-outline ml-1">(query)</span></td>
+<td class="py-3 px-4 text-on-surface-variant font-body-md text-sm">Số lượng kết quả trả về tối đa (Mặc định: 20)</td>
+</tr>
+<tr class="border-b border-outline-variant/50 hover:bg-surface-container-high transition-colors">
+<td class="py-3 px-4 text-secondary-fixed">offset</td>
+<td class="py-3 px-4 text-on-surface-variant">integer <span class="text-[10px] text-outline ml-1">(query)</span></td>
+<td class="py-3 px-4 text-on-surface-variant font-body-md text-sm">Vị trí bắt đầu của tập kết quả (Phân trang)</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-3 px-4 text-secondary-fixed">status</td>
+<td class="py-3 px-4 text-on-surface-variant">string <span class="text-[10px] text-outline ml-1">(query)</span></td>
+<td class="py-3 px-4 text-on-surface-variant font-body-md text-sm">Lọc theo trạng thái <code class="bg-surface-container-low px-1 py-0.5 rounded text-xs text-primary-container">active</code> hoặc <code class="bg-surface-container-low px-1 py-0.5 rounded text-xs text-primary-container">deprecated</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Code Example -->
+<div>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-background mb-4">Response Example</h3>
+<div class="relative bg-[#112240] rounded-lg border border-outline-variant overflow-hidden">
+<div class="flex justify-between items-center bg-[#0d1c32] px-4 py-2 border-b border-outline-variant">
+<span class="text-xs font-label-caps text-on-surface-variant">200 OK</span>
+<span class="text-xs font-label-caps text-secondary-fixed">JSON</span>
+</div>
+<pre class="p-4 overflow-x-auto text-sm font-code-block text-code-block"><code class="language-json">
+<span class="text-[#CCD6F6]">{</span>
+  <span class="text-[#64FFDA]">"data"</span><span class="text-[#CCD6F6]">: [</span>
+    <span class="text-[#CCD6F6]">{</span>
+      <span class="text-[#64FFDA]">"id"</span><span class="text-[#CCD6F6]">: </span><span class="text-[#FF8A65]">"lang_01"</span><span class="text-[#CCD6F6]">,</span>
+      <span class="text-[#64FFDA]">"name"</span><span class="text-[#CCD6F6]">: </span><span class="text-[#FF8A65]">"JavaScript"</span><span class="text-[#CCD6F6]">,</span>
+      <span class="text-[#64FFDA]">"version"</span><span class="text-[#CCD6F6]">: </span><span class="text-[#FF8A65]">"ES2022"</span><span class="text-[#CCD6F6]">,</span>
+      <span class="text-[#64FFDA]">"is_active"</span><span class="text-[#CCD6F6]">: </span><span class="text-[#FF8A65]">true</span>
+    <span class="text-[#CCD6F6]">},</span>
+    <span class="text-[#CCD6F6]">{</span>
+      <span class="text-[#64FFDA]">"id"</span><span class="text-[#CCD6F6]">: </span><span class="text-[#FF8A65]">"lang_02"</span><span class="text-[#CCD6F6]">,</span>
+      <span class="text-[#64FFDA]">"name"</span><span class="text-[#CCD6F6]">: </span><span class="text-[#FF8A65]">"Python"</span><span class="text-[#CCD6F6]">,</span>
+      <span class="text-[#64FFDA]">"version"</span><span class="text-[#CCD6F6]">: </span><span class="text-[#FF8A65]">"3.11"</span><span class="text-[#CCD6F6]">,</span>
+      <span class="text-[#64FFDA]">"is_active"</span><span class="text-[#CCD6F6]">: </span><span class="text-[#FF8A65]">true</span>
+    <span class="text-[#CCD6F6]">}</span>
+  <span class="text-[#CCD6F6]">],</span>
+  <span class="text-[#64FFDA]">"pagination"</span><span class="text-[#CCD6F6]">: {</span>
+    <span class="text-[#64FFDA]">"total"</span><span class="text-[#CCD6F6]">: </span><span class="text-[#FF8A65]">42</span><span class="text-[#CCD6F6]">,</span>
+    <span class="text-[#64FFDA]">"limit"</span><span class="text-[#CCD6F6]">: </span><span class="text-[#FF8A65]">20</span><span class="text-[#CCD6F6]">,</span>
+    <span class="text-[#64FFDA]">"offset"</span><span class="text-[#CCD6F6]">: </span><span class="text-[#FF8A65]">0</span>
+  <span class="text-[#CCD6F6]">}</span>
+<span class="text-[#CCD6F6]">}</span>
+                        </code></pre>
+</div>
+</div>
+</section>
+<!-- Info Callout -->
+<div class="bg-[#112240] border-l-4 border-primary-container p-4 rounded-r-md mb-12 shadow-sm">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container mt-0.5">info</span>
+<div>
+<h4 class="font-body-lg text-body-md font-semibold text-primary-container mb-1">Bản tin cập nhật API v2</h4>
+<p class="text-on-surface-variant text-sm">Chúng tôi dự kiến sẽ phát hành API v2 vào quý tới. Vui lòng theo dõi changelog để cập nhật những thay đổi breaking changes có thể ảnh hưởng đến tích hợp của bạn.</p>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- Footer -->
+<footer class="w-full py-xl bg-background border-t border-outline-variant mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center px-lg max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-primary mb-4 md:mb-0">
+                DevPortal VN
+            </div>
+<div class="flex flex-wrap justify-center gap-6 mb-4 md:mb-0 font-body-md text-body-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="term.html">Điều khoản</a>
+<a class="hover:text-primary transition-colors" href="privacy.html">Bảo mật</a>
+<a class="hover:text-primary transition-colors" href="contact.html">Liên hệ</a>
+<a class="hover:text-primary transition-colors" href="github.html">Github</a>
+</div>
+<div class="text-on-surface-variant text-sm opacity-70">
+                © 2024 DevPortal VN. Built for Vietnamese Developers.
+            </div>
+</div>
+</footer>
+</body></html>

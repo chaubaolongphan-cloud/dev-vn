@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>DevPortal VN</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed":"#0d1c32","surface":"#07122a","on-background":"#d9e2ff","on-tertiary-container":"#556486","background":"#07122a","on-surface":"#d9e2ff","on-tertiary":"#20304f","surface-container-highest":"#2a344e","on-surface-variant":"#bacac3","surface-bright":"#2f3952","inverse-surface":"#d9e2ff","tertiary-container":"#d8e2ff","primary-fixed":"#5ffbd6","surface-container-high":"#1f2942","primary-container":"#5ffbd6","surface-tint":"#38debb","tertiary":"#ffffff","secondary-container":"#3c4962","surface-container-lowest":"#030d25","error-container":"#93000a","outline-variant":"#3c4a45","surface-dim":"#07122a","secondary-fixed-dim":"#b9c7e4","secondary":"#b9c7e4","surface-variant":"#2a344e","on-tertiary-fixed":"#091b39","on-secondary-fixed-variant":"#39475f","surface-container":"#151f37","on-secondary":"#233148","on-primary-fixed-variant":"#005142","error":"#ffb4ab","inverse-primary":"#006b58","on-primary-container":"#00725e","outline":"#85948e","on-primary-fixed":"#002019","inverse-on-surface":"#263049","on-secondary-container":"#abb9d6","surface-container-low":"#101b33","tertiary-fixed":"#d8e2ff","primary":"#ffffff","on-error-container":"#ffdad6","on-tertiary-fixed-variant":"#374767","tertiary-fixed-dim":"#b6c6ed","primary-fixed-dim":"#38debb","on-error":"#690005","on-primary":"#00382d","secondary-fixed":"#d6e3ff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"container-max":"1200px","xl":"40px","lg":"24px","gutter":"24px","unit":"4px","xs":"4px","sm":"8px","md":"16px"},"fontFamily":{"code-block":["JetBrains Mono"],"body-lg":["Inter"],"label-caps":["JetBrains Mono"],"body-md":["Inter"],"display-lg":["Be Vietnam Pro"],"headline-md":["Be Vietnam Pro"],"display-lg-mobile":["Be Vietnam Pro"]},"fontSize":{"code-block":["14px",{"lineHeight":"1.7","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"1.6","fontWeight":"400"}],"label-caps":["12px",{"lineHeight":"1.0","letterSpacing":"0.1em","fontWeight":"500"}],"body-md":["16px",{"lineHeight":"1.6","fontWeight":"400"}],"display-lg":["48px",{"lineHeight":"1.2","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"1.4","fontWeight":"600"}],"display-lg-mobile":["32px",{"lineHeight":"1.2","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full max-w-[1200px] mx-auto px-lg flex items-center justify-between gap-md"><div class="flex items-center gap-lg"><a class="flex items-center gap-xs text-primary-fixed-dim hover:text-primary transition-colors" data-path="trang-chu" href="#"><span class="font-code-block text-code-block font-semibold">&lt;/&gt;</span><span class="font-headline-md text-headline-md tracking-tight text-primary">DevPortal VN</span></a><nav class="hidden lg:flex items-center gap-md" data-active-classes="text-primary-fixed-dim font-semibold border-b-2 border-primary-fixed-dim pb-1"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="trang-chu" href="code_4.html">Trang chủ</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="ngon-ngu" href="code.html">Ngôn ngữ</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="thu-vien" href="code_3.html">Thư viện</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kich-ban" href="code_2.html">Kịch bản</a><a aria-current="page" class="transition-colors text-primary-fixed-dim font-semibold border-b-2 border-primary-fixed-dim pb-1" data-path="tro-giup" href="help.html">Trợ giúp</a></nav></div><div class="flex-1 max-w-md hidden md:flex items-center"><div class="w-full flex items-center bg-surface-container-low px-md py-xs rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-on-surface-variant mr-xs text-[20px]">search</span><input class="w-full bg-transparent border-none outline-none font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant" placeholder="Tìm kiếm giải pháp, lỗi cú pháp, thư viện..." type="text"/><span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-high px-xs py-unit rounded">Ctrl+K</span></div></div><div class="flex items-center gap-md"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors hidden sm:inline-block" data-path="dang-nhap" href="login.html">Đăng nhập</a><a class="font-body-md text-body-md text-on-primary bg-primary-container hover:bg-primary-fixed-dim hover:text-on-primary-container px-md py-xs rounded-full transition-colors hidden sm:inline-block font-medium" data-path="dang-ky" href="signup.html">Đăng ký</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="relative w-full overflow-hidden bg-surface-container-lowest py-20 px-lg">
+<!-- Ambient glow decorative layers -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary-fixed-dim/10 blur-3xl pointer-events-none"></div>
+<div class="absolute top-10 right-0 w-80 h-80 rounded-full bg-secondary-container/30 blur-3xl pointer-events-none"></div>
+<div class="max-w-[1200px] mx-auto relative z-10 flex flex-col items-center text-center">
+<!-- Badge Category -->
+<div class="inline-flex items-center gap-xs px-md py-xs rounded-full bg-surface-container-high text-primary-fixed-dim font-label-caps text-label-caps mb-lg shadow-sm">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>HỆ THỐNG TRỢ GIÚP KỸ THUẬT DEVPORTAL VN</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-lg text-display-lg text-primary max-w-4xl tracking-tight mb-md">
+        Trung Tâm Trợ Giúp &amp; Giải Đáp Code
+      </h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-xl">
+        Tìm kiếm giải pháp nhanh chóng, tra cứu lỗi thường gặp hoặc gửi câu hỏi để được cộng đồng và AI Mentor hỗ trợ 24/7.
+      </p>
+<!-- Search Box Module -->
+<div class="w-full max-w-3xl bg-surface-container rounded-xl p-xs shadow-xl flex flex-col sm:flex-row items-center gap-xs">
+<div class="flex items-center flex-1 w-full px-md py-sm gap-sm">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[26px]">search</span>
+<input class="w-full bg-transparent border-none outline-none font-body-md text-body-md text-on-surface placeholder:text-outline" id="help-search-input" placeholder="Nhập mã lỗi, thông báo lỗi (vd: TypeError, CORS, NullPointerException)..." type="text"/>
+</div>
+<button class="w-full sm:w-auto px-xl py-md bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container font-headline-md text-[15px] font-semibold rounded-lg transition-all shadow-md flex items-center justify-center gap-xs cursor-pointer" id="btn-search-solution">
+<span>Tìm giải pháp</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Quick Tag Filter Chips -->
+<div class="mt-lg flex flex-wrap items-center justify-center gap-xs text-on-surface-variant font-label-caps text-label-caps">
+<span class="text-outline mr-xs">Lỗi phổ biến:</span>
+<button class="px-sm py-unit rounded bg-surface-container hover:bg-surface-container-high hover:text-primary-fixed-dim transition-colors cursor-pointer">#CORS</button>
+<button class="px-sm py-unit rounded bg-surface-container hover:bg-surface-container-high hover:text-primary-fixed-dim transition-colors cursor-pointer">#Promise</button>
+<button class="px-sm py-unit rounded bg-surface-container hover:bg-surface-container-high hover:text-primary-fixed-dim transition-colors cursor-pointer">#IndexError</button>
+<button class="px-sm py-unit rounded bg-surface-container hover:bg-surface-container-high hover:text-primary-fixed-dim transition-colors cursor-pointer">#Flexbox</button>
+<button class="px-sm py-unit rounded bg-surface-container hover:bg-surface-container-high hover:text-primary-fixed-dim transition-colors cursor-pointer">#ReactHook</button>
+<button class="px-sm py-unit rounded bg-surface-container hover:bg-surface-container-high hover:text-primary-fixed-dim transition-colors cursor-pointer">#GitConflict</button>
+</div>
+</div>
+</section>
+<!-- Metric Quick Stats Bar -->
+<div class="w-full bg-surface-container-low py-md px-lg">
+<div class="max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-md">
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[32px]">menu_book</span>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-bold">1,250+</span>
+<span class="font-body-md text-[13px] text-on-surface-variant">Bài giải mã lỗi chi tiết</span>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[32px]">forum</span>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-bold">18,400+</span>
+<span class="font-body-md text-[13px] text-on-surface-variant">Câu hỏi được phản hồi</span>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[32px]">bolt</span>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-bold">&lt; 3 Phút</span>
+<span class="font-body-md text-[13px] text-on-surface-variant">Tốc độ phản hồi AI Mentor</span>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[32px]">verified</span>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-bold">99.2%</span>
+<span class="font-body-md text-[13px] text-on-surface-variant">Tỷ lệ thắc mắc có lời giải</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Categories Grid (4 Cards) -->
+<section class="w-full py-xl px-lg bg-surface">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-xl gap-md">
+<div>
+<span class="font-label-caps text-label-caps text-primary-fixed-dim uppercase tracking-wider">PHƯƠNG THỨC HỖ TRỢ</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-xs">Chọn Kênh Trợ Giúp Phù Hợp</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Linh hoạt lựa chọn giữa tự tra cứu, nhận sự trợ giúp từ AI chuyên trách hoặc thảo luận cùng chuyên gia đầu ngành.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md">
+<!-- Card 1 -->
+<div class="group bg-surface-container hover:bg-surface-container-high rounded-xl p-lg transition-all duration-300 shadow-md flex flex-col justify-between cursor-pointer">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary-fixed-dim group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors mb-md">
+<span class="material-symbols-outlined text-[28px]">bug_report</span>
+</div>
+<h3 class="font-headline-md text-[18px] text-primary mb-xs">Tra Cứu Lỗi &amp; Sửa Nhanh</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant leading-relaxed mb-md">
+              Hướng dẫn khắc phục hơn 500+ lỗi lập trình phổ biến từ cơ bản đến nâng cao cho Web, Backend và Mobile.
+            </p>
+</div>
+<div class="flex items-center gap-xs font-label-caps text-label-caps text-primary-fixed-dim group-hover:translate-x-1 transition-transform">
+<span>XEM THƯ VIỆN LỖI</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container hover:bg-surface-container-high rounded-xl p-lg transition-all duration-300 shadow-md flex flex-col justify-between cursor-pointer">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary-fixed-dim group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors mb-md">
+<span class="material-symbols-outlined text-[28px]">question_answer</span>
+</div>
+<h3 class="font-headline-md text-[18px] text-primary mb-xs">Hỏi Đáp Cộng Đồng</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant leading-relaxed mb-md">
+              Đặt câu hỏi và nhận câu trả lời thực chiến từ các lập trình viên kỳ cựu và kỹ sư phần mềm tại Việt Nam.
+            </p>
+</div>
+<div class="flex items-center gap-xs font-label-caps text-label-caps text-primary-fixed-dim group-hover:translate-x-1 transition-transform">
+<span>THAM GIA DIỄN ĐÀN</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container hover:bg-surface-container-high rounded-xl p-lg transition-all duration-300 shadow-md flex flex-col justify-between cursor-pointer relative overflow-hidden">
+<div class="absolute top-3 right-3 px-xs py-unit bg-primary-container text-on-primary-container font-label-caps text-[10px] font-bold rounded">HOT</div>
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary-fixed-dim group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors mb-md">
+<span class="material-symbols-outlined text-[28px]">auto_awesome</span>
+</div>
+<h3 class="font-headline-md text-[18px] text-primary mb-xs">AI Mentor Hỗ Trợ Trực Tiếp</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant leading-relaxed mb-md">
+              Chat trực tiếp với AI trợ lý để giải nghĩa thuật toán, bóc tách luồng tư duy và tìm ra điểm nghẽn logic ngay lập tức.
+            </p>
+</div>
+<div class="flex items-center gap-xs font-label-caps text-label-caps text-primary-fixed-dim group-hover:translate-x-1 transition-transform">
+<span>BẮT ĐẦU CHAT AI</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group bg-surface-container hover:bg-surface-container-high rounded-xl p-lg transition-all duration-300 shadow-md flex flex-col justify-between cursor-pointer">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary-fixed-dim group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors mb-md">
+<span class="material-symbols-outlined text-[28px]">confirmation_number</span>
+</div>
+<h3 class="font-headline-md text-[18px] text-primary mb-xs">Gửi Yêu Cầu Hỗ Trợ (Ticket)</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant leading-relaxed mb-md">
+              Gặp bài toán kiến trúc hóc búa hoặc trục trặc hệ thống nghiêm trọng? Gửi yêu cầu để đội ngũ chuyên gia phân tích kỹ lưỡng.
+            </p>
+</div>
+<div class="flex items-center gap-xs font-label-caps text-label-caps text-primary-fixed-dim group-hover:translate-x-1 transition-transform">
+<span>TẠO PHIẾU HỖ TRỢ</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Top Issues & Accordion Solutions Section -->
+<section class="w-full py-xl px-lg bg-surface-container-low">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between mb-lg gap-sm">
+<div>
+<span class="font-label-caps text-label-caps text-primary-fixed-dim uppercase">TRI THỨC THỰC CHIẾN</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-xs">5 Vấn Đề Lập Trình Thường Gặp &amp; Cách Xử Lý Nhanh</h2>
+</div>
+<span class="font-body-md text-[14px] text-on-surface-variant">Cập nhật hàng tuần theo báo cáo cộng đồng</span>
+</div>
+<!-- Solutions Accordion List -->
+<div class="space-y-sm" id="accordion-container">
+<!-- Item 1 -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-sm transition-all duration-200">
+<button class="accordion-toggle w-full p-md text-left flex items-center justify-between gap-md cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-md flex-1 min-w-0">
+<span class="px-sm py-xs rounded bg-surface-container-highest font-code-block text-[12px] text-primary-fixed-dim font-semibold shrink-0">JS</span>
+<span class="font-headline-md text-[16px] text-primary truncate">Cách khắc phục lỗi "Cannot read property of undefined" trong JavaScript</span>
+</div>
+<div class="flex items-center gap-sm shrink-0">
+<span class="font-label-caps text-[12px] text-outline hidden sm:inline">Xem chi tiết</span>
+<span class="material-symbols-outlined text-on-surface-variant toggle-icon transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="accordion-content hidden p-md bg-surface-container-lowest">
+<div class="space-y-sm text-on-surface">
+<div class="p-sm rounded bg-surface-container-high/60">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim font-bold block mb-unit">NGUYÊN NHÂN GÂY LỖI:</span>
+<p class="font-body-md text-[15px] text-on-surface-variant">Bạn đang cố gắng truy cập thuộc tính (property) hoặc gọi phương thức của một biến đang có giá trị <code class="font-code-block text-primary-fixed-dim bg-surface px-unit py-unit rounded">undefined</code> hoặc <code class="font-code-block text-primary-fixed-dim bg-surface px-unit py-unit rounded">null</code>, thường xảy ra khi gọi API bất đồng bộ chưa có dữ liệu trả về.</p>
+</div>
+<div class="p-sm rounded bg-surface-container-high/60">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim font-bold block mb-unit">HƯỚNG DẪN KHẮC PHỤC NHANH:</span>
+<ul class="list-disc list-inside font-body-md text-[14px] text-on-surface-variant space-y-xs">
+<li>Sử dụng toán tử <strong>Optional Chaining (?.)</strong>: Thay vì viết <code class="font-code-block text-primary-fixed-dim">user.profile.name</code>, hãy dùng <code class="font-code-block text-primary-fixed-dim">user?.profile?.name</code> để tránh throw exception.</li>
+<li>Sử dụng giá trị mặc định bằng toán tử <strong>Nullish Coalescing (??)</strong>: Cung cấp fallback giá trị rỗng khi dữ liệu chưa tải xong.</li>
+<li>Khởi tạo State an toàn với cấu trúc mặc định trước khi nhận phản hồi từ API.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-sm transition-all duration-200">
+<button class="accordion-toggle w-full p-md text-left flex items-center justify-between gap-md cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-md flex-1 min-w-0">
+<span class="px-sm py-xs rounded bg-surface-container-highest font-code-block text-[12px] text-primary-fixed-dim font-semibold shrink-0">Python</span>
+<span class="font-headline-md text-[16px] text-primary truncate">Xử lý triệt để lỗi "ModuleNotFoundError: No module named..." trong Python</span>
+</div>
+<div class="flex items-center gap-sm shrink-0">
+<span class="font-label-caps text-[12px] text-outline hidden sm:inline">Xem chi tiết</span>
+<span class="material-symbols-outlined text-on-surface-variant toggle-icon transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="accordion-content hidden p-md bg-surface-container-lowest">
+<div class="space-y-sm text-on-surface">
+<div class="p-sm rounded bg-surface-container-high/60">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim font-bold block mb-unit">NGUYÊN NHÂN GÂY LỖI:</span>
+<p class="font-body-md text-[15px] text-on-surface-variant">Python Interpreter đang chạy không tìm thấy thư viện trong môi trường hiện tại, do bạn cài đặt trên Python toàn cục nhưng lại chạy chương trình trong Virtual Environment (venv) hoặc ngược lại.</p>
+</div>
+<div class="p-sm rounded bg-surface-container-high/60">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim font-bold block mb-unit">HƯỚNG DẪN KHẮC PHỤC NHANH:</span>
+<ul class="list-disc list-inside font-body-md text-[14px] text-on-surface-variant space-y-xs">
+<li>Kiểm tra đường dẫn môi trường đang kích hoạt và cài gói thư viện tương ứng qua lệnh pip của chính môi trường đó.</li>
+<li>Đảm bảo đã thêm tệp đánh dấu gói package <code class="font-code-block text-primary-fixed-dim">__init__.py</code> nếu đang import module tự tạo từ thư mục nội bộ.</li>
+<li>Kiểm tra biến môi trường <code class="font-code-block text-primary-fixed-dim">PYTHONPATH</code> đã bao gồm thư mục gốc của dự án.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-sm transition-all duration-200">
+<button class="accordion-toggle w-full p-md text-left flex items-center justify-between gap-md cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-md flex-1 min-w-0">
+<span class="px-sm py-xs rounded bg-surface-container-highest font-code-block text-[12px] text-primary-fixed-dim font-semibold shrink-0">Web</span>
+<span class="font-headline-md text-[16px] text-primary truncate">Làm sao để giải quyết lỗi CORS khi gọi API từ Frontend?</span>
+</div>
+<div class="flex items-center gap-sm shrink-0">
+<span class="font-label-caps text-[12px] text-outline hidden sm:inline">Xem chi tiết</span>
+<span class="material-symbols-outlined text-on-surface-variant toggle-icon transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="accordion-content hidden p-md bg-surface-container-lowest">
+<div class="space-y-sm text-on-surface">
+<div class="p-sm rounded bg-surface-container-high/60">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim font-bold block mb-unit">NGUYÊN NHÂN GÂY LỖI:</span>
+<p class="font-body-md text-[15px] text-on-surface-variant">Cơ chế bảo mật Same-Origin Policy của trình duyệt chặn các request HTTP từ domain này sang domain khác nếu máy chủ API không phản hồi header Access-Control-Allow-Origin tương thích.</p>
+</div>
+<div class="p-sm rounded bg-surface-container-high/60">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim font-bold block mb-unit">HƯỚNG DẪN KHẮC PHỤC NHANH:</span>
+<ul class="list-disc list-inside font-body-md text-[14px] text-on-surface-variant space-y-xs">
+<li><strong>Cách chuẩn nhất:</strong> Cấu hình middleware CORS ở phía Backend (Node.js, Spring, FastAPI...) cho phép domain client truy cập.</li>
+<li><strong>Trong quá trình phát triển (Local Dev):</strong> Cấu hình Proxy trung gian trong file cấu hình Vite/Webpack để chuyển tiếp request cùng domain local.</li>
+<li>Không tắt bảo mật trình duyệt trên máy khách vì không phải giải pháp bền vững cho môi trường Production.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-sm transition-all duration-200">
+<button class="accordion-toggle w-full p-md text-left flex items-center justify-between gap-md cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-md flex-1 min-w-0">
+<span class="px-sm py-xs rounded bg-surface-container-highest font-code-block text-[12px] text-primary-fixed-dim font-semibold shrink-0">Git</span>
+<span class="font-headline-md text-[16px] text-primary truncate">Sửa lỗi "Fatal: refusing to merge unrelated histories" trong Git</span>
+</div>
+<div class="flex items-center gap-sm shrink-0">
+<span class="font-label-caps text-[12px] text-outline hidden sm:inline">Xem chi tiết</span>
+<span class="material-symbols-outlined text-on-surface-variant toggle-icon transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="accordion-content hidden p-md bg-surface-container-lowest">
+<div class="space-y-sm text-on-surface">
+<div class="p-sm rounded bg-surface-container-high/60">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim font-bold block mb-unit">NGUYÊN NHÂN GÂY LỖI:</span>
+<p class="font-body-md text-[15px] text-on-surface-variant">Hai nhánh bạn đang cố gắng gộp (thường là repo local mới tạo và repo remote trên GitHub có sẵn README) không có chung commit khởi tạo ban đầu.</p>
+</div>
+<div class="p-sm rounded bg-surface-container-high/60">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim font-bold block mb-unit">HƯỚNG DẪN KHẮC PHỤC NHANH:</span>
+<ul class="list-disc list-inside font-body-md text-[14px] text-on-surface-variant space-y-xs">
+<li>Sử dụng cờ xác nhận hợp nhất lịch sử không liên quan: Bổ sung tham số xác thực <code class="font-code-block text-primary-fixed-dim">--allow-unrelated-histories</code> khi thực hiện kéo mã về (git pull).</li>
+<li>Tiến hành giải quyết xung đột (conflict) phát sinh nếu có, rồi tạo commit hợp nhất mới để đồng bộ hai cây lịch sử.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-sm transition-all duration-200">
+<button class="accordion-toggle w-full p-md text-left flex items-center justify-between gap-md cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-md flex-1 min-w-0">
+<span class="px-sm py-xs rounded bg-surface-container-highest font-code-block text-[12px] text-primary-fixed-dim font-semibold shrink-0">Backend</span>
+<span class="font-headline-md text-[16px] text-primary truncate">Tối ưu hóa vòng lặp tránh tràn bộ nhớ (Memory Leak)</span>
+</div>
+<div class="flex items-center gap-sm shrink-0">
+<span class="font-label-caps text-[12px] text-outline hidden sm:inline">Xem chi tiết</span>
+<span class="material-symbols-outlined text-on-surface-variant toggle-icon transition-transform duration-300">expand_more</span>
+</div>
+</button>
+<div class="accordion-content hidden p-md bg-surface-container-lowest">
+<div class="space-y-sm text-on-surface">
+<div class="p-sm rounded bg-surface-container-high/60">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim font-bold block mb-unit">NGUYÊN NHÂN GÂY LỖI:</span>
+<p class="font-body-md text-[15px] text-on-surface-variant">Tải toàn bộ tập dữ liệu cực lớn (hàng triệu bản ghi) vào một mảng duy nhất trong RAM, hoặc tạo Closure/EventListener liên tục bên trong vòng lặp mà không giải phóng tham chiếu.</p>
+</div>
+<div class="p-sm rounded bg-surface-container-high/60">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim font-bold block mb-unit">HƯỚNG DẪN KHẮC PHỤC NHANH:</span>
+<ul class="list-disc list-inside font-body-md text-[14px] text-on-surface-variant space-y-xs">
+<li>Chuyển sang cơ chế <strong>Streaming Data</strong> hoặc <strong>Paging/Cursor-based Pagination</strong> thay vì fetch toàn bộ bảng dữ liệu.</li>
+<li>Sử dụng Generator function hoặc Iterators để xử lý tuần tự từng item thay vì giữ nguyên mảng tĩnh khổng lồ.</li>
+<li>Đảm bảo dọn dẹp các biến tham chiếu toàn cục sau khi kết thúc chu trình xử lý batch.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Support Request Form & AI Advisor Side-by-Side -->
+<section class="w-full py-xl px-lg bg-surface">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-xl">
+<!-- Support Request Form Column (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container p-xl rounded-xl shadow-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-xs text-primary-fixed-dim font-label-caps text-label-caps mb-xs">
+<span class="material-symbols-outlined text-[18px]">contact_support</span>
+<span>HỎI ĐÁP CHUYÊN GIA</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-xs">Bạn vẫn chưa giải quyết được vấn đề?</h2>
+<p class="font-body-md text-[14px] text-on-surface-variant mb-lg">
+            Mô tả chi tiết tình huống lỗi và hành vi mong muốn. Mentor sẽ phản hồi với giải pháp cụ thể trong vòng 15-30 phút.
+          </p>
+<form class="space-y-md" id="help-ticket-form">
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-xs">Ngôn ngữ / Công nghệ liên quan</label>
+<select class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-md py-sm rounded-lg outline-none cursor-pointer">
+<option value="javascript">JavaScript / TypeScript</option>
+<option value="python">Python</option>
+<option value="html-css">HTML5 / Modern CSS / Tailwind</option>
+<option value="golang">Go (Golang)</option>
+<option value="java">Java / Spring Boot</option>
+<option value="devops">DevOps, Docker &amp; CI/CD</option>
+<option value="database">Cơ sở dữ liệu (PostgreSQL, MongoDB)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-xs">Tiêu đề vấn đề cần trợ giúp</label>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-md py-sm rounded-lg outline-none placeholder:text-outline" placeholder="Ví dụ: Lỗi xác thực JWT trả về 401 khi gọi refresh token ngầm..." required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-xs">Mô tả chi tiết vấn đề bạn đang gặp phải</label>
+<textarea class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md p-md rounded-lg outline-none placeholder:text-outline resize-none" placeholder="Mô tả các bước tái hiện lỗi, thông báo lỗi nhận được, và kết quả bạn mong muốn đạt được..." required="" rows="4"></textarea>
+</div>
+<div class="flex items-center justify-between pt-xs">
+<span class="font-body-md text-[12px] text-outline">Miễn phí 100% cho cộng đồng kỹ thuật</span>
+<button class="px-xl py-sm bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container font-headline-md text-[14px] font-semibold rounded-lg transition-all shadow cursor-pointer flex items-center gap-xs" type="submit">
+<span>Gửi câu hỏi cho Mentor</span>
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+</form>
+<div class="hidden mt-md p-sm rounded bg-surface-container-high text-primary-fixed-dim font-body-md text-[14px]" id="form-feedback">
+            ✓ Đã gửi yêu cầu trợ giúp thành công! Mentor của DevPortal VN đang xử lý và sẽ phản hồi sớm nhất.
+          </div>
+</div>
+</div>
+<!-- Live AI Advice Preview & Community Card (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-md">
+<!-- Visual Rich Card: AI Mentor Insight -->
+<div class="bg-surface-container p-lg rounded-xl shadow-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-md">
+<div class="flex items-center gap-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-fixed-dim animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-primary-fixed-dim uppercase font-semibold">AI MENTOR TRỰC TUYẾN</span>
+</div>
+<span class="font-label-caps text-[11px] text-on-surface-variant bg-surface-container-highest px-xs py-unit rounded">GPT-4o Engine</span>
+</div>
+<div class="relative w-full h-40 rounded-lg overflow-hidden mb-md">
+<img class="w-full h-full object-cover" data-alt="A modern, high-tech software developer laboratory in deep cyan and dark navy tones, illuminated with ambient futuristic soft glowing lights, clean minimal interface aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpZZwJgsfhlmzaXT40_pEmaaqbz4-o09H3Pfh5FnTTcr3Puw1E7C3q3GgtnzLX8x02j6tSB93WM1XN2ZvzEfRL6mscDLMAxHEoVfFAgoCDZgvsSp_e_ShTPhne1AfI7Mmt-hCxyptQAE5dOdoXPg4IL1Q__yDRXSlixWelqPQJZE1wYsF2C7gPxfyFyuJ6PNWk1s_pCUTFzcN49KiMfAH6iazGJuWnIwrOFQ6y22CVEGEWey8PQ5iXyA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+</div>
+<h3 class="font-headline-md text-[18px] text-primary mb-xs">Phân tích lỗi tức thời cùng AI</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant leading-relaxed mb-md">
+              Hệ thống AI chuyên gia được huấn luyện đặc biệt trên các kho tài liệu kỹ thuật Việt Nam và quốc tế, sẵn sàng giải thích cặn kẽ thuật ngữ khó hiểu.
+            </p>
+</div>
+<!-- Mini Checklist of AI Capabilities -->
+<div class="space-y-xs pt-sm">
+<div class="flex items-center gap-xs text-[13px] text-on-surface-variant">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">check</span>
+<span>Giải thích Stack Trace và Call Stack rõ ràng</span>
+</div>
+<div class="flex items-center gap-xs text-[13px] text-on-surface-variant">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">check</span>
+<span>Đưa ra 2-3 kịch bản giải quyết tối ưu theo ngữ cảnh</span>
+</div>
+<div class="flex items-center gap-xs text-[13px] text-on-surface-variant">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">check</span>
+<span>Định hướng kiến trúc chuẩn Clean Architecture</span>
+</div>
+</div>
+</div>
+<!-- Quick Tips Callout -->
+<div class="p-md rounded-xl bg-surface-container-high flex items-start gap-md">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[24px] shrink-0 mt-unit">lightbulb</span>
+<div class="flex flex-col">
+<span class="font-headline-md text-[14px] text-primary font-semibold">Mẹo đặt câu hỏi hiệu quả</span>
+<p class="font-body-md text-[13px] text-on-surface-variant mt-unit">
+              Hãy đính kèm đầy đủ ảnh chụp màn hình thông báo lỗi và phiên bản ngôn ngữ/thư viện bạn đang dùng để nhận được lời giải chính xác nhất.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Banner AI Trợ Lý & Hotline / Discord Cộng Đồng Hỗ Trợ 24/7 -->
+<section class="w-full py-xl px-lg bg-surface-container-lowest">
+<div class="max-w-[1200px] mx-auto rounded-xl bg-gradient-to-r from-surface-container via-surface-container-high to-surface-container p-xl shadow-xl relative overflow-hidden">
+<!-- Glow effect inside banner -->
+<div class="absolute -right-16 -bottom-16 w-64 h-64 bg-primary-fixed-dim/15 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row items-center justify-between gap-xl relative z-10">
+<div class="max-w-xl text-center lg:text-left">
+<div class="inline-flex items-center gap-xs px-sm py-unit rounded bg-surface-container-highest text-primary-fixed-dim font-label-caps text-[11px] mb-sm">
+<span class="w-2 h-2 rounded-full bg-primary-fixed-dim"></span>
+<span>KÊNH TRỰC TUYẾN 24/7</span>
+</div>
+<h2 class="font-headline-md text-[28px] text-primary font-bold mb-xs">
+            Gia Nhập Phòng Voice Hỗ Trợ Discord &amp; Hotline Kỹ Thuật
+          </h2>
+<p class="font-body-md text-[15px] text-on-surface-variant leading-relaxed">
+            Hơn 35,000 kỹ sư phần mềm, sinh viên IT và lập trình viên Việt Nam đang trực tuyến trao đổi, debug chéo và hỗ trợ nhau mỗi ngày.
+          </p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-md shrink-0">
+<a class="px-xl py-md bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container font-headline-md text-[15px] font-semibold rounded-lg transition-all shadow-md flex items-center gap-xs cursor-pointer" data-path="discord" href="#">
+<span class="material-symbols-outlined text-[20px]">group</span>
+<span><button onclick="window.location.href='https://discord.gg/devportal'">Discord</button></span>
+</a>
+<div class="flex items-center gap-sm px-lg py-md bg-surface-container-highest rounded-lg">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[24px]">call</span>
+<div class="flex flex-col text-left">
+<span class="font-label-caps text-[10px] text-outline">HOTLINE TRỢ GIÚP 24/7</span>
+<span class="font-code-block text-[15px] text-primary font-bold">1800 6899 (Ext 2)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Accordion Expand/Collapse Interaction
+  document.querySelectorAll('.accordion-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('.toggle-icon');
+      const isExpanded = !content.classList.contains('hidden');
+
+      // Close all other accordions for clean UX
+      document.querySelectorAll('.accordion-content').forEach(c => c.classList.add('hidden'));
+      document.querySelectorAll('.toggle-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+
+      if (!isExpanded) {
+        content.classList.remove('hidden');
+        if (icon) icon.style.transform = 'rotate(180deg)';
+      }
+    });
+  });
+
+  // Ticket Submission Simulation
+  const form = document.getElementById('help-ticket-form');
+  const feedback = document.getElementById('form-feedback');
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      feedback.classList.remove('hidden');
+      form.reset();
+      setTimeout(() => {
+        feedback.classList.add('hidden');
+      }, 6000);
+    });
+  }
+
+  // Quick tag filler for the search input
+  document.querySelectorAll('.font-label-caps button').forEach(tag => {
+    tag.addEventListener('click', (e) => {
+      const input = document.getElementById('help-search-input');
+      if (input) {
+        input.value = e.target.innerText.replace('#', '');
+        input.focus();
+      }
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-lowest py-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full max-w-[1200px] mx-auto px-lg flex flex-col md:flex-row items-center justify-between gap-md"><div class="text-center md:text-left"><p class="font-body-md text-body-md text-on-surface-variant">© 2024 DevPortal VN. Nền tảng học tập &amp; trợ giúp lập trình viên Việt Nam.</p></div><nav class="flex flex-wrap items-center justify-center gap-md" data-active-classes="text-primary-fixed-dim"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="ve-chung-toi" href="about.html">Về chúng tôi</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="dieu-khoan" href="term.html">Điều khoản</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="bao-mat" href="privacy.html">Bảo mật</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="lien-he" href="contact.html">Liên hệ</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="github" href="https://github.com/devportal-vn" target="_blank">GitHub</a></nav></div></footer></body></html>

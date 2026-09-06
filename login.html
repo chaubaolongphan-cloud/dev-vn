@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Đăng nhập - DevPortal VN</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body{background:#0A192F;color:#CCD6F6;font-family:Inter,system-ui,sans-serif}
+.card{background:#112240;border:1px solid #233554}
+.input{background:#0A192F;border:1px solid #233554;color:#CCD6F6}
+.input:focus{outline:none;border-color:#64FFDA;box-shadow:0 0 10px rgba(100,255,218,.3)}
+.btn{background:transparent;border:1px solid #64FFDA;color:#64FFDA}
+.btn:hover{background:rgba(100,255,218,.1);box-shadow:0 0 10px rgba(100,255,218,.3)}
+</style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-6">
+<div class="card rounded-xl p-8 w-full max-w-md shadow-2xl">
+<div class="text-center mb-7">
+<div class="text-4xl mb-3">⌘</div>
+<h1 class="text-2xl font-bold text-white">Đăng nhập</h1>
+<p class="mt-2 text-slate-400">Chào mừng bạn quay lại DevPortal VN.</p>
+</div>
+<form id="loginForm" class="space-y-5">
+<div>
+<label class="block text-xs uppercase tracking-widest text-slate-400 mb-2">Email</label>
+<input id="email" type="email" required class="input w-full rounded-lg px-4 py-3" placeholder="dev@example.com">
+</div>
+<div>
+<label class="block text-xs uppercase tracking-widest text-slate-400 mb-2">Mật khẩu</label>
+<input id="password" type="password" required class="input w-full rounded-lg px-4 py-3" placeholder="••••••••">
+</div>
+<button class="btn w-full rounded-lg py-3 font-semibold uppercase tracking-wider" type="submit">Đăng nhập →</button>
+</form>
+<p id="msg" class="mt-5 text-center text-sm"></p>
+<p class="mt-6 text-center text-slate-400">Chưa có tài khoản?
+<a class="text-[#64FFDA] hover:underline" href="/signup.html">Đăng ký</a></p>
+</div>
+<script>
+const form=document.getElementById("loginForm"), msg=document.getElementById("msg");
+form.addEventListener("submit",async e=>{
+ e.preventDefault();
+ msg.textContent="Đang kiểm tra...";
+ try{
+  const r=await fetch("/api/login",{method:"POST",headers:{"Content-Type":"application/json"},
+   body:JSON.stringify({email:email.value.trim(),password:password.value})});
+  const d=await r.json();
+  if(!r.ok){msg.textContent=d.message||"Đăng nhập thất bại.";msg.style.color="#ff8f8f";return;}
+  msg.textContent="Đăng nhập thành công!";
+  msg.style.color="#64FFDA";
+  setTimeout(()=>location.href="/account.html",500);
+ }catch{msg.textContent="Không kết nối được máy chủ.";msg.style.color="#ff8f8f";}
+});
+</script>
+</body>
+</html>

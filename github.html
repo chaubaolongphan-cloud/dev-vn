@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DevPortal VN - GitHub Cộng đồng</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#2a344e",
+                        "tertiary-fixed-dim": "#b6c6ed",
+                        "on-secondary-container": "#abb9d6",
+                        "primary-container": "#5ffbd6",
+                        "surface-container-lowest": "#030d25",
+                        "on-tertiary-fixed": "#091b39",
+                        "inverse-primary": "#006b58",
+                        "surface-bright": "#2f3952",
+                        "primary": "#ffffff",
+                        "error-container": "#93000a",
+                        "on-error": "#690005",
+                        "background": "#07122a",
+                        "secondary": "#b9c7e4",
+                        "on-secondary-fixed": "#0d1c32",
+                        "inverse-on-surface": "#263049",
+                        "surface-dim": "#07122a",
+                        "on-primary": "#00382d",
+                        "inverse-surface": "#d9e2ff",
+                        "secondary-fixed-dim": "#b9c7e4",
+                        "on-secondary-fixed-variant": "#39475f",
+                        "secondary-fixed": "#d6e3ff",
+                        "on-primary-fixed-variant": "#005142",
+                        "primary-fixed": "#5ffbd6",
+                        "error": "#ffb4ab",
+                        "primary-fixed-dim": "#38debb",
+                        "surface-container-low": "#101b33",
+                        "on-tertiary-container": "#556486",
+                        "on-surface-variant": "#bacac3",
+                        "on-tertiary-fixed-variant": "#374767",
+                        "on-secondary": "#233148",
+                        "on-surface": "#d9e2ff",
+                        "surface-container-high": "#1f2942",
+                        "surface": "#07122a",
+                        "tertiary-container": "#d8e2ff",
+                        "surface-tint": "#38debb",
+                        "outline": "#85948e",
+                        "on-primary-container": "#00725e",
+                        "on-tertiary": "#20304f",
+                        "outline-variant": "#3c4a45",
+                        "surface-container": "#151f37",
+                        "on-background": "#d9e2ff",
+                        "tertiary-fixed": "#d8e2ff",
+                        "on-error-container": "#ffdad6",
+                        "tertiary": "#ffffff",
+                        "surface-variant": "#2a344e",
+                        "secondary-container": "#3c4962",
+                        "on-primary-fixed": "#002019"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "md": "16px",
+                        "container-max": "1200px",
+                        "xs": "4px",
+                        "unit": "4px",
+                        "gutter": "24px",
+                        "xl": "40px",
+                        "lg": "24px",
+                        "sm": "8px"
+                    },
+                    "fontFamily": {
+                        "code-block": ["JetBrains Mono"],
+                        "body-lg": ["Inter"],
+                        "display-lg-mobile": ["Be Vietnam Pro"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Be Vietnam Pro"],
+                        "display-lg": ["Be Vietnam Pro"],
+                        "label-caps": ["JetBrains Mono"]
+                    },
+                    "fontSize": {
+                        "code-block": ["14px", { "lineHeight": "1.7", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #0A192F; color: #d9e2ff; }
+        .glass-panel { background: rgba(17, 34, 64, 0.7); backdrop-filter: blur(10px); border: 1px solid #233554; }
+        .glow-effect:hover { box-shadow: 0 0 10px rgba(100, 255, 218, 0.3); }
+        .btn-primary { border: 1px solid #64FFDA; color: #64FFDA; transition: all 0.3s ease; }
+        .btn-primary:hover { background-color: rgba(100, 255, 218, 0.1); }
+    </style>
+</head>
+<body class="font-body-md text-body-md antialiased min-h-screen flex flex-col selection:bg-primary-container/30 selection:text-primary-container">
+<!-- TopNavBar -->
+<header class="bg-background/80 backdrop-blur-md w-full top-0 sticky border-b border-outline-variant z-50">
+<div class="flex justify-between items-center h-16 px-lg max-w-container-max mx-auto">
+<div class="flex items-center gap-md">
+<span class="font-display-lg text-display-lg font-bold text-primary text-[24px]">DevPortal VN</span>
+</div>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95 font-body-md text-body-md" href="code_4.html">Trang chủ</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95 font-body-md text-body-md" href="code.html">Ngôn ngữ</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95 font-body-md text-body-md" href="code_3.html">Thư viện</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95 font-body-md text-body-md" href="code_2.html">Kịch bản</a>
+</nav>
+<div class="flex items-center gap-md">
+<button class="text-primary-container hover:text-primary transition-colors font-body-md text-body-md" href="login.html">Đăng nhập</button>
+<button class="btn-primary px-4 py-2 rounded font-body-md text-body-md" href="signup.html">Đăng ký</button>
+</div>
+</div>
+</header>
+<div class="flex flex-1 max-w-container-max mx-auto w-full">
+<!-- SideNavBar -->
+<aside class="hidden md:flex flex-col py-lg border-r border-outline-variant bg-surface-container h-[calc(100vh-4rem)] w-64 sticky top-16 left-0 shrink-0">
+<div class="px-lg mb-8">
+<h2 class="font-headline-md text-headline-md text-primary">Developer Hub</h2>
+<p class="text-on-surface-variant text-sm mt-1">Vietnamese Dev Community</p>
+<button class="w-full mt-4 btn-primary py-2 rounded text-center glow-effect">Tạo bài viết mới</button>
+</div>
+<nav class="flex-1 flex flex-col gap-1 px-sm">
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">description</span>
+<span class="font-label-caps text-label-caps">Tài liệu</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu_book</span>
+<span class="font-label-caps text-label-caps">Hướng dẫn</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">code</span>
+<span class="font-label-caps text-label-caps">API Reference</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-primary bg-primary-container/10 border-r-4 border-primary hover:bg-surface-container-high transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">groups</span>
+<span class="font-label-caps text-label-caps">Cộng đồng</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">help</span>
+<span class="font-label-caps text-label-caps">Hỗ trợ</span>
+</a>
+</nav>
+<div class="mt-auto px-sm pt-4 border-t border-outline-variant">
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-label-caps text-label-caps">Cài đặt</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined">feedback</span>
+<span class="font-label-caps text-label-caps">Phản hồi</span>
+</a>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 w-full p-lg md:p-xl overflow-y-auto">
+<!-- Hero Section -->
+<section class="mb-xl text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-xl">
+<div class="flex-1 space-y-6">
+<h1 class="font-display-lg text-display-lg text-primary">GitHub Cộng đồng</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl">
+                        Nơi tập hợp các dự án mã nguồn mở, tài liệu kỹ thuật và framework được phát triển bởi cộng đồng lập trình viên Việt Nam. Cùng đóng góp để xây dựng hệ sinh thái công nghệ vững mạnh.
+                    </p>
+<div class="pt-4">
+<a class="inline-flex items-center gap-3 btn-primary px-6 py-3 rounded-lg font-headline-md text-[16px] glow-effect bg-[#112240]" href="https://github.com" target="_blank">
+<img alt="GitHub Logo" class="w-6 h-6 invert" src="https://lh3.googleusercontent.com/aida/AEtjO1V0qQT7cB16o87KZp8Tz1UBHC-Ze03MYPsIXO5vcd_jKEkQ_lAs7qwOTR-O17BbGBlhTm1J4potlM617lfWun6MBVCc0p_AOaHO-5DU7rm2Ksgx4aa4xH5Bw7_OP79MGIaJ4qmbzQJZUWDYtcbDFTMzCvvesHANVFZ8DrnGVzHZWO1NV3gjcxjxJYe9QbTuxM81d7Nr0ZZyexs_ms49-vdcY8ZAznaWgwh17n2Fvti_YbzBLWALayxJFwtu"/>
+                            Truy cập GitHub
+                        </a>
+</div>
+</div>
+<div class="hidden md:block w-64 h-64 opacity-80">
+<img alt="GitHub Logo Large" class="w-full h-full object-contain invert mix-blend-screen" src="https://lh3.googleusercontent.com/aida/AEtjO1V0qQT7cB16o87KZp8Tz1UBHC-Ze03MYPsIXO5vcd_jKEkQ_lAs7qwOTR-O17BbGBlhTm1J4potlM617lfWun6MBVCc0p_AOaHO-5DU7rm2Ksgx4aa4xH5Bw7_OP79MGIaJ4qmbzQJZUWDYtcbDFTMzCvvesHANVFZ8DrnGVzHZWO1NV3gjcxjxJYe9QbTuxM81d7Nr0ZZyexs_ms49-vdcY8ZAznaWgwh17n2Fvti_YbzBLWALayxJFwtu"/>
+</div>
+</section>
+<!-- Featured Repositories (Bento Grid Style) -->
+<section class="mb-xl space-y-8">
+<div class="flex items-center gap-3 border-b border-outline-variant pb-2">
+<span class="material-symbols-outlined text-primary-container">folder_open</span>
+<h2 class="font-headline-md text-headline-md text-primary">Dự án Nổi bật</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Repo 1 -->
+<div class="glass-panel p-6 rounded-xl flex flex-col h-full hover:border-primary-container transition-colors group cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-[20px] text-primary group-hover:text-primary-container transition-colors">Core API</h3>
+<span class="material-symbols-outlined text-on-surface-variant">open_in_new</span>
+</div>
+<p class="text-on-surface-variant mb-6 flex-1">Backend service chính xử lý xác thực, phân quyền và dữ liệu người dùng cho toàn bộ hệ thống DevPortal.</p>
+<div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-outline-variant/50 mt-auto">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-blue-400"></span>
+<span class="font-code-block text-code-block text-secondary">TypeScript</span>
+</div>
+<div class="flex gap-4 text-on-surface-variant text-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">star</span> 1.2k</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">fork_right</span> 340</span>
+</div>
+</div>
+</div>
+<!-- Repo 2 -->
+<div class="glass-panel p-6 rounded-xl flex flex-col h-full hover:border-primary-container transition-colors group cursor-pointer lg:col-span-2">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-[20px] text-primary group-hover:text-primary-container transition-colors">Frontend Framework</h3>
+<span class="material-symbols-outlined text-on-surface-variant">open_in_new</span>
+</div>
+<p class="text-on-surface-variant mb-6 flex-1 max-w-2xl">Bộ UI Component thư viện chuẩn hóa dựa trên React và Tailwind CSS, giúp xây dựng giao diện nhanh chóng với Dark Mode mặc định và chuẩn Accessibility.</p>
+<div class="flex flex-wrap items-center gap-6 pt-4 border-t border-outline-variant/50 mt-auto">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+<span class="font-code-block text-code-block text-secondary">JavaScript</span>
+</div>
+<div class="flex gap-4 text-on-surface-variant text-sm ml-auto">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">star</span> 850</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">fork_right</span> 120</span>
+</div>
+</div>
+</div>
+<!-- Repo 3 -->
+<div class="glass-panel p-6 rounded-xl flex flex-col h-full hover:border-primary-container transition-colors group cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-[20px] text-primary group-hover:text-primary-container transition-colors">Vietnamese Docs</h3>
+<span class="material-symbols-outlined text-on-surface-variant">open_in_new</span>
+</div>
+<p class="text-on-surface-variant mb-6 flex-1">Kho lưu trữ mã nguồn mở các bài dịch, hướng dẫn và tài liệu học tập bằng tiếng Việt.</p>
+<div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-outline-variant/50 mt-auto">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-purple-400"></span>
+<span class="font-code-block text-code-block text-secondary">Markdown</span>
+</div>
+<div class="flex gap-4 text-on-surface-variant text-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">star</span> 2.5k</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">fork_right</span> 890</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contributors Section -->
+<section class="mb-xl space-y-8">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-outline-variant pb-2">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">groups</span>
+<h2 class="font-headline-md text-headline-md text-primary">Contributors Hàng Đầu</h2>
+</div>
+<a class="text-primary-container text-sm hover:underline flex items-center gap-1" href="#">Xem tất cả <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+<div class="flex flex-wrap gap-4">
+<!-- Contributor Avatars -->
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-surface bg-surface-container-high relative group cursor-pointer">
+<img class="w-full h-full object-cover" data-alt="A futuristic, hyper-realistic avatar of a cyberpunk developer with glowing blue neon cybernetics on their face, set against a dark tech background. Sharp focus, cinematic lighting, 8k resolution, minimalist aesthetic matching a modern dark-mode developer portal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2kdt2ffZ8vEuZgDhA6kYyTouGzh_goRVDRkWPsbt8qFzkD-BJCkjrX3_4SvJiTdFzBzmB2vuzM58v-dqUaSNx3loyF4uUa-o7OndHLl0hwsrvbcnemnd37O0ID2jpsWFukwz5gKnorVhWSX1I6MFJEppspUYtOmlcGe6HqOXMkEBXinGZyGB9lXjSA-JcSrqjfH2n2GaBY5O8s8vpixpFwvAmRGOT0DYqhUdNPM_d42t_WJS6S1lJNA"/>
+<div class="absolute inset-0 bg-primary-container/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-surface bg-surface-container-high relative group cursor-pointer -ml-4">
+<img class="w-full h-full object-cover" data-alt="A stylish portrait of a female software engineer working late at night, lit by the cyan glow of multiple monitors displaying complex code. Depth of field blurring the background, highly detailed, moody atmospheric lighting fitting a professional developer platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrxXMs783abN4Y09bUPCc9bXl1qi1GBwtGiuhIMfA0h8cwy3W0_jWPpnk8VY5YSyw2pOaPdT91kGqiUNuUk-BNIUSNgnKK45-jmbl6RgaGnN3P6VKckeVb38PX3iaI5uw6J3wk01sAJvGB93IwY5nTWDDvT2iSapVcpt0zwglbd1xNuW4k_MxKb77LaFBH4AZooD9_HYZ5Dj8967A2N18ueZFClW4meNzWNeXu6nR5VCPU_HkmQMV0uA"/>
+<div class="absolute inset-0 bg-primary-container/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-surface bg-surface-container-high relative group cursor-pointer -ml-4">
+<img class="w-full h-full object-cover" data-alt="A minimalist abstract geometric profile picture featuring sharp angular lines in cyan and navy blue against a deep black background. High contrast, precise vectors, representing a tech-savvy open source contributor in a modern dark UI." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXSscXk-JxIOYnlU-61SpAOX8nl7aNGjE44xOXaAhflDu4tpjbDWQ6kvhQnzB7AGEQVBPxyh0Gk6hQLsAtg4hkhc4xDYMHYOx9whw8l1OZLC9H27CRRMwMwJXXb5Fljvr8qNW33HKrVDFyAPahcdqRi8c9vx3pUup6AFMn-NM5RXmA8MIv9a7OXzcmTz8lsKqzhD0G-y1KQXWk_UTqPZtNN0wSoIQ4WaW7ZdgNif133Bohw64Jf5bM9A"/>
+<div class="absolute inset-0 bg-primary-container/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-surface bg-surface-container-high relative group cursor-pointer -ml-4">
+<img class="w-full h-full object-cover" data-alt="A stylized 3D rendered avatar of a robotic owl with glowing cyan eyes, metallic dark grey textures, sleek and modern. High-end graphic design, cinematic lighting, perfectly suited for a tech community platform in dark mode." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdsIHGXI1qMQ9yjPY4yEso7kReY8ET045gkfNSzI4pYHFXrVUmnYi_LdyRy_UrTskbc22HNghMkNPFMSKfjfZBO67Nl_jDuubTjL7q_IDn5cNnYeps2XFBn4iS-Wntm8sPVyeTA5EnhDaD7qvzKwTw59S67Fr5sEkmH-mUv1HnPkg5VjaTAX7zhwqqiH5VbhbkFYH091HKtOh51VHrwk_KiVNWninEGou1IOeA1V-tAucLCkiWXgwaBg"/>
+<div class="absolute inset-0 bg-primary-container/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-surface bg-surface-container flex items-center justify-center -ml-4 z-10 text-xs font-code-block text-primary-container">
+                        +42
+                    </div>
+</div>
+</section>
+</main>
+</div>
+<!-- Footer -->
+<footer class="bg-background w-full py-xl border-t border-outline-variant mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center px-lg max-w-container-max mx-auto gap-4">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 DevPortal VN. Built for Vietnamese Developers.</p>
+<div class="flex gap-6">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="term.html">Điều khoản</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="privacy.html">Bảo mật</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Liên hệ</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="https://github.com/devportal-vn" target="_blank">Github</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lập trình VN - Trang chủ</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Design System -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-secondary-container": "#abb9d6",
+                "on-tertiary-container": "#556486",
+                "on-secondary-fixed-variant": "#39475f",
+                "on-primary-container": "#00725e",
+                "surface-container-low": "#101b33",
+                "on-tertiary": "#20304f",
+                "on-tertiary-fixed": "#091b39",
+                "on-surface": "#d9e2ff",
+                "outline-variant": "#3c4a45",
+                "inverse-surface": "#d9e2ff",
+                "on-secondary": "#233148",
+                "secondary": "#b9c7e4",
+                "on-background": "#d9e2ff",
+                "inverse-primary": "#006b58",
+                "primary-fixed": "#5ffbd6",
+                "surface-container-highest": "#2a344e",
+                "surface-tint": "#38debb",
+                "tertiary-container": "#d8e2ff",
+                "outline": "#85948e",
+                "surface-container": "#151f37",
+                "inverse-on-surface": "#263049",
+                "on-primary": "#00382d",
+                "on-primary-fixed-variant": "#005142",
+                "error-container": "#93000a",
+                "primary": "#ffffff",
+                "tertiary": "#ffffff",
+                "surface": "#07122a",
+                "on-tertiary-fixed-variant": "#374767",
+                "tertiary-fixed": "#d8e2ff",
+                "on-surface-variant": "#bacac3",
+                "secondary-container": "#3c4962",
+                "on-error": "#690005",
+                "secondary-fixed": "#d6e3ff",
+                "secondary-fixed-dim": "#b9c7e4",
+                "on-error-container": "#ffdad6",
+                "tertiary-fixed-dim": "#b6c6ed",
+                "background": "#07122a",
+                "surface-variant": "#2a344e",
+                "on-secondary-fixed": "#0d1c32",
+                "on-primary-fixed": "#002019",
+                "primary-container": "#5ffbd6",
+                "surface-bright": "#2f3952",
+                "primary-fixed-dim": "#38debb",
+                "surface-dim": "#07122a",
+                "surface-container-lowest": "#030d25",
+                "surface-container-high": "#1f2942",
+                "error": "#ffb4ab"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "container-max": "1200px",
+                "xs": "4px",
+                "gutter": "24px",
+                "lg": "24px",
+                "unit": "4px",
+                "md": "16px",
+                "sm": "8px",
+                "xl": "40px"
+            },
+            "fontFamily": {
+                "body-lg": ["Inter"],
+                "label-caps": ["JetBrains Mono"],
+                "body-md": ["Inter"],
+                "code-block": ["JetBrains Mono"],
+                "display-lg": ["Be Vietnam Pro"],
+                "display-lg-mobile": ["Be Vietnam Pro"],
+                "headline-md": ["Be Vietnam Pro"]
+            },
+            "fontSize": {
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "code-block": ["14px", {"lineHeight": "1.7", "fontWeight": "400"}],
+                "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        /* Custom Styles based on guidelines */
+        body {
+            background-color: #0A192F; /* Fallback if surface class isn't exact */
+            color: #d9e2ff;
+        }
+        
+        .glow-active {
+            box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+        }
+        
+        .depth-level-1 {
+            background-color: #112240;
+            border: 1px solid #233554;
+        }
+        
+        .btn-primary {
+            border: 1px solid #64FFDA;
+            color: #64FFDA;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: rgba(100, 255, 218, 0.1);
+        }
+        
+        .btn-secondary {
+            color: #CCD6F6;
+            position: relative;
+        }
+        
+        .btn-secondary::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #64FFDA;
+            transition: width 0.3s ease;
+        }
+        
+        .btn-secondary:hover::after {
+            width: 100%;
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased pt-16">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-outline-variant dark:border-outline-variant flat no shadows transition-all duration-300">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<!-- Brand -->
+<a class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg font-bold text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity" href="#">
+                DevPortal VN
+            </a>
+<!-- Navigation Links (Desktop) -->
+<ul class="hidden md:flex items-center gap-lg">
+<li><a class="font-body-md text-body-md text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-200" href="#" onclick="window.location.href='code_4.html'">Trang chủ</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-200" href="#" onclick="window.location.href='code.html'">Ngôn ngữ</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-200" href="#" onclick="window.location.href='code_3.html'">Thư viện</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-200" href="#" onclick="window.location.href='code_2.html'">Kịch bản</a></li>
+</ul>
+<!-- Actions -->
+<div class="flex items-center gap-md">
+<a class="btn-secondary font-label-caps text-label-caps uppercase tracking-wider hidden md:block" href="#" onclick="window.location.href='login.html'">Đăng nhập</a>
+<a class="btn-primary font-label-caps text-label-caps px-md py-sm rounded-DEFAULT uppercase tracking-wider active:scale-95 duration-200" href="#" onclick="window.location.href='signup.html'">Đăng ký</a>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="max-w-container-max mx-auto px-gutter py-xl">
+<!-- Hero Section -->
+<section class="min-h-[70vh] flex flex-col md:flex-row items-center justify-between gap-xl mb-xl">
+<div class="w-full md:w-1/2 flex flex-col items-start gap-md z-10">
+<div class="bg-surface-container-high px-sm py-xs rounded-DEFAULT border border-outline-variant inline-flex items-center gap-sm mb-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-primary-fixed">V1.0 LIVE</span>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-md">
+                    Chào mừng bạn đến với <br/>
+<span class="text-primary-fixed">Web Lập trình VN</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-lg">
+                    Nền tảng học tập và chia sẻ kiến thức chuyên sâu dành riêng cho cộng đồng kỹ sư phần mềm Việt Nam. Khám phá tài liệu, code snippets và thực hành trực tiếp.
+                </p>
+<div class="flex gap-md">
+<a class="btn-primary font-label-caps text-label-caps px-lg py-md rounded-DEFAULT uppercase tracking-wider glow-active" href="welcome.html">Bắt đầu ngay</a>
+<a class="btn-secondary font-label-caps text-label-caps flex items-center gap-sm px-md py-md uppercase tracking-wider" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">play_circle</span>
+                        <button onclick="window.location.href='watch video.html'">Tìm hiểu thêm</button>
+                    </a>
+</div>
+</div>
+<div class="w-full md:w-1/2 relative h-[400px] flex justify-center items-center">
+<!-- Abstract coding visualization using CSS/HTML -->
+<div class="absolute inset-0 bg-gradient-to-tr from-surface-container-lowest to-surface-container opacity-50 rounded-xl blur-3xl"></div>
+<div class="relative w-full max-w-md depth-level-1 rounded-xl p-md overflow-hidden shadow-2xl">
+<div class="flex items-center gap-sm mb-md border-b border-outline-variant pb-sm">
+<div class="w-3 h-3 rounded-full bg-error"></div>
+<div class="w-3 h-3 rounded-full bg-[#F5A623]"></div>
+<div class="w-3 h-3 rounded-full bg-[#7ED321]"></div>
+<span class="ml-auto font-code-block text-code-block text-on-surface-variant text-xs">main.js</span>
+</div>
+<pre class="font-code-block text-code-block text-sm overflow-x-auto text-left"><code class="language-js">
+<span class="text-[#C678DD]">import</span> { <span class="text-[#E5C07B]">Community</span> } <span class="text-[#C678DD]">from</span> <span class="text-[#98C379]">'@vn/dev'</span>;
+
+<span class="text-[#C678DD]">const</span> <span class="text-[#E06C75]">developer</span> = <span class="text-[#56B6C2]">new</span> <span class="text-[#E5C07B]">Developer</span>({
+  <span class="text-[#D19A66]">passion</span>: <span class="text-[#D19A66]">true</span>,
+  <span class="text-[#D19A66]">location</span>: <span class="text-[#98C379]">'Vietnam'</span>
+});
+
+<span class="text-[#56B6C2]">function</span> <span class="text-[#61AFEF]">init</span>() {
+  <span class="text-[#C678DD]">if</span> (developer.<span class="text-[#E06C75]">isReady</span>()) {
+    Community.<span class="text-[#61AFEF]">join</span>(developer);
+    <span class="text-[#56B6C2]">console</span>.<span class="text-[#61AFEF]">log</span>(<span class="text-[#98C379]">'Hello World!'</span>);
+  }
+}
+
+<span class="text-[#61AFEF]">init</span>();
+</code>
+                    </pre>
+</div>
+</div>
+</section>
+<!-- Giới thiệu Section (Bento Grid Style) -->
+<section class="mb-xl py-xl">
+<div class="flex items-center gap-sm mb-lg">
+<span class="material-symbols-outlined text-primary-fixed">info</span>
+<h2 class="font-headline-md text-headline-md text-primary">Sứ mệnh của chúng tôi</h2>
+</div>
+<div class="bento-grid">
+<!-- Large Feature Card -->
+<div class="col-span-12 md:col-span-8 depth-level-1 rounded-xl p-lg relative overflow-hidden group">
+<div class="absolute right-0 bottom-0 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
+<span class="material-symbols-outlined text-[150px]">public</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Kết nối cộng đồng</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mb-md">
+                            Tạo ra một không gian chung nơi các lập trình viên Việt Nam có thể chia sẻ kiến thức, thảo luận về các vấn đề kỹ thuật chuyên sâu và xây dựng mạng lưới quan hệ bền vững trong ngành công nghiệp phần mềm.
+                        </p>
+<a class="inline-flex items-center gap-sm text-primary-fixed hover:underline font-label-caps text-label-caps" href="#">
+                            Tìm hiểu thêm <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Info Callout Card -->
+<div class="col-span-12 md:col-span-4 bg-surface-container rounded-xl p-lg border-l-4 border-primary-container flex flex-col justify-center">
+<h4 class="font-label-caps text-label-caps text-primary-fixed mb-sm">BẢN TIN</h4>
+<p class="font-body-md text-body-md text-primary">
+                        Hơn 10,000+ lập trình viên đã tham gia nền tảng. Các sự kiện offline dự kiến sẽ diễn ra vào quý tới tại Hà Nội và TP.HCM.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Ngôn ngữ phổ biến Section (Glassmorphism Cards) -->
+<section class="mb-xl py-xl">
+<div class="flex items-center gap-sm mb-lg">
+<span class="material-symbols-outlined text-primary-fixed">code_blocks</span>
+<h2 class="font-headline-md text-headline-md text-primary">Ngôn ngữ phổ biến</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md">
+<!-- Card 1: Python -->
+<div class="depth-level-1 rounded-xl p-md border border-outline-variant hover:border-primary-fixed transition-colors duration-300 group cursor-pointer">
+<div class="flex justify-between items-start mb-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center group-hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary-fixed text-3xl">terminal</span>
+</div>
+<span class="font-label-caps text-label-caps bg-surface-container px-2 py-1 rounded text-on-surface-variant">#python</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary text-lg mb-xs">Python</h3>
+<p class="font-body-md text-body-md text-sm text-on-surface-variant">Phân tích dữ liệu, AI, Backend mạnh mẽ và cú pháp thân thiện.</p>
+</div>
+<!-- Card 2: HTML/CSS -->
+<div class="depth-level-1 rounded-xl p-md border border-outline-variant hover:border-primary-fixed transition-colors duration-300 group cursor-pointer">
+<div class="flex justify-between items-start mb-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center group-hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[#E34F26] text-3xl">html</span>
+</div>
+<span class="font-label-caps text-label-caps bg-surface-container px-2 py-1 rounded text-on-surface-variant">#frontend</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary text-lg mb-xs">HTML &amp; CSS</h3>
+<p class="font-body-md text-body-md text-sm text-on-surface-variant">Nền tảng của web, cấu trúc và định dạng giao diện người dùng.</p>
+</div>
+<!-- Card 3: JavaScript -->
+<div class="depth-level-1 rounded-xl p-md border border-outline-variant hover:border-primary-fixed transition-colors duration-300 group cursor-pointer">
+<div class="flex justify-between items-start mb-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center group-hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[#F7DF1E] text-3xl">javascript</span>
+</div>
+<span class="font-label-caps text-label-caps bg-surface-container px-2 py-1 rounded text-on-surface-variant">#fullstack</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary text-lg mb-xs">JavaScript</h3>
+<p class="font-body-md text-body-md text-sm text-on-surface-variant">Ngôn ngữ kịch bản động, tạo tương tác phong phú cho web hiện đại.</p>
+</div>
+<!-- Card 4: Go -->
+<div class="depth-level-1 rounded-xl p-md border border-outline-variant hover:border-primary-fixed transition-colors duration-300 group cursor-pointer">
+<div class="flex justify-between items-start mb-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center group-hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[#00ADD8] text-3xl">rocket_launch</span>
+</div>
+<span class="font-label-caps text-label-caps bg-surface-container px-2 py-1 rounded text-on-surface-variant">#backend</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary text-lg mb-xs">Go (Golang)</h3>
+<p class="font-body-md text-body-md text-sm text-on-surface-variant">Hiệu suất cao, xử lý đồng thời tuyệt vời cho hệ thống phân tán.</p>
+</div>
+</div>
+</section>
+<!-- Tính năng chính Section (Asymmetric Layout) -->
+<section class="mb-xl py-xl border-t border-outline-variant">
+<div class="flex items-center gap-sm mb-xl">
+<span class="material-symbols-outlined text-primary-fixed">widgets</span>
+<h2 class="font-headline-md text-headline-md text-primary">Tính năng cốt lõi</h2>
+</div>
+<div class="space-y-xl">
+<!-- Feature 1: Detail -->
+<div class="flex flex-col md:flex-row gap-lg items-center">
+<div class="w-full md:w-1/2 flex justify-center">
+<div class="w-24 h-24 rounded-2xl bg-surface-container flex items-center justify-center border border-outline-variant shadow-lg relative">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary-container to-surface rounded-2xl blur opacity-20"></div>
+<span class="material-symbols-outlined text-5xl text-primary relative z-10" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+</div>
+</div>
+<div class="w-full md:w-1/2 text-center md:text-left">
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Tra cứu chi tiết (Detail)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Hệ thống tài liệu được tổ chức theo chuẩn kiến trúc, đi sâu vào bản chất kỹ thuật thay vì chỉ bề nổi. Cung cấp API references, design patterns và best practices được cập nhật liên tục.
+                        </p>
+</div>
+</div>
+<!-- Feature 2: Library -->
+<div class="flex flex-col md:flex-row-reverse gap-lg items-center">
+<div class="w-full md:w-1/2 flex justify-center">
+<div class="w-24 h-24 rounded-2xl bg-surface-container flex items-center justify-center border border-outline-variant shadow-lg relative">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary-container to-surface rounded-2xl blur opacity-20"></div>
+<span class="material-symbols-outlined text-5xl text-primary relative z-10" style="font-variation-settings: 'FILL' 1;">collections_bookmark</span>
+</div>
+</div>
+<div class="w-full md:w-1/2 text-center md:text-left">
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Thư viện cá nhân (Library)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Lưu trữ và tổ chức các snippets, bài viết hoặc module yêu thích. Xây dựng một không gian tri thức cá nhân hóa, dễ dàng truy xuất và đồng bộ trên mọi thiết bị.
+                        </p>
+</div>
+</div>
+<!-- Feature 3: Script -->
+<div class="flex flex-col md:flex-row gap-lg items-center">
+<div class="w-full md:w-1/2 flex justify-center">
+<div class="w-24 h-24 rounded-2xl bg-surface-container flex items-center justify-center border border-outline-variant shadow-lg relative">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary-container to-surface rounded-2xl blur opacity-20"></div>
+<span class="material-symbols-outlined text-5xl text-primary relative z-10" style="font-variation-settings: 'FILL' 1;">integration_instructions</span>
+</div>
+</div>
+<div class="w-full md:w-1/2 text-center md:text-left">
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Thực hành code (Script)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Môi trường thực thi mã nguồn an toàn ngay trên trình duyệt. Hỗ trợ nhiều ngôn ngữ, cho phép kiểm thử nhanh các giải thuật hoặc minh họa ý tưởng mà không cần setup local.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline-variant flat no shadows transition-all duration-300 w-full py-xl mt-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md px-gutter max-w-container-max mx-auto">
+<!-- Brand & Copyright -->
+<div class="flex flex-col items-start gap-sm">
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed">
+                    DevPortal VN
+                </span>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant mt-sm">
+                    © 2024 DevPortal VN. Cộng đồng lập trình viên Việt Nam.
+                </p>
+</div>
+<!-- Links -->
+<div class="flex flex-col md:items-end justify-center">
+<ul class="flex flex-wrap gap-md font-body-md text-body-md">
+<li><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors" href="about.html">Về chúng tôi</a></li>
+<li><button class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors" onclick="window.location.href='term.html'">Điều khoản</button></li>
+<li><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors" href="privacy.html">Bảo mật</a></li>
+<li><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors" href="contact.html">Liên hệ</a></li>
+<li><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors" href="api-docs.html">Tài liệu API</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hướng dẫn sử dụng - Lập trình VN</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary": "#b9c7e4",
+                      "on-primary": "#00382d",
+                      "on-secondary-fixed": "#0d1c32",
+                      "on-primary-container": "#00725e",
+                      "primary": "#ffffff",
+                      "surface-container-highest": "#2a344e",
+                      "on-surface": "#d9e2ff",
+                      "on-primary-fixed-variant": "#005142",
+                      "outline": "#85948e",
+                      "surface-container-high": "#1f2942",
+                      "surface-container-low": "#101b33",
+                      "secondary-container": "#3c4962",
+                      "on-background": "#d9e2ff",
+                      "on-secondary": "#233148",
+                      "error-container": "#93000a",
+                      "on-secondary-container": "#abb9d6",
+                      "outline-variant": "#3c4a45",
+                      "inverse-primary": "#006b58",
+                      "secondary-fixed-dim": "#b9c7e4",
+                      "tertiary-container": "#d8e2ff",
+                      "on-tertiary": "#20304f",
+                      "inverse-on-surface": "#263049",
+                      "tertiary-fixed-dim": "#b6c6ed",
+                      "on-tertiary-fixed-variant": "#374767",
+                      "on-surface-variant": "#bacac3",
+                      "surface-bright": "#2f3952",
+                      "primary-fixed-dim": "#38debb",
+                      "primary-container": "#5ffbd6",
+                      "on-error": "#690005",
+                      "secondary-fixed": "#d6e3ff",
+                      "on-tertiary-fixed": "#091b39",
+                      "inverse-surface": "#d9e2ff",
+                      "background": "#07122a",
+                      "on-secondary-fixed-variant": "#39475f",
+                      "on-tertiary-container": "#556486",
+                      "surface": "#07122a",
+                      "surface-container": "#151f37",
+                      "surface-dim": "#07122a",
+                      "tertiary-fixed": "#d8e2ff",
+                      "primary-fixed": "#5ffbd6",
+                      "on-error-container": "#ffdad6",
+                      "surface-container-lowest": "#030d25",
+                      "surface-tint": "#38debb",
+                      "on-primary-fixed": "#002019",
+                      "surface-variant": "#2a344e",
+                      "error": "#ffb4ab",
+                      "tertiary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "xs": "4px",
+                      "unit": "4px",
+                      "md": "16px",
+                      "lg": "24px",
+                      "xl": "40px",
+                      "sm": "8px",
+                      "container-max": "1200px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "display-lg-mobile": [
+                              "Be Vietnam Pro"
+                      ],
+                      "label-caps": [
+                              "JetBrains Mono"
+                      ],
+                      "display-lg": [
+                              "Be Vietnam Pro"
+                      ],
+                      "headline-md": [
+                              "Be Vietnam Pro"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "code-block": [
+                              "JetBrains Mono"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "code-block": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.7",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: #0A192F;
+            color: #CCD6F6;
+        }
+        .glow-effect:focus-within {
+            box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+        }
+        .step-card {
+            background-color: #112240;
+            border: 1px solid #233554;
+            transition: all 0.3s ease;
+        }
+        .step-card:hover {
+            transform: translateY(-5px);
+            border-color: #64FFDA;
+            box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+        }
+        .text-cyan-accent {
+            color: #64FFDA;
+        }
+        .bg-cyan-accent {
+            background-color: #64FFDA;
+        }
+        .border-cyan-accent {
+            border-color: #64FFDA;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0A192F; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #233554; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3c4962; 
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md min-h-screen flex flex-col">
+<!-- TopNavBar (Generated from JSON) -->
+<header class="bg-background/80 backdrop-blur-md font-body-md text-body-md fixed top-0 w-full z-50 border-b border-outline-variant flat no shadows">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-lg h-16">
+<div class="flex items-center gap-md">
+<a class="font-headline-md text-headline-md font-bold text-primary" href="#">Lập trình VN</a>
+</div>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 active:scale-95 transition-transform" href="code_4.html">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 active:scale-95 transition-transform" href="code.html">Languages</a>
+<a class="text-primary font-bold border-b-2 border-primary-fixed pb-1 hover:text-primary transition-colors duration-200 active:scale-95 transition-transform" href="code_3.html">Library</a> <!-- Assuming Library is active for Guide/Tutorial -->
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 active:scale-95 transition-transform" href="code_2.html">Script</a>
+</nav>
+<div class="flex items-center gap-sm">
+<!-- Assuming search is on right per JSON -->
+<button class="text-on-surface-variant hover:text-primary transition-colors duration-200 active:scale-95 transition-transform p-sm">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors duration-200 active:scale-95 transition-transform p-sm">
+<span class="material-symbols-outlined" data-icon="person"><button onclick="window.location.href='signup.html'">person</button></span>
+</button>
+<button class="md:hidden text-on-surface-variant p-sm">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow pt-[104px] pb-xl px-lg max-w-container-max mx-auto w-full">
+<!-- Hero Section -->
+<section class="mb-xl text-center md:text-left">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-md">Hướng dẫn sử dụng hệ thống</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">Khám phá cách tận dụng tối đa nền tảng Lập trình VN. Hướng dẫn chi tiết từ việc thiết lập tài khoản đến viết những dòng code đầu tiên của bạn.</p>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-xl">
+<!-- Main Content -->
+<div class="lg:col-span-8 flex flex-col gap-xl">
+<!-- Video Section -->
+<section class="step-card rounded-lg p-md overflow-hidden">
+<h2 class="font-headline-md text-headline-md text-primary border-l-4 border-cyan-accent pl-sm mb-md flex items-center gap-sm">
+<span class="material-symbols-outlined text-cyan-accent">play_circle</span>
+                        Video làm quen nhanh (Quick Start)
+                    </h2>
+<div class="relative w-full aspect-video rounded bg-surface-container-low flex items-center justify-center border border-outline-variant overflow-hidden group cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center opacity-50 group-hover:opacity-70 transition-opacity" data-alt="A high-quality, abstract digital representation of a video player interface on a futuristic dark web portal. The screen shows lines of vibrant cyan and pink code floating against a deep navy blue background. The aesthetic is highly technical, minimalist, and developer-focused, with glowing accents and subtle glassmorphism effects reflecting a modern programming tutorial environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAbLhdkUbETI3qFay5WwI-FP3RQ7lo_6PeIoph_tOro_px0OetxAOc6agtEiYbqkdk8nvzEl-4OF3knyXp0S4vD22xZT8J1rAqKCM385DOPh6Cunsq9tWyGJ9BaP1nlYG6e2hKR9WhjxVp-CG_IBC4GZj6QPKWtsogmBqrqi-ACOU7Q3PMqvPdhIuzfiDj65W7GbJbsL84TS47Fe7OMip-5vQ0P0kapJb2EKKYobAgZqxMNN7wot3L2VQ')"></div>
+<div class="relative z-10 w-16 h-16 rounded-full border-2 border-cyan-accent flex items-center justify-center bg-background/50 backdrop-blur-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-cyan-accent" style="font-size: 32px;">play_arrow</span>
+</div>
+</div>
+</section>
+<!-- Step-by-Step Guide -->
+<section>
+<h2 class="font-headline-md text-headline-md text-primary mb-lg">Lộ trình bắt đầu</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Step 1 -->
+<div class="step-card rounded-lg p-lg flex flex-col gap-sm">
+<div class="flex items-center justify-between mb-sm">
+<span class="font-label-caps text-label-caps text-cyan-accent bg-cyan-accent/10 px-sm py-xs rounded">BƯỚC 1</span>
+<span class="material-symbols-outlined text-on-surface-variant">person_add</span>
+</div>
+<h3 class="font-body-lg text-body-lg text-primary font-semibold">Đăng ký &amp; Đăng nhập</h3>
+<p class="text-on-surface-variant text-sm flex-grow">Tạo tài khoản miễn phí bằng email hoặc kết nối qua GitHub để lưu trữ tiến trình học tập của bạn.</p>
+<a class="text-cyan-accent text-sm font-semibold flex items-center gap-xs hover:underline mt-sm w-fit" href="#">
+                                Chi tiết <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
+</a>
+</div>
+<!-- Step 2 -->
+<div class="step-card rounded-lg p-lg flex flex-col gap-sm">
+<div class="flex items-center justify-between mb-sm">
+<span class="font-label-caps text-label-caps text-cyan-accent bg-cyan-accent/10 px-sm py-xs rounded">BƯỚC 2</span>
+<span class="material-symbols-outlined text-on-surface-variant">route</span>
+</div>
+<h3 class="font-body-lg text-body-lg text-primary font-semibold">Chọn lộ trình học</h3>
+<p class="text-on-surface-variant text-sm flex-grow">Lựa chọn ngôn ngữ phù hợp: Python cho AI, JavaScript cho Web, hoặc C++ cho thuật toán chuyên sâu.</p>
+<a class="text-cyan-accent text-sm font-semibold flex items-center gap-xs hover:underline mt-sm w-fit" href="#">
+                                Chi tiết <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
+</a>
+</div>
+<!-- Step 3 -->
+<div class="step-card rounded-lg p-lg flex flex-col gap-sm">
+<div class="flex items-center justify-between mb-sm">
+<span class="font-label-caps text-label-caps text-cyan-accent bg-cyan-accent/10 px-sm py-xs rounded">BƯỚC 3</span>
+<span class="material-symbols-outlined text-on-surface-variant">terminal</span>
+</div>
+<h3 class="font-body-lg text-body-lg text-primary font-semibold">Thực hành trong Editor</h3>
+<p class="text-on-surface-variant text-sm flex-grow">Trải nghiệm môi trường code trực tuyến tích hợp sẵn trình biên dịch, không cần cài đặt cục bộ.</p>
+<a class="text-cyan-accent text-sm font-semibold flex items-center gap-xs hover:underline mt-sm w-fit" href="#">
+                                Chi tiết <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
+</a>
+</div>
+<!-- Step 4 -->
+<div class="step-card rounded-lg p-lg flex flex-col gap-sm">
+<div class="flex items-center justify-between mb-sm">
+<span class="font-label-caps text-label-caps text-cyan-accent bg-cyan-accent/10 px-sm py-xs rounded">BƯỚC 4</span>
+<span class="material-symbols-outlined text-on-surface-variant">forum</span>
+</div>
+<h3 class="font-body-lg text-body-lg text-primary font-semibold">Tham gia cộng đồng</h3>
+<p class="text-on-surface-variant text-sm flex-grow">Kết nối với hàng ngàn lập trình viên Việt Nam trên Discord và diễn đàn để thảo luận và gỡ lỗi.</p>
+<a class="text-cyan-accent text-sm font-semibold flex items-center gap-xs hover:underline mt-sm w-fit" href="#">
+                                Chi tiết <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+<!-- Sidebar -->
+<aside class="lg:col-span-4 flex flex-col gap-md">
+<div class="step-card rounded-lg p-md sticky top-[104px]">
+<h2 class="font-headline-md text-headline-md text-primary mb-md border-b border-outline-variant pb-sm">Câu hỏi thường gặp (FAQ)</h2>
+<div class="flex flex-col gap-sm">
+<!-- FAQ Item 1 -->
+<details class="group cursor-pointer">
+<summary class="flex justify-between items-center text-primary font-semibold py-sm list-none hover:text-cyan-accent transition-colors">
+                                Nền tảng có miễn phí không?
+                                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="text-on-surface-variant text-sm pb-sm border-l-2 border-outline-variant ml-xs pl-sm mt-xs">
+                                Các khóa học cơ bản và môi trường thực hành hoàn toàn miễn phí cho mọi người dùng.
+                            </div>
+</details>
+<!-- FAQ Item 2 -->
+<details class="group cursor-pointer border-t border-outline-variant pt-sm">
+<summary class="flex justify-between items-center text-primary font-semibold py-sm list-none hover:text-cyan-accent transition-colors">
+                                Làm sao để lưu trữ code?
+                                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="text-on-surface-variant text-sm pb-sm border-l-2 border-outline-variant ml-xs pl-sm mt-xs">
+                                Mọi đoạn code bạn viết trong Editor sẽ tự động lưu vào "Workspace" cá nhân khi bạn đã đăng nhập.
+                            </div>
+</details>
+<!-- FAQ Item 3 -->
+<details class="group cursor-pointer border-t border-outline-variant pt-sm">
+<summary class="flex justify-between items-center text-primary font-semibold py-sm list-none hover:text-cyan-accent transition-colors">
+                                Có hỗ trợ tiếng Việt không?
+                                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="text-on-surface-variant text-sm pb-sm border-l-2 border-outline-variant ml-xs pl-sm mt-xs">
+                                Toàn bộ tài liệu, bài giảng và giao diện hệ thống được thiết kế 100% bằng tiếng Việt.
+                            </div>
+</details>
+</div>
+<div class="mt-lg pt-md border-t border-outline-variant">
+<p class="text-sm text-on-surface-variant mb-sm">Cần hỗ trợ thêm?</p>
+<button class="w-full py-sm px-md border border-cyan-accent text-cyan-accent rounded hover:bg-cyan-accent/10 transition-colors font-semibold flex items-center justify-center gap-xs">
+<span class="material-symbols-outlined" style="font-size: 18px;">support_agent</span>
+                            <button onclick="window.location.href='contact.html'">Liên hệ hỗ trợ</button>
+                        </button>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer (Generated from JSON) -->
+<footer class="bg-surface-container-low font-body-md text-body-md w-full mt-xl border-t border-outline-variant flat no shadows">
+<div class="max-w-container-max mx-auto px-lg py-xl flex flex-col md:flex-row justify-between items-center gap-md">
+<div class="flex flex-col items-center md:items-start gap-xs text-center md:text-left">
+<span class="font-headline-md text-headline-md font-bold text-primary">Lập trình VN</span>
+<span class="text-on-surface-variant text-sm">© 2024 Lập trình VN. Built for the Vietnamese developer community.</span>
+</div>
+<nav class="flex gap-md">
+<a class="text-on-surface-variant hover:text-primary-fixed transition-colors hover:opacity-80" href="https://discord.gg/vn-dev">Discord</a>
+<a class="text-on-surface-variant hover:text-primary-fixed transition-colors hover:opacity-80" href="https://github.com/vn-dev">GitHub</a>
+<a class="text-on-surface-variant hover:text-primary-fixed transition-colors hover:opacity-80" href="https://www.facebook.com/vn-dev">Facebook</a>
+<a class="text-on-surface-variant hover:text-primary-fixed transition-colors hover:opacity-80" href="https://www.youtube.com/vn-dev">YouTube</a>
+</nav>
+</div>
+</footer>
+</body></html>
