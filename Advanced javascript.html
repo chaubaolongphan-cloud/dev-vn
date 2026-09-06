@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>DevPortal VN</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed":"#0d1c32","surface":"#07122a","on-background":"#d9e2ff","on-tertiary-container":"#556486","background":"#07122a","on-surface":"#d9e2ff","on-tertiary":"#20304f","surface-container-highest":"#2a344e","on-surface-variant":"#bacac3","surface-bright":"#2f3952","inverse-surface":"#d9e2ff","tertiary-container":"#d8e2ff","primary-fixed":"#5ffbd6","surface-container-high":"#1f2942","primary-container":"#5ffbd6","surface-tint":"#38debb","tertiary":"#ffffff","secondary-container":"#3c4962","surface-container-lowest":"#030d25","error-container":"#93000a","outline-variant":"#3c4a45","surface-dim":"#07122a","secondary-fixed-dim":"#b9c7e4","secondary":"#b9c7e4","surface-variant":"#2a344e","on-tertiary-fixed":"#091b39","on-secondary-fixed-variant":"#39475f","surface-container":"#151f37","on-secondary":"#233148","on-primary-fixed-variant":"#005142","error":"#ffb4ab","inverse-primary":"#006b58","on-primary-container":"#00725e","outline":"#85948e","on-primary-fixed":"#002019","inverse-on-surface":"#263049","on-secondary-container":"#abb9d6","surface-container-low":"#101b33","tertiary-fixed":"#d8e2ff","primary":"#ffffff","on-error-container":"#ffdad6","on-tertiary-fixed-variant":"#374767","tertiary-fixed-dim":"#b6c6ed","primary-fixed-dim":"#38debb","on-error":"#690005","on-primary":"#00382d","secondary-fixed":"#d6e3ff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"container-max":"1200px","xl":"40px","lg":"24px","gutter":"24px","unit":"4px","xs":"4px","sm":"8px","md":"16px"},"fontFamily":{"code-block":["JetBrains Mono"],"body-lg":["Inter"],"label-caps":["JetBrains Mono"],"body-md":["Inter"],"display-lg":["Be Vietnam Pro"],"headline-md":["Be Vietnam Pro"],"display-lg-mobile":["Be Vietnam Pro"]},"fontSize":{"code-block":["14px",{"lineHeight":"1.7","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"1.6","fontWeight":"400"}],"label-caps":["12px",{"lineHeight":"1.0","letterSpacing":"0.1em","fontWeight":"500"}],"body-md":["16px",{"lineHeight":"1.6","fontWeight":"400"}],"display-lg":["48px",{"lineHeight":"1.2","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"1.4","fontWeight":"600"}],"display-lg-mobile":["32px",{"lineHeight":"1.2","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full max-w-[1200px] mx-auto px-lg flex items-center justify-between gap-md"><div class="flex items-center gap-lg"><a class="flex items-center gap-xs text-primary-fixed-dim hover:text-primary transition-colors" data-path="trang-chu" href="#"><span class="font-code-block text-code-block font-semibold">&lt;/&gt;</span><span class="font-headline-md text-headline-md tracking-tight text-primary">DevPortal VN</span></a><nav class="hidden lg:flex items-center gap-md" data-active-classes="text-primary-fixed-dim font-semibold border-b-2 border-primary-fixed-dim pb-1"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="trang-chu" href="code_4.html">Trang chủ</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="ngon-ngu" href="code.html">Ngôn ngữ</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="thu-vien" href="code_3.html">Thư viện</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kich-ban" href="code_2.html">Kịch bản</a><a aria-current="page" class="transition-colors text-primary-fixed-dim font-semibold border-b-2 border-primary-fixed-dim pb-1" data-path="tro-giup" href="#">Trợ giúp</a></nav></div><div class="flex-1 max-w-md hidden md:flex items-center"><div class="w-full flex items-center bg-surface-container-low px-md py-xs rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-on-surface-variant mr-xs text-[20px]">search</span><input class="w-full bg-transparent border-none outline-none font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant" placeholder="Tìm kiếm giải pháp, lỗi cú pháp, thư viện..." type="text"/><span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-high px-xs py-unit rounded">Ctrl+K</span></div></div><div class="flex items-center gap-md"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors hidden sm:inline-block" data-path="dang-nhap" href="login.html">Đăng nhập</a><a class="font-body-md text-body-md text-on-primary bg-primary-container hover:bg-primary-fixed-dim hover:text-on-primary-container px-md py-xs rounded-full transition-colors hidden sm:inline-block font-medium" data-path="dang-ky" href="signup.html">Đăng ký</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow -->
+<div class="relative w-full max-w-[1200px] mx-auto px-lg py-md">
+<div class="absolute top-12 left-1/4 w-96 h-96 bg-primary-container/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-64 right-10 w-80 h-80 bg-secondary-container/10 rounded-full blur-2xl pointer-events-none -z-10"></div>
+<!-- Breadcrumbs Section -->
+<nav class="flex items-center gap-xs text-on-surface-variant font-label-caps text-label-caps mb-md flex-wrap">
+<a class="hover:text-primary-fixed transition-colors" href="#">Thư viện của tôi</a>
+<span class="text-outline">/</span>
+<a class="hover:text-primary-fixed transition-colors" href="#">Lộ trình Frontend &amp; Fullstack</a>
+<span class="text-outline">/</span>
+<span class="text-primary font-semibold">JavaScript Nâng Cao</span>
+<span class="ml-sm px-xs py-unit bg-surface-container-high text-primary-fixed font-code-block text-[11px] rounded-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed animate-pulse"></span>
+        Đang học • 68% hoàn thành
+      </span>
+</nav>
+<!-- Course Header Hero Card -->
+<section class="bg-surface-container-low rounded-xl p-lg md:p-xl mb-xl shadow-md relative overflow-hidden">
+<div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-lg">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-xs px-sm py-unit bg-surface-container-highest text-primary-fixed font-label-caps text-label-caps tracking-wider rounded mb-sm">
+<span class="material-symbols-outlined text-[14px]">terminal</span>
+            JS ADVANCED MASTERY • MODULE 04/06
+          </div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tight mb-md">
+            JavaScript Nâng Cao: Bất Đồng Bộ, Closures &amp; Tối Ưu Hiệu Năng V8 Engine
+          </h1>
+<p class="font-body-lg text-body-lg text-secondary mb-md">
+            Chinh phục kiến trúc tầng sâu của JavaScript, cơ chế Garbage Collection, Heap Memory, và tư duy thiết kế hệ thống thư viện chịu tải cao.
+          </p>
+<!-- Overall Progress Metrics Bar -->
+<div class="space-y-xs bg-surface-container p-md rounded-lg max-w-2xl">
+<div class="flex items-center justify-between text-on-surface text-[13px] font-code-block">
+<span class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-primary-fixed text-[18px]">verified</span>
+                Tiến độ: <strong class="text-primary font-bold">18/26 bài</strong> (68%)
+              </span>
+<span class="flex items-center gap-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 14.5 giờ đã tích lũy
+              </span>
+<span class="text-primary-fixed-dim hidden sm:inline-block">Kế tiếp: Event Loop &amp; Memory Leaks</span>
+</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary-fixed transition-all duration-500 rounded-full" style="width: 68%;"></div>
+</div>
+</div>
+</div>
+<!-- Quick Actions Panel -->
+<div class="flex flex-col sm:flex-row lg:flex-col gap-sm w-full lg:w-auto min-w-[280px]">
+<a class="flex items-center justify-center gap-xs px-md py-sm bg-primary-container text-on-primary font-body-md font-bold rounded-xl hover:bg-primary-fixed-dim transition-all shadow-md group text-center" href="#lesson-workbench">
+<span class="material-symbols-outlined text-[20px] group-hover:translate-x-0.5 transition-transform">play_arrow</span>
+<span>Tiếp tục Bài 19: Closures</span>
+</a>
+<button class="flex items-center justify-center gap-xs px-md py-sm bg-surface-container-high text-on-surface font-body-md font-medium rounded-xl hover:bg-surface-bright transition-colors text-center">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">code</span>
+<span>Mở Web IDE Trực Tuyến</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Main Content Area: 2 Columns Split (65% / 35%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-start" id="lesson-workbench">
+<!-- Left Column: Lesson Content & Interactive Sandbox (65% = 8 cols on desktop) -->
+<article class="lg:col-span-8 flex flex-col gap-xl">
+<!-- Lesson Banner & Metadata -->
+<header class="bg-surface-container rounded-xl p-lg shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-sm mb-sm text-secondary text-[13px] font-code-block">
+<div class="flex items-center gap-xs">
+<span class="px-xs py-unit bg-surface-container-highest text-primary-fixed rounded">BÀI 19 CỦA 26</span>
+<span>Thời gian ước tính: 35 phút</span>
+</div>
+<div class="flex items-center gap-sm">
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">visibility</span> 1.4k lượt học
+              </span>
+<button class="hover:text-primary transition-colors flex items-center gap-1 text-[13px]">
+<span class="material-symbols-outlined text-[16px]">bookmark</span> Lưu bài
+              </button>
+</div>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">
+            Bài 19: Closures, Lexical Scope &amp; Kỹ Thuật Memoization Tối Ưu Bộ Nhớ
+          </h2>
+</header>
+<!-- Deep Theory Section -->
+<section class="space-y-md text-on-surface bg-surface-container-low rounded-xl p-lg shadow-sm">
+<h3 class="font-headline-md text-[20px] text-primary-fixed font-semibold flex items-center gap-xs">
+<span class="material-symbols-outlined text-primary-fixed">psychology</span>
+            1. Bản chất Lexical Scope &amp; Vòng Đời Execution Context
+          </h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+            Trong JavaScript, một <strong>Closure</strong> được tạo ra mỗi khi một hàm được khai báo bên trong một hàm khác, cho phép hàm con truy cập vào <em>Lexical Environment</em> (môi trường từ vựng) của hàm cha ngay cả khi hàm cha đã hoàn tất việc thực thi và thoát khỏi Call Stack.
+          </p>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+            Ở góc độ V8 Engine, thông thường các biến cục bộ nguyên thủy (primitive values) nằm trên Stack. Tuy nhiên, khi một biến được "đóng gói" (closed over) bởi một hàm con lồng bên trong, V8 sẽ đẩy toàn bộ Context đó lên <strong>Heap Memory</strong> để tránh việc bị bộ thu gom rác (Garbage Collector) dọn dẹp sớm.
+          </p>
+<!-- SVG Visual Diagram for Scope Chain -->
+<div class="bg-surface-container-lowest p-md rounded-lg overflow-x-auto my-md">
+<div class="text-[12px] font-code-block text-on-surface-variant mb-xs">// Kiến trúc V8 Heap Allocation khi sinh ra Closure</div>
+<svg class="w-full max-w-xl mx-auto h-40 text-on-surface" fill="none" viewbox="0 0 540 140" xmlns="http://www.w3.org/2000/svg">
+<!-- Global Context Box -->
+<rect class="fill-surface-container-high" height="100" rx="8" stroke="currentColor" stroke-opacity="0.2" width="150" x="10" y="20"></rect>
+<text class="fill-primary text-[12px] font-bold" font-family="Be Vietnam Pro" x="25" y="45">Global Context</text>
+<text class="fill-secondary-fixed-dim text-[11px]" font-family="JetBrains Mono" x="25" y="70">window / globalThis</text>
+<text class="fill-on-surface-variant text-[10px]" font-family="JetBrains Mono" x="25" y="95">Scope: Root</text>
+<!-- Arrow 1 -->
+<path class="text-primary-fixed" d="M165 70 H200" stroke="currentColor" stroke-dasharray="3 3" stroke-width="2"></path>
+<polygon class="fill-primary-fixed" points="198,66 206,70 198,74"></polygon>
+<!-- Outer Function Context -->
+<rect class="fill-surface-container-highest" height="100" rx="8" stroke="currentColor" stroke-opacity="0.2" width="150" x="208" y="20"></rect>
+<text class="fill-primary text-[12px] font-bold" font-family="Be Vietnam Pro" x="220" y="45">Outer Scope</text>
+<text class="fill-primary-fixed text-[11px]" font-family="JetBrains Mono" x="220" y="70">let cache = new Map()</text>
+<text class="fill-on-surface-variant text-[10px]" font-family="JetBrains Mono" x="220" y="95">V8: Retained in Heap</text>
+<!-- Arrow 2 -->
+<path class="text-primary-fixed" d="M362 70 H395" stroke="currentColor" stroke-width="2"></path>
+<polygon class="fill-primary-fixed" points="393,66 401,70 393,74"></polygon>
+<!-- Inner Closure Context -->
+<rect class="fill-surface-container-high" height="100" rx="8" stroke="currentColor" stroke-opacity="0.3" width="125" x="403" y="20"></rect>
+<text class="fill-primary text-[12px] font-bold" font-family="Be Vietnam Pro" x="415" y="45">Closure Fn</text>
+<text class="fill-primary-container text-[11px]" font-family="JetBrains Mono" x="415" y="70">return (args) =&gt;</text>
+<text class="fill-on-surface-variant text-[10px]" font-family="JetBrains Mono" x="415" y="95">[[Scopes]]: Outer</text>
+</svg>
+</div>
+</section>
+<!-- IDE Code Sandbox Section -->
+<section class="bg-surface-container-lowest rounded-xl shadow-lg overflow-hidden">
+<!-- IDE Titlebar -->
+<div class="bg-surface-container-high px-md py-sm flex items-center justify-between">
+<div class="flex items-center gap-xs">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="w-3 h-3 rounded-full bg-surface-tint"></span>
+<span class="ml-sm font-code-block text-[13px] text-primary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">javascript</span>
+                memoization-engine.js
+              </span>
+</div>
+<div class="flex items-center gap-xs">
+<button class="px-xs py-unit text-on-surface-variant hover:text-primary-fixed font-code-block text-[12px] flex items-center gap-1 transition-colors" id="copy-code-btn">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+<span id="copy-btn-text">Sao chép</span>
+</button>
+<button class="px-sm py-unit bg-primary-fixed text-on-primary font-code-block text-[12px] font-bold rounded flex items-center gap-1 hover:bg-primary-fixed-dim transition-colors" id="run-code-btn">
+<span class="material-symbols-outlined text-[15px]">play_circle</span>
+                Chạy thử nghiệm
+              </button>
+</div>
+</div>
+<!-- Code Viewport -->
+<pre class="p-md md:p-lg font-code-block text-code-block text-on-surface overflow-x-auto leading-relaxed bg-surface-container-lowest select-all"><code><span class="text-on-surface-variant font-medium">// 1. Triển khai Higher-Order Memoize Function với Closure bảo toàn bộ nhớ</span>
+<span class="text-surface-tint font-semibold">export function</span> <span class="text-primary-fixed font-bold">createMemoizer</span>(targetFunction, resolver = JSON.stringify) {
+  <span class="text-on-surface-variant">// Biến cache được đóng kín trong Heap Lexical Scope</span>
+  <span class="text-secondary-fixed-dim">const</span> cache = <span class="text-surface-tint">new</span> <span class="text-primary">Map</span>();
+
+  <span class="text-surface-tint font-semibold">return function</span> <span class="text-primary font-semibold">memoized</span>(...args) {
+    <span class="text-secondary-fixed-dim">const</span> key = resolver(args);
+
+    <span class="text-surface-tint font-semibold">if</span> (cache.<span class="text-primary-fixed">has</span>(key)) {
+      <span class="text-on-surface-variant">// Cache Hit: O(1) time complexity, tránh re-compute</span>
+      <span class="text-surface-tint font-semibold">return</span> { <span class="text-primary">value</span>: cache.<span class="text-primary-fixed">get</span>(key), <span class="text-primary">isCached</span>: <span class="text-secondary-fixed-dim">true</span> };
+    }
+
+    <span class="text-on-surface-variant">// Cache Miss: Thực thi hàm gốc nặng chi phí tính toán</span>
+    <span class="text-secondary-fixed-dim">const</span> computedResult = targetFunction.<span class="text-primary-fixed">apply</span>(<span class="text-secondary-fixed-dim">this</span>, args);
+    cache.<span class="text-primary-fixed">set</span>(key, computedResult);
+
+    <span class="text-surface-tint font-semibold">return</span> { <span class="text-primary">value</span>: computedResult, <span class="text-primary">isCached</span>: <span class="text-secondary-fixed-dim">false</span> };
+  };
+}
+
+<span class="text-on-surface-variant">// 2. Thử nghiệm thực tế với thuật toán Fibonacci đệ quy</span>
+<span class="text-secondary-fixed-dim">const</span> heavyFibonacci = (n) =&gt; (n &lt;= <span class="text-secondary">1</span> ? n : heavyFibonacci(n - <span class="text-secondary">1</span>) + heavyFibonacci(n - <span class="text-secondary">2</span>));
+<span class="text-secondary-fixed-dim">const</span> fastFib = <span class="text-primary-fixed">createMemoizer</span>(heavyFibonacci);
+
+console.<span class="text-primary-fixed">log</span>(fastFib(<span class="text-secondary">40</span>)); <span class="text-on-surface-variant">// Lần 1: isCached = false (~1200ms)</span>
+console.<span class="text-primary-fixed">log</span>(fastFib(<span class="text-secondary">40</span>)); <span class="text-on-surface-variant">// Lần 2: isCached = true (&lt;1ms)</span></code></pre>
+<!-- Interactive Console Output Simulation -->
+<div class="bg-surface-container p-sm md:p-md text-on-surface font-code-block text-[13px] flex flex-col gap-xs">
+<div class="flex items-center justify-between text-on-surface-variant text-[11px] uppercase tracking-wider pb-xs">
+<span>Terminal Output (V8 Node.js Runtime)</span>
+<span class="text-primary-fixed">Hoàn tất trong 0.04s</span>
+</div>
+<div class="text-on-surface font-code-block text-[12px] space-y-1">
+<div class="text-secondary">&gt; Execution initiated...</div>
+<div class="text-primary-fixed-dim">&gt; { value: 102334155, isCached: false, execTime: "1248.12ms" }</div>
+<div class="text-primary-fixed font-bold">&gt; { value: 102334155, isCached: true, execTime: "0.08ms" } [MEMO_HIT]</div>
+</div>
+</div>
+</section>
+<!-- Senior Caveat / Memory Leak Warning Box -->
+<aside class="bg-surface-container rounded-xl p-md md:p-lg shadow-sm relative overflow-hidden pl-lg">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex items-start gap-md">
+<div class="p-xs bg-error-container text-on-error-container rounded-lg shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[24px]">warning</span>
+</div>
+<div>
+<h4 class="font-headline-md text-[18px] text-error font-bold mb-xs">
+                Senior Caveat: Nguy cơ Memory Leaks qua Uncleaned Closures
+              </h4>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+                Khi gắn Closure chứa tham chiếu tới các DOM nodes lớn vào các sự kiện toàn cục (<code class="bg-surface-container-highest px-1 rounded text-primary text-[13px]">window.addEventListener</code> hoặc Pub/Sub managers) mà quên gỡ bỏ (<code class="bg-surface-container-highest px-1 rounded text-primary text-[13px]">removeEventListener</code>), toàn bộ chuỗi Scope cha sẽ không bao giờ được GC giải phóng, dẫn tới hiện tượng <em>Detached DOM Nodes Leak</em> cực kỳ phổ biến trong các ứng dụng SPA phức tạp.
+              </p>
+</div>
+</div>
+</aside>
+<!-- Fast Knowledge Check Challenge -->
+<section class="bg-surface-container-low rounded-xl p-lg space-y-md shadow-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-primary-fixed uppercase tracking-wider">Thử thách mở khóa</span>
+<h3 class="font-headline-md text-[20px] text-primary font-bold">3 Câu Hỏi Kiểm Tra Hiểu Sâu Bài Học</h3>
+</div>
+<span class="text-secondary text-[13px] font-code-block">0/3 câu hoàn tất</span>
+</div>
+<div class="space-y-sm">
+<!-- Question 1 -->
+<div class="p-md bg-surface-container rounded-lg">
+<p class="font-body-md text-on-surface font-medium mb-sm">
+                1. Biến nằm trong lexical scope của hàm cha được V8 lưu trữ ở vùng nhớ nào khi hàm con tạo thành closure?
+              </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xs font-code-block text-[13px]">
+<button class="p-sm text-left bg-surface-container-high hover:bg-surface-container-highest rounded text-secondary hover:text-primary transition-colors flex items-center justify-between">
+<span>A. Call Stack Frame</span>
+<span class="material-symbols-outlined text-[16px] opacity-0">check_circle</span>
+</button>
+<button class="p-sm text-left bg-surface-container-high hover:bg-surface-bright rounded text-primary-fixed font-semibold transition-colors flex items-center justify-between shadow-sm">
+<span>B. Managed Heap Memory</span>
+<span class="material-symbols-outlined text-primary-fixed text-[16px]">check_circle</span>
+</button>
+</div>
+</div>
+<!-- Question 2 -->
+<div class="p-md bg-surface-container rounded-lg">
+<p class="font-body-md text-on-surface font-medium mb-sm">
+                2. Kỹ thuật Memoization phù hợp nhất với loại hàm nào sau đây trong kiến trúc JS?
+              </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xs font-code-block text-[13px]">
+<button class="p-sm text-left bg-surface-container-high hover:bg-surface-bright rounded text-primary-fixed font-semibold transition-colors flex items-center justify-between shadow-sm">
+<span>A. Pure Functions (Hàm thuần khiết)</span>
+<span class="material-symbols-outlined text-primary-fixed text-[16px]">check_circle</span>
+</button>
+<button class="p-sm text-left bg-surface-container-high hover:bg-surface-container-highest rounded text-secondary hover:text-primary transition-colors flex items-center justify-between">
+<span>B. Hàm thực thi I/O &amp; API requests</span>
+<span class="material-symbols-outlined text-[16px] opacity-0">check_circle</span>
+</button>
+</div>
+</div>
+<!-- Question 3 -->
+<div class="p-md bg-surface-container rounded-lg">
+<p class="font-body-md text-on-surface font-medium mb-sm">
+                3. Điều gì xảy ra nếu closure tham chiếu tới một DOM Element đã bị gỡ bỏ khỏi HTML tree?
+              </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xs font-code-block text-[13px]">
+<button class="p-sm text-left bg-surface-container-high hover:bg-surface-container-highest rounded text-secondary hover:text-primary transition-colors flex items-center justify-between">
+<span>A. Tự động thu gom rác ngay tức thì</span>
+<span class="material-symbols-outlined text-[16px] opacity-0">check_circle</span>
+</button>
+<button class="p-sm text-left bg-surface-container-high hover:bg-surface-bright rounded text-primary-fixed font-semibold transition-colors flex items-center justify-between shadow-sm">
+<span>B. Gây Detached DOM Tree Leak</span>
+<span class="material-symbols-outlined text-primary-fixed text-[16px]">check_circle</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-sm">
+<span class="text-on-surface-variant text-[13px]">Trả lời đúng 3/3 để mở Bài 20: Event Loop</span>
+<button class="px-md py-xs bg-primary-container text-on-primary font-bold rounded-lg hover:bg-primary-fixed-dim transition-colors text-[14px]">
+              Gửi kết quả bài tập
+            </button>
+</div>
+</section>
+</article>
+<!-- Right Column: Course Curriculum & Live Progress (35% = 4 cols on desktop) -->
+<aside class="lg:col-span-4 flex flex-col gap-lg">
+<!-- Personal Progress Stat Card -->
+<div class="bg-surface-container-low rounded-xl p-md space-y-md shadow-md">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-md text-[16px] text-primary font-bold">Chỉ Số Học Viên</h4>
+<span class="px-xs py-unit bg-primary-container/20 text-primary-fixed font-code-block text-[11px] rounded">PRO LEARNER</span>
+</div>
+<!-- Mini Metrics Bento -->
+<div class="grid grid-cols-2 gap-sm">
+<div class="bg-surface-container p-sm rounded-lg flex flex-col">
+<span class="text-on-surface-variant text-[12px]">Điểm thực hành</span>
+<span class="font-headline-md text-primary text-[22px] font-bold">92<span class="text-[13px] text-on-surface-variant font-normal">/100</span></span>
+<span class="text-primary-fixed text-[11px] font-code-block mt-0.5">Top 5% khóa</span>
+</div>
+<div class="bg-surface-container p-sm rounded-lg flex flex-col">
+<span class="text-on-surface-variant text-[12px]">Chuỗi ngày (Streak)</span>
+<span class="font-headline-md text-primary text-[22px] font-bold flex items-center gap-1">
+                7 <span class="material-symbols-outlined text-primary-fixed text-[18px]">local_fire_department</span>
+</span>
+<span class="text-primary-fixed text-[11px] font-code-block mt-0.5">Kỷ lục: 14 ngày</span>
+</div>
+</div>
+<div class="p-sm bg-surface-container rounded-lg space-y-xs">
+<div class="flex items-center justify-between text-[12px]">
+<span class="text-on-surface font-medium">Đồ án thực chiến cuối khóa</span>
+<span class="text-primary-fixed font-code-block">Chưa nộp</span>
+</div>
+<p class="text-secondary text-[12px]">
+              Xây dựng Custom Event Emitter &amp; Async Queue Concurrency Manager tiêu chuẩn sản xuất.
+            </p>
+</div>
+</div>
+<!-- Modules Accordion / List -->
+<div class="bg-surface-container-low rounded-xl p-md shadow-md space-y-md">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-md text-[16px] text-primary font-bold">Lộ Trình Khóa Học</h4>
+<span class="font-code-block text-[12px] text-primary-fixed">6 Chuyên Đề</span>
+</div>
+<div class="space-y-sm font-body-md text-[14px]">
+<!-- Module 1 -->
+<div class="p-sm bg-surface-container rounded-lg flex items-center justify-between text-secondary">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary-fixed text-[18px]">check_circle</span>
+<div>
+<div class="font-medium text-on-surface text-[13px]">M01: Prototype &amp; ES6 Classes</div>
+<div class="text-[11px] text-on-surface-variant font-code-block">Đã xong • 4/4 bài</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">lock_open</span>
+</div>
+<!-- Module 2 -->
+<div class="p-sm bg-surface-container rounded-lg flex items-center justify-between text-secondary">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary-fixed text-[18px]">check_circle</span>
+<div>
+<div class="font-medium text-on-surface text-[13px]">M02: Promises, Async/Await</div>
+<div class="text-[11px] text-on-surface-variant font-code-block">Đã xong • 6/6 bài</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">lock_open</span>
+</div>
+<!-- Module 3 -->
+<div class="p-sm bg-surface-container rounded-lg flex items-center justify-between text-secondary">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary-fixed text-[18px]">check_circle</span>
+<div>
+<div class="font-medium text-on-surface text-[13px]">M03: Event Loop &amp; Microtasks</div>
+<div class="text-[11px] text-on-surface-variant font-code-block">Đã xong • 5/5 bài</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">lock_open</span>
+</div>
+<!-- Module 4 - Active -->
+<div class="p-sm bg-surface-container-highest rounded-lg space-y-xs shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-sm">
+<span class="w-2 h-2 rounded-full bg-primary-fixed animate-ping"></span>
+<div class="font-bold text-primary text-[13px]">M04: Closures &amp; Memory Flow</div>
+</div>
+<span class="text-[11px] font-code-block text-primary-fixed font-bold">19/22</span>
+</div>
+<div class="pl-md space-y-1 text-[12px] pt-1">
+<div class="flex items-center justify-between text-primary-fixed font-medium">
+<span>• Bài 19: Closures &amp; Memoize</span>
+<span class="text-[10px] font-code-block uppercase">Đang mở</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>• Bài 20: Garbage Collector V8</span>
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>• Bài 21: WeakMap &amp; WeakRef</span>
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</div>
+</div>
+</div>
+<!-- Module 5 - Locked -->
+<div class="p-sm bg-surface-container/60 rounded-lg flex items-center justify-between text-on-surface-variant opacity-75">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<div>
+<div class="font-medium text-[13px]">M05: Design Patterns trong JS</div>
+<div class="text-[11px] font-code-block">Khóa • Singleton, Observer</div>
+</div>
+</div>
+</div>
+<!-- Module 6 - Locked -->
+<div class="p-sm bg-surface-container/60 rounded-lg flex items-center justify-between text-on-surface-variant opacity-75">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<div>
+<div class="font-medium text-[13px]">M06: Web Workers &amp; Tuning</div>
+<div class="text-[11px] font-code-block">Khóa • SharedArrayBuffer</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Mentorship & External Docs Quick Support -->
+<div class="space-y-sm">
+<button class="w-full flex items-center justify-center gap-xs px-md py-sm bg-surface-container-high hover:bg-surface-bright text-primary font-body-md rounded-xl transition-colors shadow-sm">
+<span class="material-symbols-outlined text-primary-fixed text-[20px]">smart_toy</span>
+<span>Hỏi Trợ Giảng AI DevPortal</span>
+</button>
+<a class="w-full flex items-center justify-center gap-xs px-md py-xs text-on-surface-variant hover:text-primary transition-colors text-[13px] font-code-block text-center" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Performance" target="_blank">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>Đọc đặc tả TC39 &amp; Tài liệu MDN</span>
+</a>
+</div>
+</aside>
+</div>
+</div>
+<!-- Micro-interactions JavaScript -->
+<script>
+    (function() {
+      const copyBtn = document.getElementById('copy-code-btn');
+      const copyBtnText = document.getElementById('copy-btn-text');
+      const runBtn = document.getElementById('run-code-btn');
+
+      if (copyBtn && copyBtnText) {
+        copyBtn.addEventListener('click', function() {
+          copyBtnText.textContent = 'Đã chép!';
+          setTimeout(function() {
+            copyBtnText.textContent = 'Sao chép';
+          }, 2000);
+        });
+      }
+
+      if (runBtn) {
+        runBtn.addEventListener('click', function() {
+          const originalText = runBtn.innerHTML;
+          runBtn.innerHTML = '<span class="material-symbols-outlined text-[15px] animate-spin">refresh</span> Đang chạy...';
+          setTimeout(function() {
+            runBtn.innerHTML = '<span class="material-symbols-outlined text-[15px]">done</span> Xong (0.04s)';
+            setTimeout(function() {
+              runBtn.innerHTML = originalText;
+            }, 1500);
+          }, 600);
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full max-w-[1200px] mx-auto px-lg flex flex-col md:flex-row items-center justify-between gap-md"><div class="text-center md:text-left"><p class="font-body-md text-body-md text-on-surface-variant">© 2024 DevPortal VN. Nền tảng học tập &amp; trợ giúp lập trình viên Việt Nam.</p></div><nav class="flex flex-wrap items-center justify-center gap-md" data-active-classes="text-primary-fixed-dim"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="ve-chung-toi" href="about.html">Về chúng tôi</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="dieu-khoan" href="term.html">Điều khoản</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="bao-mat" href="privacy.html">Bảo mật</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="lien-he" href="contact.html">Liên hệ</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="github" href="https://github.com/DevPortal-VN" target="_blank">GitHub</a></nav></div></footer></body></html>
