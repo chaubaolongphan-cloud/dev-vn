@@ -3,317 +3,288 @@
 <html class="dark" lang="vi"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>DevPortal VN - Ngôn ngữ - Python</title>
-<!-- Fonts -->
+<title>DevPortal VN - Tra cứu Ngôn ngữ Python</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter & Be Vietnam Pro & Fira Code -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-<!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<!-- Tailwind Config injected from Style Guidance -->
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "secondary-fixed": "#d6e3ff",
-                        "surface-container-highest": "#2a344e",
-                        "inverse-on-surface": "#263049",
-                        "on-primary-container": "#00725e",
-                        "inverse-primary": "#006b58",
-                        "on-tertiary": "#20304f",
-                        "surface-container-low": "#101b33",
-                        "tertiary-container": "#d8e2ff",
-                        "tertiary-fixed-dim": "#b6c6ed",
-                        "on-tertiary-fixed-variant": "#374767",
-                        "tertiary": "#ffffff",
-                        "on-background": "#d9e2ff",
-                        "secondary": "#b9c7e4",
-                        "on-error": "#690005",
-                        "outline": "#85948e",
-                        "primary-container": "#5ffbd6",
-                        "error": "#ffb4ab",
-                        "primary-fixed": "#5ffbd6",
-                        "on-secondary-container": "#abb9d6",
-                        "secondary-container": "#3c4962",
-                        "on-primary-fixed": "#002019",
-                        "on-secondary-fixed": "#0d1c32",
-                        "error-container": "#93000a",
-                        "tertiary-fixed": "#d8e2ff",
-                        "surface-container": "#151f37",
-                        "surface-tint": "#38debb",
-                        "outline-variant": "#3c4a45",
-                        "on-tertiary-container": "#556486",
-                        "on-surface": "#d9e2ff",
-                        "primary": "#ffffff",
-                        "on-error-container": "#ffdad6",
-                        "surface-container-high": "#1f2942",
-                        "primary-fixed-dim": "#38debb",
-                        "surface-variant": "#2a344e",
-                        "on-surface-variant": "#bacac3",
-                        "on-secondary-fixed-variant": "#39475f",
-                        "surface-bright": "#2f3952",
-                        "surface-dim": "#07122a",
-                        "secondary-fixed-dim": "#b9c7e4",
-                        "surface": "#07122a",
-                        "inverse-surface": "#d9e2ff",
-                        "on-tertiary-fixed": "#091b39",
-                        "on-primary": "#00382d",
-                        "surface-container-lowest": "#030d25",
-                        "background": "#07122a",
-                        "on-secondary": "#233148",
-                        "on-primary-fixed-variant": "#005142"
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    spacing: {
-                        "md": "16px",
-                        "gutter": "24px",
-                        "xl": "40px",
-                        "container-max": "1200px",
-                        "unit": "4px",
-                        "lg": "24px",
-                        "xs": "4px",
-                        "sm": "8px"
-                    },
-                    fontFamily: {
-                        "display-lg": ["Be Vietnam Pro"],
-                        "body-lg": ["Inter"],
-                        "code-block": ["JetBrains Mono"],
-                        "display-lg-mobile": ["Be Vietnam Pro"],
-                        "headline-md": ["Be Vietnam Pro"],
-                        "label-caps": ["JetBrains Mono"],
-                        "body-md": ["Inter"]
-                    },
-                    fontSize: {
-                        "display-lg": ["48px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700" }],
-                        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
-                        "code-block": ["14px", { lineHeight: "1.7", fontWeight: "400" }],
-                        "display-lg-mobile": ["32px", { lineHeight: "1.2", fontWeight: "700" }],
-                        "headline-md": ["24px", { lineHeight: "1.4", fontWeight: "600" }],
-                        "label-caps": ["12px", { lineHeight: "1.0", letterSpacing: "0.1em", fontWeight: "500" }],
-                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }]
-                    }
-                }
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&amp;family=Fira+Code:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              mint: '#64ffda',
+              mintHover: '#4cdbb7',
+              bgDeep: '#030d25',
+              bgCard: '#07122a',
+              bgLight: '#0d1d3d',
+              border: 'rgba(100, 255, 218, 0.15)',
+              textMuted: '#94a3b8',
+              textLight: '#e2e8f0'
             }
+          },
+          fontFamily: {
+            sans: ['"Be Vietnam Pro"', 'Inter', 'sans-serif'],
+            mono: ['"Fira Code"', 'monospace']
+          }
         }
-    </script>
-<style>
-        /* Base styles */
-        body {
-            background-color: theme('colors.background');
-            color: theme('colors.on-surface');
-            -webkit-font-smoothing: antialiased;
-        }
-        
-        /* Material symbols setup */
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        
-        /* Custom scrollbar for dark theme */
-        ::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: theme('colors.surface-container-lowest');
-        }
-        ::-webkit-scrollbar-thumb {
-            background: theme('colors.surface-container-highest');
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: theme('colors.outline-variant');
-        }
-    </style>
+      }
+    }
+  </script>
+<!-- Custom Styles: data-purpose="base-styling" -->
+<style data-purpose="base-styling">
+    body {
+      background-color: #030d25;
+      color: #e2e8f0;
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    ::selection {
+      background-color: rgba(100, 255, 218, 0.25);
+      color: #64ffda;
+    }
+    /* Scrollbar Styling */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #030d25;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #334155;
+    }
+  </style>
 </head>
-<body class="font-body-md text-body-md antialiased min-h-screen flex flex-col">
-<!-- TopNavBar (From JSON) -->
-<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-outline-variant dark:border-outline-variant">
-<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
-<!-- Brand -->
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary-fixed" data-weight="fill" style="font-variation-settings: 'FILL' 1;">terminal</span>
-<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed tracking-tight">DevPortal VN</span>
+<body class="min-h-screen flex flex-col bg-[#030d25] text-slate-100 antialiased selection:bg-[#64ffda]/20 selection:text-[#64ffda]">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 w-full bg-[#07122a]/95 backdrop-blur border-b border-[#64ffda]/15" data-purpose="main-navigation">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+<!-- Brand Logo & Main Nav -->
+<div class="flex items-center gap-8">
+<!-- Logo -->
+<a class="flex items-center gap-2.5 group" href="#">
+<div class="w-8 h-8 rounded-lg bg-[#64ffda]/10 border border-[#64ffda]/30 flex items-center justify-center text-[#64ffda] group-hover:bg-[#64ffda]/20 transition-colors">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
 </div>
-<!-- Navigation Links -->
-<nav class="hidden md:flex gap-lg items-center">
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-200" href="#"><button onclick="window.location.href='code_4.html'">Trang chủ</button></a>
-
-<!-- Active Navigation Item -->
-<a class="font-body-md text-body-md text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 active:scale-95 duration-200" href="#"><button onclick="window.location.href='code.html'">Ngôn ngữ</button></a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-200" href="#"><button onclick="window.location.href='code_3.html'">Thư viện</button></a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-200" href="#"><button onclick="window.location.href='code_2.html'">Kịch bản</button></a>
+<div class="font-bold text-lg tracking-tight text-white flex items-center gap-1.5">
+<span class="text-[#64ffda]">DevPortal</span>
+<span class="text-slate-200">VN</span>
+</div>
+</a>
+<!-- Primary Navigation Links -->
+<nav class="hidden md:flex items-center space-x-1">
+<a class="px-3.5 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/40 transition-colors" href="code_4.html">Trang chủ</a>
+<a class="px-3.5 py-2 text-sm font-semibold text-[#64ffda] border-b-2 border-[#64ffda] pb-2 transition-colors" href="code.html">Ngôn ngữ</a>
+<a class="px-3.5 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/40 transition-colors" href="code_3.html">Thư viện</a>
+<a class="px-3.5 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/40 transition-colors" href="code_2.html">Kịch bản</a>
 </nav>
-<!-- Search and Actions -->
-<div class="flex items-center gap-md">
-<!-- Functional Search Bar (search_bar: "on_right") -->
-<div class="hidden lg:flex items-center relative group">
-<span class="material-symbols-outlined absolute left-3 text-on-surface-variant group-focus-within:text-primary-fixed transition-colors">search</span>
-<input class="bg-surface-container border border-outline-variant rounded-md py-1.5 pl-10 pr-4 text-on-surface font-body-md text-sm focus:outline-none focus:border-primary-fixed focus:ring-1 focus:ring-primary-fixed transition-all w-64 placeholder-on-surface-variant/50" placeholder="Tìm kiếm tài liệu..." type="text"/>
-<div class="absolute right-2 flex items-center gap-1">
-<kbd class="font-code-block text-xs text-on-surface-variant bg-surface-container-highest px-1.5 py-0.5 rounded border border-outline-variant">Ctrl</kbd>
-<kbd class="font-code-block text-xs text-on-surface-variant bg-surface-container-highest px-1.5 py-0.5 rounded border border-outline-variant">K</kbd>
+</div>
+<!-- Right Header Actions: Search & Auth Buttons -->
+<div class="flex items-center gap-4">
+<!-- Quick Search Bar -->
+<div class="relative hidden sm:block w-64 lg:w-72">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+<svg class="h-4 w-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<input class="w-full pl-9 pr-14 py-1.5 bg-[#030d25] border border-slate-700/80 rounded-lg text-xs text-slate-200 placeholder-slate-400 focus:outline-none focus:border-[#64ffda] focus:ring-1 focus:ring-[#64ffda] transition-all" placeholder="Tìm kiếm tài liệu..." type="text"/>
+<div class="absolute inset-y-0 right-0 pr-2 flex items-center gap-0.5 pointer-events-none">
+<kbd class="px-1.5 py-0.5 text-[10px] font-semibold text-slate-400 bg-slate-800 border border-slate-700 rounded">Ctrl</kbd>
+<kbd class="px-1.5 py-0.5 text-[10px] font-semibold text-slate-400 bg-slate-800 border border-slate-700 rounded">K</kbd>
 </div>
 </div>
-<div class="hidden sm:flex items-center gap-sm">
-<button class="font-body-md text-body-md text-secondary hover:text-primary-fixed underline-offset-4 hover:underline transition-all active:scale-95 px-3 py-1.5"><button onclick="window.location.href='login.html'">Đăng nhập</button></button>
-<button class="font-body-md text-body-md border border-primary-fixed text-primary-fixed px-4 py-1.5 rounded hover:bg-primary-fixed/10 transition-colors active:scale-95"><button onclick="window.location.href='signup.html'">Đăng ký</button></button>
+<!-- Auth Buttons -->
+<div class="flex items-center gap-3">
+<button class="text-xs sm:text-sm font-medium text-slate-300 hover:text-[#64ffda] transition-colors px-2 py-1.5" type="button">
+            <button onclick="window.location.href='login.html'" class="px-3.5 py-1.5 rounded-lg border border-slate-700 hover:border-[#64ffda] text-slate-300 hover:text-[#64ffda] transition-all shadow-sm shadow-slate-800/20">Đăng nhập</button>
+          </button>
+<button class="text-xs sm:text-sm font-medium px-3.5 py-1.5 rounded-lg border border-[#64ffda] text-[#64ffda] hover:bg-[#64ffda]/10 transition-all shadow-sm shadow-[#64ffda]/10" type="button">
+            <button onclick="window.location.href='signup.html'" class="px-3.5 py-1.5 rounded-lg border border-[#64ffda] hover:bg-[#64ffda]/10 text-[#64ffda] transition-all shadow-sm shadow-[#64ffda]/10">Đăng ký</button>
+          </button>
 </div>
-<!-- Mobile Menu Toggle -->
-<button class="md:hidden text-on-surface">
-<span class="material-symbols-outlined">menu</span>
-</button>
 </div>
 </div>
 </header>
-<!-- Main Layout Grid -->
-<div class="flex-1 pt-24 pb-xl px-gutter max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-xl">
-<!-- Sidebar Navigation -->
-<aside class="hidden md:flex flex-col col-span-3 h-[calc(100vh-8rem)] sticky top-24 overflow-y-auto pr-4 border-r border-outline-variant">
-<h3 class="font-headline-md text-lg text-on-surface mb-md">Ngôn ngữ phổ biến</h3>
-<ul class="flex flex-col gap-sm">
-<li>
-<a class="flex items-center gap-3 p-2 rounded bg-surface-container-high border-l-2 border-primary-fixed text-primary-fixed font-body-md" href="#">
-<span class="material-symbols-outlined text-xl"></span>
-                        <button onclick="window.location.href='python.html'">Python</button>
-                    </a>
-</li>
-<li>
-<a class="flex items-center gap-3 p-2 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="#">
-<span class="material-symbols-outlined text-xl"></span>
-                        <button onclick="window.location.href='html.html'">HTML</button>
-                    </a>
-</li>
-<li>
-<a class="flex items-center gap-3 p-2 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="#">
-<span class="material-symbols-outlined text-xl"></span>
-                        <button onclick="window.location.href='css.html'">CSS</button>
-                    </a>
-</li>
-<li>
-<a class="flex items-center gap-3 p-2 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="#">
-<span class="material-symbols-outlined text-xl">javascript</span>
-                        <button onclick="window.location.href='javascript.html'">JavaScript</button>
-                    </a>
-</li>
-<li>
-<a class="flex items-center gap-3 p-2 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors font-body-md mt-4" href="#">
-<span class="material-symbols-outlined text-xl">terminal</span>
-                        <button onclick="window.location.href='bash.html'">Bash / Shell</button>
-                    </a>
-</li>
-<li>
-<a class="flex items-center gap-3 p-2 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors font-body-md" href="#">
-<span class="material-symbols-outlined text-xl">data_object</span>
-                        <button onclick="window.location.href='json.html'">JSON &amp; XML</button>
-                    </a>
-</li>
-</ul>
-</aside>
-<!-- Main Content Area -->
-<main class="col-span-1 md:col-span-9 flex flex-col gap-xl">
-<!-- Hero Section -->
-<section class="border-b border-outline-variant pb-md">
-<div class="flex items-center gap-4 mb-4">
-<span class="bg-surface-container-high p-3 rounded-lg border border-outline-variant">
-<img alt="Python Logo" class="w-12 h-12 object-contain" data-alt="A detailed 50-100 word prompt describing a high-quality, flat vector logo of the Python programming language (blue and yellow snakes intertwined) rendered against a dark navy technical background. The style is minimalist, developer-centric, and sleek, fitting a dark mode technical documentation site perfectly." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMnviDPqLU_ipDrrTZYCD3yf6t4pulwPS6r140ht1MAJQm80I3Rt6RFU7qmQPmWFXhEfcAiFpY5aqbiLUVIqMxsA8_ABFsJnOt80vK05qMGble-BbeCvV-Yy7eCqCdPp2xQ6SP7BE6aOroLq8fSJDTt6lBQBP0lwvSqkb2iyoLtJdVtkdZ_olck9lG44ZmrRC8ktPpdMHpi89_yWrHG266MUb8sE8jw_bXoSfkwlMljdLSFsboCYq56w"/>
-</span>
-<h1 class="font-display-lg text-display-lg text-primary md:hidden">Python</h1>
-<h1 class="font-display-lg text-display-lg text-primary hidden md:block">Python Tutorial</h1>
-</div>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
-                    Python là một ngôn ngữ lập trình bậc cao, đa năng, phổ biến với cú pháp rõ ràng và dễ đọc. Nó được sử dụng rộng rãi trong phát triển web, khoa học dữ liệu, trí tuệ nhân tạo, và tự động hóa.
-                </p>
-</section>
-<!-- Information Callout -->
-<section class="bg-surface-container border-l-4 border-primary-fixed p-md rounded-r-lg flex gap-4 items-start shadow-sm shadow-surface-container-lowest/50">
-<span class="material-symbols-outlined text-primary-fixed mt-1">lightbulb</span>
+<!-- END: MainHeader -->
+<!-- BEGIN: MainContent -->
+<main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row gap-8">
+<!-- BEGIN: LeftSidebar -->
+<aside class="w-full md:w-64 lg:w-72 shrink-0" data-purpose="language-sidebar">
+<div class="sticky top-24 space-y-4">
 <div>
-<h4 class="font-body-lg text-body-lg text-primary font-semibold mb-1">Tại sao chọn Python?</h4>
-<p class="font-body-md text-on-surface-variant">Cú pháp của Python cho phép lập trình viên thể hiện các khái niệm bằng ít dòng code hơn so với các ngôn ngữ như C++ hay Java. Đây là ngôn ngữ tuyệt vời cho người mới bắt đầu.</p>
+<h2 class="text-lg font-bold text-white tracking-wide">Ngôn ngữ phổ biến</h2>
+<p class="text-xs text-slate-400 mt-0.5">Tài liệu lập trình &amp; hướng dẫn</p>
 </div>
-</section>
-<!-- Code Example Section (Developer Centric Design) -->
-<section class="flex flex-col gap-md">
-<h2 class="font-headline-md text-headline-md text-on-surface">Ví dụ "Hello, World!"</h2>
-<p class="text-on-surface-variant font-body-md">Cách đơn giản nhất để bắt đầu với bất kỳ ngôn ngữ lập trình nào.</p>
-<!-- Code Block Component -->
-<div class="relative bg-[#112240] rounded-lg border border-[#233554] overflow-hidden">
-<div class="flex justify-between items-center px-4 py-2 bg-surface-container-high border-b border-[#233554]">
-<div class="flex gap-2">
-<div class="w-3 h-3 rounded-full bg-error-container"></div>
-<div class="w-3 h-3 rounded-full bg-surface-tint opacity-50"></div>
-<div class="w-3 h-3 rounded-full bg-primary-fixed opacity-50"></div>
+<!-- Language Items List -->
+<nav aria-label="Languages" class="space-y-1.5 mt-4">
+<!-- Item 1: Python (Active State) -->
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg bg-[#07122a] border-l-4 border-[#64ffda] shadow-md shadow-black/20 text-white font-medium group transition-all" href="python.html">
+<div class="text-[#64ffda] flex items-center justify-center">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
 </div>
-<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">python</span>
+<span class="text-sm font-semibold tracking-wide">Python</span>
+</a>
+<!-- Item 2: HTML -->
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg hover:bg-[#07122a]/70 text-slate-300 hover:text-white transition-all group" href="html.html">
+<span class="text-xs font-mono font-bold px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 group-hover:text-[#64ffda] transition-colors">&lt;/&gt;</span>
+<span class="text-sm font-medium">HTML</span>
+</a>
+<!-- Item 3: CSS -->
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg hover:bg-[#07122a]/70 text-slate-300 hover:text-white transition-all group" href="css.html">
+<span class="text-xs font-mono font-bold px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 group-hover:text-[#64ffda] transition-colors">#</span>
+<span class="text-sm font-medium">CSS</span>
+</a>
+<!-- Item 4: JavaScript -->
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg hover:bg-[#07122a]/70 text-slate-300 hover:text-white transition-all group" href="javascript.html">
+<span class="text-xs font-mono font-bold px-1 py-0.5 rounded bg-amber-400/20 text-amber-300">JS</span>
+<span class="text-sm font-medium">JavaScript</span>
+</a>
+<!-- Item 5: Bash / Shell -->
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg hover:bg-[#07122a]/70 text-slate-300 hover:text-white transition-all group" href="bash.html">
+<div class="text-slate-400 group-hover:text-[#64ffda] transition-colors">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
 </div>
-<pre class="p-4 overflow-x-auto"><code class="font-code-block text-code-block text-on-surface">
-<span class="text-[#c678dd]">print</span>(<span class="text-[#98c379]">"Hello, World!"</span>)
-<span class="text-[#5c6370] italic"># Output: Hello, World!</span>
-                    </code></pre>
-<button class="absolute top-12 right-4 text-on-surface-variant hover:text-primary-fixed transition-colors bg-surface-container-high p-1.5 rounded-md border border-outline-variant" title="Copy code">
-<span class="material-symbols-outlined text-sm">content_copy</span>
+<span class="text-sm font-medium">Bash / Shell</span>
+</a>
+<!-- Item 6: JSON & XML -->
+<a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg hover:bg-[#07122a]/70 text-slate-300 hover:text-white transition-all group" href="json.html">
+<div class="text-slate-400 group-hover:text-[#64ffda] transition-colors">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<span class="text-sm font-medium">JSON &amp; XML</span>
+</a>
+</nav>
+</div>
+</aside>
+<!-- END: LeftSidebar -->
+<!-- BEGIN: DetailContent -->
+<section class="flex-1 min-w-0 space-y-8" data-purpose="python-documentation-article">
+<!-- Python Header Badge / Icon Card -->
+<div>
+<div class="inline-flex items-center justify-center p-3.5 rounded-xl bg-[#07122a] border border-[#64ffda]/25 shadow-lg shadow-black/30 mb-4">
+<!-- Python SVG Logo Representation -->
+<svg class="w-10 h-10" fill="none" viewbox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+<path d="M63.5 12C41.2 12 42.6 21.6 42.6 21.6L42.7 31.6H64V34.8H34.4C22.6 34.8 12 43.4 12 64C12 84.1 20.3 84.9 20.3 84.9H29.1V74.4C29.1 61.4 39.9 61.5 39.9 61.5H61.2C72.2 61.5 73.1 52.3 73.1 52.3V21.6C73.1 21.6 72.8 12 63.5 12ZM52.4 20.5C54.7 20.5 56.6 22.4 56.6 24.7C56.6 27 54.7 28.9 52.4 28.9C50.1 28.9 48.2 27 48.2 24.7C48.2 22.4 50.1 20.5 52.4 20.5Z" fill="#387eb8"></path>
+<path d="M64.5 116C86.8 116 85.4 106.4 85.4 106.4L85.3 96.4H64V93.2H93.6C105.4 93.2 116 84.6 116 64C116 43.9 107.7 43.1 107.7 43.1H98.9V53.6C98.9 66.6 88.1 66.5 88.1 66.5H66.8C55.8 66.5 54.9 75.7 54.9 75.7V106.4C54.9 106.4 55.2 116 64.5 116ZM75.6 107.5C73.3 107.5 71.4 105.6 71.4 103.3C71.4 101 73.3 99.1 75.6 99.1C77.9 99.1 79.8 101 79.8 103.3C79.8 105.6 77.9 107.5 75.6 107.5Z" fill="#ffe052"></path>
+</svg>
+</div>
+<!-- High-contrast Description -->
+<p class="text-base sm:text-lg text-slate-200 leading-relaxed font-normal">
+          Python là một ngôn ngữ lập trình bậc cao, đa năng, phổ biến với cú pháp rõ ràng và dễ đọc. Nó được sử dụng rộng rãi trong phát triển web, khoa học dữ liệu, trí tuệ nhân tạo, và tự động hóa.
+        </p>
+</div>
+<!-- Divider line -->
+<hr class="border-slate-800"/>
+<!-- Highlight Callout: Tại sao chọn Python? -->
+<div class="rounded-xl bg-[#07122a] border-l-4 border-[#64ffda] p-5 sm:p-6 shadow-lg shadow-black/20 relative">
+<div class="flex items-start gap-4">
+<div class="p-2 rounded-lg bg-[#64ffda]/10 text-[#64ffda] shrink-0 mt-0.5">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h3 class="text-lg font-bold text-white mb-2">Tại sao chọn Python?</h3>
+<p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+              Cú pháp của Python cho phép lập trình viên thể hiện các khái niệm bằng ít dòng code hơn so với các ngôn ngữ như C++ hay Java. Đây là ngôn ngữ tuyệt vời cho người mới bắt đầu.
+            </p>
+</div>
+</div>
+</div>
+<!-- Code Example Section -->
+<div class="space-y-4 pt-2">
+<div>
+<h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Ví dụ "Hello, World!"</h3>
+<p class="text-sm text-slate-400 mt-1">Cách đơn giản nhất để bắt đầu với bất kỳ ngôn ngữ lập trình nào.</p>
+</div>
+<!-- Terminal / Code Snippet Container -->
+<div class="rounded-xl overflow-hidden bg-[#07122a] border border-slate-800/90 shadow-2xl">
+<!-- Terminal Header -->
+<div class="bg-[#0b1b3a] px-4 py-2.5 flex items-center justify-between border-b border-slate-800">
+<!-- 3 Colored Terminal Dots -->
+<div class="flex items-center space-x-2">
+<span class="w-3 h-3 rounded-full bg-rose-500 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-amber-400 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
+</div>
+<!-- Language Badge & Copy Button -->
+<div class="flex items-center gap-3">
+<span class="text-xs font-mono font-semibold tracking-wider text-slate-400 uppercase">PYTHON</span>
+<button aria-label="Sao chép mã" class="p-1 rounded text-slate-400 hover:text-[#64ffda] hover:bg-slate-800 transition-colors" id="copy-code-btn" onclick="navigator.clipboard.writeText('print(\x22Hello, World!\x22)\n# Output: Hello, World!')" title="Sao chép mã">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
 </button>
 </div>
-</section>
-<!-- Bento Grid Highlights -->
-<section class="mt-lg">
-<h2 class="font-headline-md text-headline-md text-on-surface mb-lg">Tính năng nổi bật</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
-<!-- Card 1 -->
-<div class="bg-surface-container p-lg rounded-xl border border-outline-variant hover:border-primary-fixed/50 transition-colors group">
-<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center mb-4 group-hover:bg-primary-fixed/10 transition-colors">
-<span class="material-symbols-outlined text-primary-fixed text-2xl">read_more</span>
 </div>
-<h3 class="font-headline-md text-lg text-on-surface mb-2">Dễ đọc &amp; Dễ học</h3>
-<p class="font-body-md text-on-surface-variant">Thiết kế cú pháp gần với tiếng Anh tự nhiên, sử dụng thụt lề thay vì dấu ngoặc nhọn.</p>
-<div class="mt-4 flex gap-2">
-<span class="font-label-caps text-label-caps bg-surface-container-high px-2 py-1 rounded text-on-surface-variant">#cúpháp</span>
-<span class="font-label-caps text-label-caps bg-surface-container-high px-2 py-1 rounded text-on-surface-variant">#beginner</span>
+<!-- Code Body -->
+<div class="p-6 font-mono text-sm sm:text-base leading-relaxed overflow-x-auto bg-[#050e20]">
+<div class="flex flex-col space-y-1">
+<div class="flex items-center">
+<span class="text-pink-400 font-semibold">print</span><span class="text-slate-300">(</span><span class="text-[#64ffda]">"Hello, World!"</span><span class="text-slate-300">)</span>
+</div>
+<div>
+<span class="text-slate-500 italic"># Output: Hello, World!</span>
 </div>
 </div>
-<!-- Card 2 -->
-<div class="bg-surface-container p-lg rounded-xl border border-outline-variant hover:border-primary-fixed/50 transition-colors group">
-<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center mb-4 group-hover:bg-primary-fixed/10 transition-colors">
-<span class="material-symbols-outlined text-primary-fixed text-2xl">library_books</span>
-</div>
-<h3 class="font-headline-md text-lg text-on-surface mb-2">Thư viện phong phú</h3>
-<p class="font-body-md text-on-surface-variant">Hệ sinh thái khổng lồ với các thư viện tiêu chuẩn như NumPy, Pandas, TensorFlow cho mọi nhu cầu.</p>
-<div class="mt-4 flex gap-2">
-<span class="font-label-caps text-label-caps bg-surface-container-high px-2 py-1 rounded text-on-surface-variant">#ecosystem</span>
-<span class="font-label-caps text-label-caps bg-surface-container-high px-2 py-1 rounded text-on-surface-variant">#data</span>
 </div>
 </div>
 </div>
 </section>
+<!-- END: DetailContent -->
 </main>
-</div>
-<!-- Footer (From JSON) -->
-<footer class="w-full py-xl border-t border-outline-variant dark:border-outline-variant bg-surface-container-lowest dark:bg-surface-container-lowest mt-auto">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-md px-gutter max-w-container-max mx-auto">
-<div class="flex flex-col gap-sm">
-<div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed">DevPortal VN</div>
-<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant">
-                    © 2024 DevPortal VN. Cộng đồng lập trình viên Việt Nam.
-                </p>
-</div>
-<div class="flex flex-wrap gap-x-6 gap-y-2 items-center md:justify-end">
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all duration-300" href="about.html">Về chúng tôi</a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all duration-300" href="term.html">Điều khoản</a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all duration-300" href="privacy.html">Bảo mật</a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all duration-300" href="contact.html">Liên hệ</a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all duration-300" href="api-docs.html">Tài liệu API</a>
+<!-- END: MainContent -->
+<!-- BEGIN: MainFooter -->
+<footer class="mt-auto border-t border-slate-800/80 bg-[#07122a] py-6 text-xs text-slate-400" data-purpose="page-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+<p class="text-center sm:text-left">
+        © 2024 DevPortal VN. Nền tảng học tập &amp; trợ giúp lập trình viên Việt Nam.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-5">
+<a class="hover:text-[#64ffda] transition-colors" href="about.html">Về chúng tôi</a>
+<a class="hover:text-[#64ffda] transition-colors" href="term.html">Điều khoản</a>
+<a class="hover:text-[#64ffda] transition-colors" href="privacy.html">Bảo mật</a>
+<a class="hover:text-[#64ffda] transition-colors" href="contact.html">Liên hệ</a>
+<a class="hover:text-[#64ffda] transition-colors font-medium text-slate-300 flex items-center gap-1" href="https://github.com/devportal-vn">
+<svg class="w-3.5 h-3.5" fill="currentColor" viewbox="0 0 24 24">
+<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.
+</svg>
+          GitHub
+        </a>
 </div>
 </div>
 </footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: InteractiveScripts -->
+<script data-purpose="interaction-handlers">
+    // Copy feedback tooltip/effect
+    const copyBtn = document.getElementById('copy-code-btn');
+    if (copyBtn) {
+      copyBtn.addEventListener('click', () => {
+        copyBtn.classList.add('text-[#64ffda]');
+        setTimeout(() => {
+          copyBtn.classList.remove('text-[#64ffda]');
+        }, 1200);
+      });
+    }
+  </script>
+<!-- END: InteractiveScripts -->
 </body></html>
