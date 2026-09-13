@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>DevPortal VN</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed":"#0d1c32","surface":"#07122a","on-background":"#d9e2ff","on-tertiary-container":"#556486","background":"#07122a","on-surface":"#d9e2ff","on-tertiary":"#20304f","surface-container-highest":"#2a344e","on-surface-variant":"#bacac3","surface-bright":"#2f3952","inverse-surface":"#d9e2ff","tertiary-container":"#d8e2ff","primary-fixed":"#5ffbd6","surface-container-high":"#1f2942","primary-container":"#5ffbd6","surface-tint":"#38debb","tertiary":"#ffffff","secondary-container":"#3c4962","surface-container-lowest":"#030d25","error-container":"#93000a","outline-variant":"#3c4a45","surface-dim":"#07122a","secondary-fixed-dim":"#b9c7e4","secondary":"#b9c7e4","surface-variant":"#2a344e","on-tertiary-fixed":"#091b39","on-secondary-fixed-variant":"#39475f","surface-container":"#151f37","on-secondary":"#233148","on-primary-fixed-variant":"#005142","error":"#ffb4ab","inverse-primary":"#006b58","on-primary-container":"#00725e","outline":"#85948e","on-primary-fixed":"#002019","inverse-on-surface":"#263049","on-secondary-container":"#abb9d6","surface-container-low":"#101b33","tertiary-fixed":"#d8e2ff","primary":"#ffffff","on-error-container":"#ffdad6","on-tertiary-fixed-variant":"#374767","tertiary-fixed-dim":"#b6c6ed","primary-fixed-dim":"#38debb","on-error":"#690005","on-primary":"#00382d","secondary-fixed":"#d6e3ff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"container-max":"1200px","xl":"40px","lg":"24px","gutter":"24px","unit":"4px","xs":"4px","sm":"8px","md":"16px"},"fontFamily":{"code-block":["JetBrains Mono"],"body-lg":["Inter"],"label-caps":["JetBrains Mono"],"body-md":["Inter"],"display-lg":["Be Vietnam Pro"],"headline-md":["Be Vietnam Pro"],"display-lg-mobile":["Be Vietnam Pro"]},"fontSize":{"code-block":["14px",{"lineHeight":"1.7","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"1.6","fontWeight":"400"}],"label-caps":["12px",{"lineHeight":"1.0","letterSpacing":"0.1em","fontWeight":"500"}],"body-md":["16px",{"lineHeight":"1.6","fontWeight":"400"}],"display-lg":["48px",{"lineHeight":"1.2","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"1.4","fontWeight":"600"}],"display-lg-mobile":["32px",{"lineHeight":"1.2","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full max-w-[1200px] mx-auto px-lg flex items-center justify-between gap-md"><div class="flex items-center gap-lg"><a class="flex items-center gap-xs text-primary-fixed-dim hover:text-primary transition-colors" data-path="trang-chu" href="code_4.html"><span class="font-code-block text-code-block font-semibold">&lt;/&gt;</span><span class="font-headline-md text-headline-md tracking-tight text-primary">DevPortal VN</span></a><nav class="hidden lg:flex items-center gap-md" data-active-classes="text-primary-fixed-dim font-semibold border-b-2 border-primary-fixed-dim pb-1"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="trang-chu" href="code_4.html">Trang chủ</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="ngon-ngu" href="code.html">Ngôn ngữ</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="thu-vien" href="code_3.html">Thư viện</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kich-ban" href="code_2.html">Kịch bản</a><a aria-current="page" class="transition-colors text-primary-fixed-dim font-semibold border-b-2 border-primary-fixed-dim pb-1" data-path="tro-giup" href="#">Trợ giúp</a></nav></div><div class="flex-1 max-w-md hidden md:flex items-center"><div class="w-full flex items-center bg-surface-container-low px-md py-xs rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-on-surface-variant mr-xs text-[20px]">search</span><input class="w-full bg-transparent border-none outline-none font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant" placeholder="Tìm kiếm giải pháp, lỗi cú pháp, thư viện..." type="text"/><span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-high px-xs py-unit rounded">Ctrl+K</span></div></div><div class="flex items-center gap-md"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors hidden sm:inline-block" data-path="dang-nhap" href="login.html">Đăng nhập</a><a class="font-body-md text-body-md text-on-primary bg-primary-container hover:bg-primary-fixed-dim hover:text-on-primary-container px-md py-xs rounded-full transition-colors hidden sm:inline-block font-medium" data-path="dang-ky" href="signup.html">Đăng ký</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1200px] mx-auto px-lg py-xl">
+<!-- Breadcrumb & Top Indicator -->
+<div class="flex items-center justify-between gap-md mb-lg">
+<div class="flex items-center gap-xs text-on-surface-variant font-label-caps text-label-caps tracking-wider uppercase">
+<a class="hover:text-primary-fixed transition-colors" data-path="trang-chu" href="#">DevPortal</a>
+<span>/</span>
+<a class="text-primary-fixed-dim hover:text-primary transition-colors" data-path="ngon-ngu" href="#">Ngôn ngữ</a>
+<span>/</span>
+<span class="text-primary">C++</span>
+</div>
+<div class="hidden sm:flex items-center gap-xs px-sm py-unit rounded bg-surface-container text-primary-fixed-dim font-label-caps text-label-caps">
+<span class="inline-block w-2 h-2 rounded-full bg-primary-fixed animate-pulse"></span>
+<span>Chuẩn C++20 / C++23</span>
+</div>
+</div>
+<!-- Main 2-Column Responsive Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-start">
+<!-- Left Sidebar: Ngôn ngữ phổ biến -->
+<aside class="lg:col-span-3 flex flex-col gap-md bg-surface-container-low rounded-xl p-md shadow-sm sticky top-20">
+<div class="px-xs pb-xs border-none">
+<div class="flex items-center gap-xs text-primary-fixed mb-unit">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+<span class="font-label-caps text-label-caps font-semibold uppercase tracking-widest text-primary-fixed">Danh mục</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">Ngôn ngữ phổ biến</h2>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-unit">Tài liệu lập trình &amp; hướng dẫn chuẩn kỹ thuật.</p>
+</div>
+<nav aria-label="Danh sách ngôn ngữ" class="flex flex-col gap-xs">
+<!-- C++ (Active) -->
+<a class="group relative flex items-center justify-between px-md py-sm rounded-lg bg-surface-container-high text-primary font-body-md font-semibold transition-all" href="#">
+<div class="absolute left-0 top-1 bottom-1 w-1 bg-primary-fixed rounded-r"></div>
+<div class="flex items-center gap-md pl-xs">
+<span class="flex items-center justify-center w-8 h-8 rounded bg-surface-variant text-primary-fixed font-code-block text-xs font-bold shadow-inner">
+                C++
+              </span>
+<div class="flex flex-col">
+<span class="text-primary group-hover:text-primary-fixed transition-colors">C++</span>
+<span class="text-[11px] font-label-caps text-primary-fixed-dim">High Performance</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">chevron_right</span>
+</a>
+<!-- Python -->
+<a class="group flex items-center justify-between px-md py-sm rounded-lg bg-transparent hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" href="#">
+<div class="flex items-center gap-md">
+<span class="flex items-center justify-center w-8 h-8 rounded bg-surface-container-highest text-on-surface-variant group-hover:text-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</span>
+<span class="font-body-md text-body-md">Python</span>
+</div>
+<span class="font-label-caps text-[11px] text-on-surface-variant/70">v3.12</span>
+</a>
+<!-- HTML -->
+<a class="group flex items-center justify-between px-md py-sm rounded-lg bg-transparent hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" href="#">
+<div class="flex items-center gap-md">
+<span class="flex items-center justify-center w-8 h-8 rounded bg-surface-container-highest text-on-surface-variant group-hover:text-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</span>
+<span class="font-body-md text-body-md">HTML5</span>
+</div>
+<span class="font-label-caps text-[11px] text-on-surface-variant/70">W3C</span>
+</a>
+<!-- CSS -->
+<a class="group flex items-center justify-between px-md py-sm rounded-lg bg-transparent hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" href="#">
+<div class="flex items-center gap-md">
+<span class="flex items-center justify-center w-8 h-8 rounded bg-surface-container-highest text-on-surface-variant group-hover:text-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-[18px]">css</span>
+</span>
+<span class="font-body-md text-body-md">CSS3</span>
+</div>
+<span class="font-label-caps text-[11px] text-on-surface-variant/70">Modern</span>
+</a>
+<!-- JavaScript -->
+<a class="group flex items-center justify-between px-md py-sm rounded-lg bg-transparent hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" href="#">
+<div class="flex items-center gap-md">
+<span class="flex items-center justify-center w-8 h-8 rounded bg-surface-container-highest text-on-surface-variant group-hover:text-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-[18px]">javascript</span>
+</span>
+<span class="font-body-md text-body-md">JavaScript</span>
+</div>
+<span class="font-label-caps text-[11px] text-on-surface-variant/70">ES2024</span>
+</a>
+<!-- Bash / Shell -->
+<a class="group flex items-center justify-between px-md py-sm rounded-lg bg-transparent hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" href="#">
+<div class="flex items-center gap-md">
+<span class="flex items-center justify-center w-8 h-8 rounded bg-surface-container-highest text-on-surface-variant group-hover:text-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-[18px]">laptop_mac</span>
+</span>
+<span class="font-body-md text-body-md">Bash / Shell</span>
+</div>
+<span class="font-label-caps text-[11px] text-on-surface-variant/70">CLI</span>
+</a>
+<!-- JSON & XML -->
+<a class="group flex items-center justify-between px-md py-sm rounded-lg bg-transparent hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" href="#">
+<div class="flex items-center gap-md">
+<span class="flex items-center justify-center w-8 h-8 rounded bg-surface-container-highest text-on-surface-variant group-hover:text-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-[18px]">data_object</span>
+</span>
+<span class="font-body-md text-body-md">JSON &amp; XML</span>
+</div>
+<span class="font-label-caps text-[11px] text-on-surface-variant/70">Schemas</span>
+</a>
+</nav>
+<!-- Sidebar Promo Card -->
+<div class="mt-md p-md rounded-lg bg-surface-container-highest flex flex-col gap-xs">
+<div class="flex items-center gap-xs text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[18px]">speed</span>
+<span class="font-label-caps text-label-caps font-semibold">Tốc độ biên dịch</span>
+</div>
+<p class="font-body-md text-sm text-on-surface-variant">Thực hành biên dịch Clang 18 &amp; GCC 14 tức thì trong trình giả lập DevPortal.</p>
+<a class="mt-xs text-primary-fixed hover:text-primary font-body-md text-sm font-semibold flex items-center gap-xs" href="#">
+<span>Khám phá Sandbox</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</aside>
+<!-- Right Column: Nội dung tài liệu C++ -->
+<section class="lg:col-span-9 flex flex-col gap-xl">
+<!-- Header Ngôn Ngữ & Banner -->
+<div class="relative rounded-xl bg-surface-container p-lg sm:p-xl shadow-md overflow-hidden">
+<div class="absolute -right-16 -top-16 w-64 h-64 bg-primary-fixed/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-md mb-md">
+<div class="flex items-center gap-md">
+<div class="w-16 h-16 rounded-xl bg-surface-container-high flex items-center justify-center shadow-lg text-primary-fixed">
+<span class="font-code-block text-2xl font-bold tracking-tighter">C++</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-xs">
+<h1 class="font-display-lg text-headline-md sm:text-display-lg text-primary tracking-tight font-bold">C++</h1>
+<span class="px-xs py-unit rounded bg-primary-container/20 text-primary-fixed font-label-caps text-label-caps font-medium">Standard C++20</span>
+</div>
+<p class="font-body-md text-body-md text-primary-fixed-dim font-medium">Ngôn ngữ lập trình hệ thống &amp; hiệu năng tối thượng</p>
+</div>
+</div>
+<div class="flex items-center gap-xs flex-wrap">
+<span class="px-sm py-xs rounded bg-surface-container-low text-on-surface-variant font-label-caps text-xs">Biên dịch: AOT</span>
+<span class="px-sm py-xs rounded bg-surface-container-low text-on-surface-variant font-label-caps text-xs">Mô hình: Đa mô hình</span>
+<span class="px-sm py-xs rounded bg-surface-container-low text-primary-fixed font-label-caps text-xs">Zero-Cost Abstractions</span>
+</div>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed mb-md">
+            C++ là một ngôn ngữ lập trình biên dịch mạnh mẽ, hỗ trợ đa mô hình (hướng đối tượng, thủ tục, tổng quát) với hiệu năng tiệm cận phần cứng. C++ được sử dụng cốt lõi trong xây dựng hệ điều hành, công cụ game AAA, hệ thống giao dịch tần suất cao (HFT), trình biên dịch và hệ thống nhúng đòi hỏi tốc độ tối đa.
+          </p>
+<!-- Action Buttons Bar -->
+<div class="flex flex-wrap items-center gap-sm pt-xs">
+<a class="flex items-center gap-xs px-md py-xs rounded-full bg-primary-container hover:bg-primary-fixed-dim text-on-primary font-body-md font-semibold shadow-md transition-all" href="#sandbox">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>Mở Trình Thực Hành C++ Online</span>
+</a>
+<a class="flex items-center gap-xs px-md py-xs rounded-full bg-surface-container-high hover:bg-surface-variant text-primary font-body-md font-medium transition-all" href="#reference">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span>Tài Liệu Chi Tiết C++ Reference</span>
+</a>
+<a class="flex items-center gap-xs px-md py-xs rounded-full bg-surface-container-high hover:bg-surface-variant text-primary-fixed-dim font-body-md font-medium transition-all" href="#certificate">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Nhận Chứng Chỉ C++ Developer</span>
+</a>
+</div>
+</div>
+<!-- Hộp thông điệp nổi bật "Tại sao chọn C++?" -->
+<div class="relative rounded-xl bg-surface-container-low p-lg shadow-sm">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-fixed rounded-l"></div>
+<div class="flex items-start gap-md">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[24px]">lightbulb</span>
+</div>
+<div class="flex flex-col gap-xs">
+<h3 class="font-headline-md text-lg text-primary font-bold">Tại sao chọn C++?</h3>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                Khả năng quản lý bộ nhớ trực tiếp (pointers &amp; manual memory management), mô hình RAII an toàn, hiệu năng vượt trội nhờ tối ưu hóa cấp máy móc (Zero-overhead principle) và hệ sinh thái thư viện STL (Standard Template Library) cực kỳ mạnh mẽ.
+              </p>
+</div>
+</div>
+</div>
+<!-- Khu vực ví dụ mã nguồn & Terminal Simulator -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest shadow-xl overflow-hidden" id="sandbox">
+<!-- Code Editor Header -->
+<div class="flex items-center justify-between px-md py-sm bg-surface-container-high">
+<div class="flex items-center gap-md">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-[#ff5f56]"></span>
+<span class="w-3 h-3 rounded-full bg-[#ffbd2e]"></span>
+<span class="w-3 h-3 rounded-full bg-[#27c93f]"></span>
+</div>
+<div class="flex items-center gap-xs px-sm py-unit rounded bg-surface-container text-on-surface-variant font-code-block text-xs">
+<span class="material-symbols-outlined text-[14px]">description</span>
+<span>main.cpp</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary-fixed uppercase tracking-wider bg-surface-variant px-xs py-unit rounded">C++20</span>
+</div>
+<div class="flex items-center gap-sm">
+<span class="hidden font-code-block text-xs text-primary-fixed" id="copy-status">Đã sao chép!</span>
+<button class="flex items-center gap-xs px-sm py-unit rounded bg-surface-container hover:bg-surface-variant text-on-surface-variant hover:text-primary font-code-block text-xs transition-colors" id="copy-btn" onclick="copySnippet()">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Sao chép code</span>
+</button>
+</div>
+</div>
+<!-- Code Display -->
+<div class="p-lg overflow-x-auto bg-[#07122a]">
+<pre class="font-code-block text-code-block text-on-surface leading-relaxed"><code id="cpp-code"><span class="text-[#f43f5e]">#include</span> <span class="text-primary-fixed">&lt;iostream&gt;</span>
+<span class="text-[#f43f5e]">#include</span> <span class="text-primary-fixed">&lt;memory&gt;</span>
+<span class="text-[#f43f5e]">#include</span> <span class="text-primary-fixed">&lt;string_view&gt;</span>
+
+<span class="text-[#38debb]">int</span> <span class="text-[#60a5fa]">main</span>() {
+    <span class="text-[#38debb]">constexpr</span> <span class="text-[#b9c7e4]">std::string_view</span> greeting = <span class="text-[#fed7aa]">"Hello, World từ DevPortal C++20!"</span>;
+    <span class="text-[#b9c7e4]">std::cout</span> &lt;&lt; greeting &lt;&lt; <span class="text-[#b9c7e4]">std::endl</span>;
+
+    <span class="text-on-surface-variant/60">// Ví dụ quản lý bộ nhớ hiện đại với Smart Pointer</span>
+    <span class="text-[#38debb]">auto</span> ptr = <span class="text-[#b9c7e4]">std::make_unique</span>&lt;<span class="text-[#38debb]">int</span>&gt;(<span class="text-[#fb923c]">2025</span>);
+    <span class="text-[#b9c7e4]">std::cout</span> &lt;&lt; <span class="text-[#fed7aa]">"Gía trị quản lý bởi std::unique_ptr: "</span> &lt;&lt; *ptr &lt;&lt; <span class="text-[#b9c7e4]">std::endl</span>;
+
+    <span class="text-[#f43f5e]">return</span> <span class="text-[#fb923c]">0</span>;
+}</code></pre>
+</div>
+<!-- Terminal Output Simulation -->
+<div class="bg-surface-container-low p-md">
+<div class="flex items-center justify-between pb-xs mb-xs text-on-surface-variant font-label-caps text-xs">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">terminal</span>
+<span class="text-primary font-semibold">TERMINAL EXECUTION OUTPUT</span>
+</div>
+<span class="text-primary-fixed-dim">Clang LLVM 18.1</span>
+</div>
+<div class="p-md rounded-lg bg-surface-container-lowest font-code-block text-xs leading-relaxed flex flex-col gap-xs">
+<div class="flex items-center gap-xs text-on-surface-variant">
+<span class="text-primary-fixed">$</span>
+<span class="text-on-surface">g++ -std=c++20 -O3 main.cpp -o app &amp;&amp; ./app</span>
+</div>
+<div class="text-primary font-medium pl-md">Hello, World từ DevPortal C++20!</div>
+<div class="text-primary font-medium pl-md">Gía trị quản lý bởi std::unique_ptr: 2025</div>
+<div class="text-primary-fixed-dim pl-md"># Tiến trình hoàn tất với mã thoát 0 (0.002s)</div>
+</div>
+</div>
+</div>
+<!-- Tính năng & Kiến trúc Cốt Lõi (Cards Bento Grid) -->
+<div class="flex flex-col gap-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-primary font-bold flex items-center gap-xs">
+<span class="material-symbols-outlined text-primary-fixed">tune</span>
+<span>Tính năng &amp; Kiến trúc cốt lõi</span>
+</h2>
+<span class="font-label-caps text-label-caps text-on-surface-variant hidden sm:inline">Kiến trúc tiệm cận phần cứng</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Card 1: RAII & Memory Control -->
+<div class="p-lg rounded-xl bg-surface-container hover:bg-surface-container-high transition-all group relative overflow-hidden shadow-sm">
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-fixed to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-primary-fixed flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">memory</span>
+</div>
+<h3 class="font-headline-md text-lg text-primary font-bold mb-xs">RAII &amp; Memory Control</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Tài nguyên được giải phóng tự động dựa trên phạm vi vòng đời (Scope-bound). Không cần cơ chế thu gom rác (Garbage Collector), triệt tiêu gián đoạn và đảm bảo tài nguyên hữu hạn luôn được thu hồi.
+              </p>
+<div class="mt-md flex items-center gap-xs text-xs font-label-caps text-primary-fixed">
+<span>#smart_pointers</span>
+<span>#destructors</span>
+</div>
+</div>
+<!-- Card 2: Concurrency & Threads -->
+<div class="p-lg rounded-xl bg-surface-container hover:bg-surface-container-high transition-all group relative overflow-hidden shadow-sm">
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-fixed to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-primary-fixed flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">alt_route</span>
+</div>
+<h3 class="font-headline-md text-lg text-primary font-bold mb-xs">Concurrency &amp; Threads</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Cơ chế đa luồng cấp phần cứng với <code class="font-code-block text-primary-fixed bg-surface-container-highest px-unit rounded">std::jthread</code>, Coroutines, Atomic operations và bộ nhớ đồng bộ (Memory Models) tối ưu cho bộ xử lý đa nhân.
+              </p>
+<div class="mt-md flex items-center gap-xs text-xs font-label-caps text-primary-fixed">
+<span>#coroutines</span>
+<span>#jthread</span>
+</div>
+</div>
+<!-- Card 3: Template Metaprogramming -->
+<div class="p-lg rounded-xl bg-surface-container hover:bg-surface-container-high transition-all group relative overflow-hidden shadow-sm">
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-fixed to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-primary-fixed flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">schema</span>
+</div>
+<h3 class="font-headline-md text-lg text-primary font-bold mb-xs">Template Metaprogramming</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Thực thi mã nguồn tính toán phức tạp ngay trong thời điểm biên dịch (Compile-time evaluation) qua <code class="font-code-block text-primary-fixed bg-surface-container-highest px-unit rounded">constexpr</code>, <code class="font-code-block text-primary-fixed bg-surface-container-highest px-unit rounded">consteval</code> và C++20 Concepts.
+              </p>
+<div class="mt-md flex items-center gap-xs text-xs font-label-caps text-primary-fixed">
+<span>#concepts</span>
+<span>#constexpr</span>
+</div>
+</div>
+<!-- Card 4: STL Algorithms & Ranges -->
+<div class="p-lg rounded-xl bg-surface-container hover:bg-surface-container-high transition-all group relative overflow-hidden shadow-sm">
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-fixed to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-primary-fixed flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">account_tree</span>
+</div>
+<h3 class="font-headline-md text-lg text-primary font-bold mb-xs">STL Algorithms &amp; Ranges</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Thư viện mẫu chuẩn cung cấp hàng trăm thuật toán tối ưu hóa cao độ, kết hợp C++20 Ranges với đường ống dữ liệu (pipeline operator <code class="font-code-block text-primary-fixed bg-surface-container-highest px-unit rounded">|</code>) thanh lịch và súc tích.
+              </p>
+<div class="mt-md flex items-center gap-xs text-xs font-label-caps text-primary-fixed">
+<span>#ranges</span>
+<span>#containers</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Performance Comparison Mini-Visualizer -->
+<div class="rounded-xl bg-surface-container p-lg shadow-sm flex flex-col gap-md">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-xs">
+<div>
+<h4 class="font-headline-md text-base sm:text-lg text-primary font-bold">Chỉ số tối ưu tài nguyên &amp; Tốc độ</h4>
+<p class="font-body-md text-sm text-on-surface-variant">So sánh độ trễ thực thi vi mô trên cùng tác vụ xử lý đồ họa / toán học nặng</p>
+</div>
+<span class="font-label-caps text-label-caps text-primary-fixed bg-surface-container-low px-sm py-unit rounded">Càng thấp càng tốt (ms)</span>
+</div>
+<div class="space-y-sm">
+<div>
+<div class="flex justify-between font-label-caps text-xs mb-unit">
+<span class="text-primary font-semibold">C++20 (Native Clang -O3)</span>
+<span class="text-primary-fixed font-bold">4.2 ms</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary-fixed h-full rounded-full w-[15%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-caps text-xs mb-unit">
+<span class="text-on-surface-variant">Rust (Edition 2021)</span>
+<span class="text-on-surface-variant">4.4 ms</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[17%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-caps text-xs mb-unit">
+<span class="text-on-surface-variant">Java 21 (GraalVM Native)</span>
+<span class="text-on-surface-variant">14.8 ms</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2.5 rounded-full overflow-hidden">
+<div class="bg-surface-variant h-full rounded-full w-[48%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-caps text-xs mb-unit">
+<span class="text-on-surface-variant">Python 3.12 (PyPy JIT)</span>
+<span class="text-on-surface-variant">32.6 ms</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2.5 rounded-full overflow-hidden">
+<div class="bg-surface-variant h-full rounded-full w-[85%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Community Callout Box -->
+<div class="p-lg rounded-xl bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-md shadow-md">
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary-fixed flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">forum</span>
+</div>
+<div>
+<h4 class="font-headline-md text-base text-primary font-bold">Cộng đồng C++ DevPortal Việt Nam</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Tham gia thảo luận về kỹ thuật tối ưu hóa mã nguồn, game engines và kiến trúc hệ thống.</p>
+</div>
+</div>
+<a class="px-md py-xs rounded-full bg-surface-container-highest hover:bg-surface-variant text-primary font-body-md text-sm font-semibold whitespace-nowrap transition-colors" href="#">
+            Tham gia thảo luận
+          </a>
+</div>
+</section>
+</div>
+</div>
+</div>
+<script>
+  function copySnippet() {
+    const rawCode = `#include <iostream>
+#include <memory>
+#include <string_view>
+
+int main() {
+    constexpr std::string_view greeting = "Hello, World từ DevPortal C++20!";
+    std::cout << greeting << std::endl;
+
+    // Ví dụ quản lý bộ nhớ hiện đại với Smart Pointer
+    auto ptr = std::make_unique<int>(2025);
+    std::cout << "Gía trị quản lý bởi std::unique_ptr: " << *ptr << std::endl;
+
+    return 0;
+}`;
+    navigator.clipboard.writeText(rawCode).then(() => {
+      const statusEl = document.getElementById('copy-status');
+      if (statusEl) {
+        statusEl.classList.remove('hidden');
+        setTimeout(() => {
+          statusEl.classList.add('hidden');
+        }, 2200);
+      }
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-lowest py-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full max-w-[1200px] mx-auto px-lg flex flex-col md:flex-row items-center justify-between gap-md"><div class="text-center md:text-left"><p class="font-body-md text-body-md text-on-surface-variant">© 2024 DevPortal VN. Nền tảng học tập &amp; trợ giúp lập trình viên Việt Nam.</p></div><nav class="flex flex-wrap items-center justify-center gap-md" data-active-classes="text-primary-fixed-dim"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="ve-chung-toi" href="about.html">Về chúng tôi</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="dieu-khoan" href="term.html">Điều khoản</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="bao-mat" href="privacy.html">Bảo mật</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="lien-he" href="contact.html">Liên hệ</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="github" href="https://github.com/DevPortal-VN">GitHub</a></nav></div></footer></body></html>
