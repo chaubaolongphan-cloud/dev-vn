@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>DevPortal VN</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed":"#0d1c32","surface":"#07122a","on-background":"#d9e2ff","on-tertiary-container":"#556486","background":"#07122a","on-surface":"#d9e2ff","on-tertiary":"#20304f","surface-container-highest":"#2a344e","on-surface-variant":"#bacac3","surface-bright":"#2f3952","inverse-surface":"#d9e2ff","tertiary-container":"#d8e2ff","primary-fixed":"#5ffbd6","surface-container-high":"#1f2942","primary-container":"#5ffbd6","surface-tint":"#38debb","tertiary":"#ffffff","secondary-container":"#3c4962","surface-container-lowest":"#030d25","error-container":"#93000a","outline-variant":"#3c4a45","surface-dim":"#07122a","secondary-fixed-dim":"#b9c7e4","secondary":"#b9c7e4","surface-variant":"#2a344e","on-tertiary-fixed":"#091b39","on-secondary-fixed-variant":"#39475f","surface-container":"#151f37","on-secondary":"#233148","on-primary-fixed-variant":"#005142","error":"#ffb4ab","inverse-primary":"#006b58","on-primary-container":"#00725e","outline":"#85948e","on-primary-fixed":"#002019","inverse-on-surface":"#263049","on-secondary-container":"#abb9d6","surface-container-low":"#101b33","tertiary-fixed":"#d8e2ff","primary":"#ffffff","on-error-container":"#ffdad6","on-tertiary-fixed-variant":"#374767","tertiary-fixed-dim":"#b6c6ed","primary-fixed-dim":"#38debb","on-error":"#690005","on-primary":"#00382d","secondary-fixed":"#d6e3ff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"container-max":"1200px","xl":"40px","lg":"24px","gutter":"24px","unit":"4px","xs":"4px","sm":"8px","md":"16px"},"fontFamily":{"code-block":["JetBrains Mono"],"body-lg":["Inter"],"label-caps":["JetBrains Mono"],"body-md":["Inter"],"display-lg":["Be Vietnam Pro"],"headline-md":["Be Vietnam Pro"],"display-lg-mobile":["Be Vietnam Pro"]},"fontSize":{"code-block":["14px",{"lineHeight":"1.7","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"1.6","fontWeight":"400"}],"label-caps":["12px",{"lineHeight":"1.0","letterSpacing":"0.1em","fontWeight":"500"}],"body-md":["16px",{"lineHeight":"1.6","fontWeight":"400"}],"display-lg":["48px",{"lineHeight":"1.2","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"1.4","fontWeight":"600"}],"display-lg-mobile":["32px",{"lineHeight":"1.2","fontWeight":"700"}]}}}}</script><meta content="web_standard" name="shell-type"/></head><body class="bg-background font-body-md text-body-md text-on-surface min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full max-w-[1200px] mx-auto px-lg flex items-center justify-between gap-md"><div class="flex items-center gap-lg"><a class="flex items-center gap-xs text-primary-fixed-dim hover:text-primary transition-colors" data-path="trang-chu" href="#"><span class="font-code-block text-code-block font-semibold">&lt;/&gt;</span><span class="font-headline-md text-headline-md tracking-tight text-primary">DevPortal VN</span></a><nav class="hidden lg:flex items-center gap-md" data-active-classes="text-primary-fixed-dim font-semibold border-b-2 border-primary-fixed-dim pb-1"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="trang-chu" href="#">Trang chủ</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="ngon-ngu" href="#">Ngôn ngữ</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="thu-vien" href="#">Thư viện</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kich-ban" href="#">Kịch bản</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="tro-giup" href="#">Trợ giúp</a></nav></div><div class="flex-1 max-w-md hidden md:flex items-center"><div class="w-full flex items-center bg-surface-container-low px-md py-xs rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-on-surface-variant mr-xs text-[20px]">search</span><input class="w-full bg-transparent border-none outline-none font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant" placeholder="Tìm kiếm giải pháp, lỗi cú pháp, thư viện..." type="text"/><span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-high px-xs py-unit rounded">Ctrl+K</span></div></div><div class="flex items-center gap-md"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors hidden sm:inline-block" data-path="dang-nhap" href="#">Đăng nhập</a><a class="font-body-md text-body-md text-on-primary bg-primary-container hover:bg-primary-fixed-dim hover:text-on-primary-container px-md py-xs rounded-full transition-colors hidden sm:inline-block font-medium" data-path="dang-ky" href="#">Đăng ký</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<div class="w-full bg-surface-container-low shadow-md px-lg py-sm sticky top-16 z-40">
+<div class="max-w-[1200px] mx-auto flex flex-wrap items-center justify-between gap-md">
+<div class="flex items-center gap-md min-w-0">
+<button class="flex items-center gap-xs px-sm py-xs bg-surface-container hover:bg-surface-container-high text-on-surface rounded transition-colors text-label-caps font-label-caps" onclick="history.back()">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Khóa học</span>
+</button>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-xs truncate">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[18px]">picture_as_pdf</span>
+<span class="font-code-block text-code-block text-on-surface font-semibold truncate max-w-[280px] sm:max-w-md">
+              VNDev_Certified_Developer_Certificate_ID_88294.pdf
+            </span>
+</div>
+<div class="flex items-center gap-xs">
+<span class="w-2 h-2 rounded-full bg-primary-fixed-dim animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-primary-fixed-dim uppercase tracking-wider">
+              Đã ký số điện tử SHA-256 (Hiệu lực vĩnh viễn)
+            </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-xs bg-surface-container-lowest p-xs rounded-xl shadow-inner">
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded transition-colors" id="btn-zoom-out" title="Thu nhỏ">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="font-code-block text-code-block text-on-surface px-xs select-none" id="zoom-text">100%</span>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded transition-colors" id="btn-zoom-in" title="Phóng to">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<button class="hidden sm:flex items-center gap-xs px-xs py-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded transition-colors text-label-caps font-label-caps" id="btn-fit-width" title="Vừa chiều rộng">
+<span class="material-symbols-outlined text-[16px]">fit_screen</span>
+<span>Fit</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded transition-colors" id="btn-fullscreen" title="Toàn màn hình">
+<span class="material-symbols-outlined text-[18px]">fullscreen</span>
+</button>
+</div>
+<div class="flex items-center gap-xs">
+<button class="flex items-center gap-xs px-md py-xs bg-surface-container hover:bg-surface-container-high text-on-surface rounded-full transition-colors text-label-caps font-label-caps shadow-sm" id="btn-download-pdf">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed-dim">download</span>
+<span class="hidden sm:inline">Tải PDF</span>
+</button>
+<button class="flex items-center gap-xs px-lg py-xs bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container font-semibold rounded-full shadow-md transition-all hover:scale-[1.02] active:scale-[0.98] text-body-md font-body-md" onclick="window.print()">
+<span class="material-symbols-outlined text-[20px]">print</span>
+<span>IN CHỨNG CHỈ</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto w-full px-lg py-lg flex flex-col lg:flex-row gap-lg items-start justify-between">
+<div class="flex-1 w-full flex flex-col items-center justify-center overflow-auto rounded-xl p-md bg-surface-container-lowest/60 backdrop-blur-md" id="pdf-viewport">
+<div class="relative w-full max-w-[842px] aspect-[1.414/1] bg-[#050b18] text-[#e2e8f0] p-6 sm:p-8 flex flex-col justify-between shadow-2xl rounded overflow-hidden select-none transform transition-transform duration-200 origin-top" id="certificate-canvas">
+<div class="absolute inset-0 pointer-events-none opacity-30 bg-[radial-gradient(#5ffbd6_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<svg class="absolute inset-0 w-full h-full pointer-events-none opacity-20" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="80" id="guilloche" patternunits="userSpaceOnUse" width="80">
+<path d="M 0 40 Q 20 0 40 40 T 80 40" fill="none" stroke="#d4af37" stroke-width="0.75"></path>
+<path d="M 0 40 Q 20 80 40 40 T 80 40" fill="none" stroke="#5ffbd6" stroke-width="0.75"></path>
+<circle cx="40" cy="40" fill="none" r="28" stroke="#d4af37" stroke-width="0.5"></circle>
+</pattern>
+</defs>
+<rect fill="url(#guilloche)" height="100%" width="100%"></rect>
+</svg>
+<div class="absolute inset-2 sm:inset-3 pointer-events-none bg-transparent shadow-[inset_0_0_0_2px_#d4af37,inset_0_0_0_6px_#07122a,inset_0_0_0_8px_#5ffbd6,inset_0_0_0_12px_#07122a,inset_0_0_0_13px_#d4af37]"></div>
+<svg class="absolute top-4 left-4 w-12 h-12 text-[#d4af37] opacity-85 pointer-events-none" viewbox="0 0 40 40">
+<path d="M0,0 L40,0 L40,6 L6,6 L6,40 L0,40 Z" fill="currentColor"></path>
+<circle cx="10" cy="10" fill="#5ffbd6" r="3"></circle>
+</svg>
+<svg class="absolute top-4 right-4 w-12 h-12 text-[#d4af37] opacity-85 pointer-events-none rotate-90" viewbox="0 0 40 40">
+<path d="M0,0 L40,0 L40,6 L6,6 L6,40 L0,40 Z" fill="currentColor"></path>
+<circle cx="10" cy="10" fill="#5ffbd6" r="3"></circle>
+</svg>
+<svg class="absolute bottom-4 left-4 w-12 h-12 text-[#d4af37] opacity-85 pointer-events-none -rotate-90" viewbox="0 0 40 40">
+<path d="M0,0 L40,0 L40,6 L6,6 L6,40 L0,40 Z" fill="currentColor"></path>
+<circle cx="10" cy="10" fill="#5ffbd6" r="3"></circle>
+</svg>
+<svg class="absolute bottom-4 right-4 w-12 h-12 text-[#d4af37] opacity-85 pointer-events-none rotate-180" viewbox="0 0 40 40">
+<path d="M0,0 L40,0 L40,6 L6,6 L6,40 L0,40 Z" fill="currentColor"></path>
+<circle cx="10" cy="10" fill="#5ffbd6" r="3"></circle>
+</svg>
+<div class="relative z-10 text-center flex flex-col items-center pt-2">
+<div class="flex items-center gap-xs mb-1">
+<span class="font-code-block text-code-block font-semibold text-[#5ffbd6]">&lt;/&gt;</span>
+<span class="font-headline-md text-headline-md font-bold tracking-tight text-white">DevPortal VN</span>
+</div>
+<p class="font-label-caps text-label-caps text-[#d4af37] uppercase tracking-widest font-semibold">
+            Hội đồng Thẩm định Lập trình viên Quốc gia • Vietnam Developer Accreditation Board
+          </p>
+<div class="w-36 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent my-1"></div>
+<h1 class="font-display-lg text-headline-md sm:text-display-lg text-[#d4af37] uppercase font-bold tracking-tight mt-1 mb-0 leading-none">
+            CHỨNG NHẬN TỐT NGHIỆP
+          </h1>
+<p class="font-code-block text-code-block text-[#5ffbd6] uppercase tracking-wider font-semibold">
+            Certificate of Software Engineering Excellence
+          </p>
+</div>
+<div class="relative z-10 text-center flex flex-col items-center my-auto py-1">
+<span class="font-body-md text-body-md italic text-on-surface-variant">Chứng chỉ này được vinh danh và trân trọng trao cho</span>
+<h2 class="font-display-lg text-display-lg text-white font-bold tracking-wide my-1 text-shadow-sm uppercase">
+            NGUYỄN VĂN AN
+          </h2>
+<div class="flex items-center justify-center gap-md mb-2">
+<span class="font-code-block text-code-block text-primary-fixed-dim bg-surface-container px-sm py-unit rounded">DevID: VN-DEV-2024-88294</span>
+<span class="font-code-block text-code-block text-[#d4af37] bg-surface-container px-sm py-unit rounded">Hạng: Xuất sắc (Distinction - Top 1%)</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface max-w-xl mx-auto leading-relaxed px-md text-center">
+            Đã hoàn thành xuất sắc toàn bộ chương trình huấn luyện chuyên sâu cấp cao về 
+            <strong class="text-white font-semibold">Kiến trúc Hệ thống, Cloud Computing, C++, Python, Bash Scripting và Microservices</strong> 
+            tại DevPortal VN, vượt qua toàn bộ các kỳ sát hạch bảo mật và kiểm chuẩn năng lực thực chiến chuẩn Quốc tế.
+          </p>
+</div>
+<div class="relative z-10 grid grid-cols-3 items-end pt-2 pb-1 text-center">
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 p-1 bg-white rounded flex items-center justify-center shadow-lg mb-1">
+<svg class="w-full h-full" viewbox="0 0 100 100">
+<rect fill="white" height="100" width="100"></rect>
+<rect fill="black" height="25" width="25" x="10" y="10"></rect>
+<rect fill="white" height="15" width="15" x="15" y="15"></rect>
+<rect fill="black" height="9" width="9" x="18" y="18"></rect>
+<rect fill="black" height="25" width="25" x="65" y="10"></rect>
+<rect fill="white" height="15" width="15" x="70" y="15"></rect>
+<rect fill="black" height="9" width="9" x="73" y="18"></rect>
+<rect fill="black" height="25" width="25" x="10" y="65"></rect>
+<rect fill="white" height="15" width="15" x="15" y="70"></rect>
+<rect fill="black" height="9" width="9" x="18" y="73"></rect>
+<rect fill="black" height="8" width="16" x="42" y="15"></rect>
+<rect fill="black" height="18" width="8" x="42" y="30"></rect>
+<rect fill="black" height="12" width="12" x="58" y="42"></rect>
+<rect fill="black" height="8" width="18" x="40" y="65"></rect>
+<rect fill="black" height="25" width="25" x="65" y="65"></rect>
+<rect fill="white" height="10" width="10" x="72" y="72"></rect>
+</svg>
+</div>
+<span class="font-code-block text-[10px] text-on-surface-variant font-mono truncate max-w-[150px]">
+              hash: 9e7b23f8c889...a41c
+            </span>
+<span class="font-label-caps text-[10px] text-primary-fixed-dim uppercase mt-0.5">
+              Xác thực Blockchain VN
+            </span>
+</div>
+<div class="flex flex-col items-center justify-center">
+<div class="relative w-24 h-24 flex items-center justify-center">
+<div class="absolute inset-0 rounded-full border-4 border-dashed border-[#ff4d4f] opacity-80 animate-[spin_60s_linear_infinite]"></div>
+<div class="w-20 h-20 rounded-full bg-[#93000a]/20 border-2 border-[#ff4d4f] flex flex-col items-center justify-center text-[#ff4d4f] p-1 shadow-md rotate-[-8deg]">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+<span class="font-label-caps text-[7px] uppercase font-bold text-center leading-tight">BAN THẨM ĐỊNH</span>
+<span class="font-label-caps text-[8px] uppercase font-extrabold text-center leading-tight tracking-wider">DEVPORTAL VN</span>
+<span class="font-label-caps text-[6px] tracking-tight text-[#ffb4ab]">CHỨNG THỰC 2024</span>
+</div>
+</div>
+<span class="font-code-block text-[11px] text-[#d4af37] mt-1 font-semibold">
+              Điểm số đánh giá: 98 / 100
+            </span>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="h-12 flex items-center justify-center">
+<span class="font-serif italic text-2xl text-primary-fixed-dim tracking-wider font-semibold opacity-90 -rotate-6">
+                TranDinhTuan
+              </span>
+</div>
+<div class="w-32 h-[1px] bg-[#d4af37] mb-1"></div>
+<span class="font-headline-md text-code-block text-white font-bold">TS. TRẦN ĐÌNH TUẤN</span>
+<span class="font-body-md text-[11px] text-on-surface-variant leading-tight">Chủ tịch Hội đồng &amp; Giám đốc Kỹ thuật</span>
+<span class="font-code-block text-[10px] text-on-surface-variant">Ngày cấp: 15/10/2024</span>
+</div>
+</div>
+<div class="relative z-10 flex justify-between items-center text-[10px] font-code-block text-on-surface-variant pt-2">
+<span>Giấy phép số: VN-EDU-88294/BGD</span>
+<span class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[12px] text-[#5ffbd6]">lock</span>
+            Mã định danh SHA-256 đã xác minh toàn vẹn tài liệu
+          </span>
+<span>Bản quyền © DevPortal VN</span>
+</div>
+</div>
+</div>
+<aside class="w-full lg:w-80 flex flex-col gap-md">
+<div class="bg-surface-container p-lg rounded-xl shadow-lg flex flex-col gap-md">
+<div class="flex items-center gap-xs text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">Thông số in ấn A4</h3>
+</div>
+<div class="space-y-sm text-body-md">
+<div class="flex justify-between items-center py-xs">
+<span class="text-on-surface-variant">Khổ giấy tiêu chuẩn:</span>
+<span class="font-code-block text-code-block text-on-surface font-semibold">A4 (297 x 210 mm)</span>
+</div>
+<div class="flex justify-between items-center py-xs">
+<span class="text-on-surface-variant">Hướng in:</span>
+<span class="font-code-block text-code-block text-on-surface font-semibold">Ngang (Landscape)</span>
+</div>
+<div class="flex justify-between items-center py-xs">
+<span class="text-on-surface-variant">Độ phân giải hiển thị:</span>
+<span class="font-code-block text-code-block text-primary-fixed-dim font-semibold">300 DPI Vector</span>
+</div>
+<div class="flex justify-between items-center py-xs">
+<span class="text-on-surface-variant">Căn lề trang in:</span>
+<span class="font-code-block text-code-block text-on-surface font-semibold">Tối thiểu (None / Zero)</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-md rounded-xl space-y-xs shadow-inner">
+<div class="flex items-center gap-xs text-primary-fixed">
+<span class="material-symbols-outlined text-[18px]">palette</span>
+<span class="font-code-block text-code-block font-semibold">Mẹo in chuẩn màu sắc:</span>
+</div>
+<p class="text-body-md text-on-surface-variant text-sm leading-relaxed">
+            Trong hộp thoại in của trình duyệt (Chrome / Edge), hãy nhớ tích chọn 
+            <strong class="text-on-surface font-semibold">"Background graphics"</strong> (Đồ họa nền) để hiển thị viền vàng mạ kim và con dấu đỏ sắc nét nhất.
+          </p>
+</div>
+<div class="flex flex-col gap-xs pt-xs">
+<button class="w-full flex items-center justify-center gap-xs py-sm bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container rounded font-semibold transition-colors shadow-md" onclick="window.print()">
+<span class="material-symbols-outlined text-[20px]">print</span>
+<span>In ngay (Ctrl + P)</span>
+</button>
+<button class="w-full flex items-center justify-center gap-xs py-sm bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded transition-colors text-label-caps font-label-caps" id="btn-save-offline">
+<span class="material-symbols-outlined text-[18px]">save_alt</span>
+<span>Lưu bản sao Offline</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container p-lg rounded-xl shadow-lg flex flex-col gap-sm">
+<div class="flex items-center gap-xs text-[#d4af37]">
+<span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+<h4 class="font-headline-md text-code-block uppercase font-bold tracking-wider text-white">Quyền lợi chứng chỉ</h4>
+</div>
+<ul class="space-y-xs text-on-surface-variant text-sm font-body-md">
+<li class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[16px] mt-0.5">check_circle</span>
+<span>Đính kèm trực tiếp vào hồ sơ tuyển dụng IT &amp; LinkedIn Certificate.</span>
+</li>
+<li class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[16px] mt-0.5">check_circle</span>
+<span>Truy xuất tính hợp lệ công khai qua DevPortal Verification API.</span>
+</li>
+<li class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[16px] mt-0.5">check_circle</span>
+<span>Được bảo chứng chất lượng bởi mạng lưới hơn 50 doanh nghiệp công nghệ đối tác.</span>
+</li>
+</ul>
+</div>
+</aside>
+</div>
+<div class="hidden" id="print-styles"></div>
+</div>
+<style>
+  @media print {
+    @page {
+      size: A4 landscape;
+      margin: 0;
+    }
+    html, body {
+      background: #050b18 !important;
+      color: #ffffff !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      overflow: visible !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    header, footer, nav, aside, #pdf-viewport > :not(#certificate-canvas), .sticky {
+      display: none !important;
+    }
+    main {
+      padding: 0 !important;
+      margin: 0 !important;
+      background: transparent !important;
+    }
+    #pdf-viewport {
+      padding: 0 !important;
+      margin: 0 !important;
+      background: transparent !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+    #certificate-canvas {
+      width: 297mm !important;
+      height: 210mm !important;
+      max-width: none !important;
+      transform: none !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      page-break-after: avoid !important;
+      page-break-inside: avoid !important;
+      margin: 0 !important;
+      padding: 12mm 14mm !important;
+      box-sizing: border-box !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+  }
+</style>
+<script>
+  (function() {
+    let currentZoom = 1.0;
+    const cert = document.getElementById('certificate-canvas');
+    const zoomText = document.getElementById('zoom-text');
+    const btnZoomIn = document.getElementById('btn-zoom-in');
+    const btnZoomOut = document.getElementById('btn-zoom-out');
+    const btnFit = document.getElementById('btn-fit-width');
+    const btnFullscreen = document.getElementById('btn-fullscreen');
+    const btnDownload = document.getElementById('btn-download-pdf');
+    const btnSaveOffline = document.getElementById('btn-save-offline');
+
+    function updateZoom(val) {
+      currentZoom = Math.min(Math.max(val, 0.6), 1.6);
+      if (cert) {
+        cert.style.transform = `scale(${currentZoom})`;
+      }
+      if (zoomText) {
+        zoomText.innerText = `${Math.round(currentZoom * 100)}%`;
+      }
+    }
+
+    if (btnZoomIn) {
+      btnZoomIn.addEventListener('click', () => updateZoom(currentZoom + 0.1));
+    }
+    if (btnZoomOut) {
+      btnZoomOut.addEventListener('click', () => updateZoom(currentZoom - 0.1));
+    }
+    if (btnFit) {
+      btnFit.addEventListener('click', () => updateZoom(1.0));
+    }
+    if (btnFullscreen) {
+      btnFullscreen.addEventListener('click', () => {
+        if (!document.fullscreenElement) {
+          document.getElementById('pdf-viewport')?.requestFullscreen().catch(err => {
+            alert(`Lỗi toàn màn hình: ${err.message}`);
+          });
+        } else {
+          document.exitFullscreen();
+        }
+      });
+    }
+
+    const triggerPrintModal = () => window.print();
+
+    if (btnDownload) {
+      btnDownload.addEventListener('click', triggerPrintModal);
+    }
+    if (btnSaveOffline) {
+      btnSaveOffline.addEventListener('click', triggerPrintModal);
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+        e.preventDefault();
+        window.print();
+      }
+    });
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest py-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full max-w-[1200px] mx-auto px-lg flex flex-col md:flex-row items-center justify-between gap-md"><div class="text-center md:text-left"><p class="font-body-md text-body-md text-on-surface-variant">© 2024 DevPortal VN. Nền tảng học tập &amp; trợ giúp lập trình viên Việt Nam.</p></div><nav class="flex flex-wrap items-center justify-center gap-md" data-active-classes="text-primary-fixed-dim"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="ve-chung-toi" href="#">Về chúng tôi</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="dieu-khoan" href="#">Điều khoản</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="bao-mat" href="#">Bảo mật</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="lien-he" href="#">Liên hệ</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="github" href="#">GitHub</a></nav></div></footer></body></html>
